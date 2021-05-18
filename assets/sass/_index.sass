@@ -1,0 +1,264 @@
+@import "susy";
+@import _map.scss
+
+
+// shorthand
+$desktop: 12 (70px 30px) split
+$pad: 6 (70px 30px) split
+
+$w_desktop: 12 split
+$w_pad: 6 split
+
+$breakpoint_desktop: 891px
+$breakpoint_pad: 0 890px
+
+
+$susy: (debug: (image: hide))
+
+.slick-dots
+	bottom: 15px !important
+
+.main_image_wrapper
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		width: 100%
+
+		.main_slider
+			margin-top: 70px
+			.new_photo
+				width: 100%
+				position: relative
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				.text
+					position: absolute
+					// background: rgba(0,0,0,.8)
+					padding: 14px
+					h6
+						color: #FFF
+						font-size: 16px
+				img
+					width: 100%
+
+		.detail_main_image
+			height: 300px
+			background-size: cover
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			margin-bottom: 50px
+			padding-top: 0px
+			h2
+				font-size: 30px
+				color: #FFF
+				font-weight: 900
+
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		width: 100%
+		// height: 800px
+		// background: url('../img/main_img.jpg') center bottom 
+		
+		.main_slider
+			.new_photo
+				width: 100%
+				position: relative
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				.text
+					position: absolute
+					// background: rgba(0,0,0,.8)
+					padding: 30px
+
+					h6
+						color: #FFF
+						font-size: 40px
+						text-align: center
+				img
+					width: 100%
+
+		.detail_main_image
+			height: 400px
+			background-size: cover
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			margin-bottom: 80px
+			padding-top: 80px
+			h2
+				font-size: 40px
+				color: #FFF
+				font-weight: 900
+
+
+
+
+.main_image
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		height: 1200px
+		position: relative
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		height: 900px
+		position: relative
+
+
+.img_a
+	background: url('../img/pixta_47630913_M.jpeg') center
+.img_b
+	background: url('../img/pixta_58103247_M.jpeg') center
+.img_c
+	background: url('../img/pixta_33407689_M.jpeg') center
+.img_d
+	background: url('../img/pixta_54540294_M.jpeg') center
+
+
+
+
+.section_a
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		.m-img
+			width: 100%
+			height: 400px
+			background-size: cover
+			
+		.m-text
+			width: 100%
+			padding: 30px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			h6 
+				font-size: 28px
+				margin-bottom: 20px
+				color: #e9ac03
+				font-weight: 700
+			p 
+				font-size: 16px
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.m-img
+			width: 50%
+			height: 400px
+			background-size: cover
+			
+		.m-text
+			width: 50%
+			padding: 30px 80px 30px 80px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			h6 
+				font-size: 28px
+				margin-bottom: 20px
+				color: #e9ac03
+				font-weight: 700
+			p 
+				font-size: 16px
+
+.section_b
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		.m-img
+			width: 100%
+			height: 400px
+			background-size: cover
+			
+		.m-text
+			width: 100%
+			padding: 30px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			h6 
+				font-size: 28px
+				margin-bottom: 20px
+				color: #e9ac03
+				font-weight: 700
+			p 
+				font-size: 16px
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.m-img
+			width: 50%
+			height: 400px
+			background-size: cover
+			
+		.m-text
+			width: 50%
+			padding: 30px 80px 30px 80px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			order: 1
+			h6 
+				font-size: 28px
+				margin-bottom: 20px
+				color: #e9ac03
+				font-weight: 700
+			p 
+				font-size: 16px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

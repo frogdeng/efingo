@@ -1,0 +1,291 @@
+
+@import reset
+@import _index
+
+
+// @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
+
+body
+	// background: #09CEF6
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Helvetica, Arial, sans-serif !important
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	line-height: 1.5
+	color: #000
+	// background: #ECEBE7
+a
+	color: #888
+
+h5
+	font-size: 28px
+
+h6
+	font-size: 18px
+p
+	font-size: 16px
+
+
+
+.brand
+	display: inline-block
+	width: 100px
+	height: 0
+	padding-top: 25px
+	overflow: hidden
+	background-image: url('../img/logo.png')
+
+
+header
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		position: fixed
+		z-index: 1000	
+		width: 100%
+		height: 70px
+		padding: 0 0px
+		background: rgba(255,255,255,.9)
+		filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6))
+		z-index: 2000
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		top: 0
+		.logo
+
+			width: 100px
+			margin-left: 20px
+			img 
+				display: block
+
+		.menu
+			width: 60%
+			ul
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				align-items: center
+				li 
+					margin-left: 0px
+					height: 70px
+					padding: 0 8px
+					cursor: pointer
+					color: #999
+					font-size: 13px
+					font-weight: 900
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					position: relative
+					&:hover
+						background: #182e59
+						color: #FFF	
+					a 
+						display: block
+						// width: 140px
+						height: 70px
+						color: #999
+						// padding: 0 22px
+						font-size: 13px
+						font-weight: 900
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						transition: all .3s
+
+					.drop_down
+						position: absolute
+						display: none
+						width: 150px
+						// background: rgba(0,0,0,.8)
+						top: 70px
+						right: -10px
+						transition: all .3s
+						z-index: 3000
+						a 
+							display: block
+							width: 100%
+							height: 60px
+							color: #FFF
+							font-size: 16px
+							line-height: 1.4
+							background: rgba(0,0,0,.6)
+							border-bottom: 1px solid #666
+							display: flex
+							flex-direction: column
+							justify-content: center
+							align-items: center
+							&:hover
+								background: rgba(23,45,88,.9)
+					&:hover
+						.drop_down
+							display: block
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		position: fixed
+		border-radius: 50px
+		width: 90%
+		height: 60px
+		padding: 0 0px
+		background: rgba(255,255,255,1)
+		// filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3))
+		z-index: 2000
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		top: 10px
+		left: 5%
+		.logo
+			width: 250px
+			margin-left: 30px
+
+			img 
+				display: block
+
+		.menu
+			width: 90%
+			ul
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				align-items: center
+				li 
+					margin-left: 0px
+					height: 70px
+					padding: 0 22px
+					cursor: pointer
+					color: #999
+					font-size: 16px
+					font-weight: 900
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					position: relative
+					&:hover
+						text-decoration-line: underline
+						text-underline-position: 10px
+						
+					a 
+						display: block
+						// width: 140px
+						height: 70px
+						color: #195F5F
+						// padding: 0 22px
+						font-size: 16px
+						font-weight: 900
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						transition: all .3s
+
+					.drop_down
+						position: absolute
+						display: none
+						border-radius: 20px
+						width: 150px
+						background: #FFF
+						padding: 20px
+						top: 70px
+						left: 15px
+						transition: all .3s
+						z-index: 3000
+						overflow: hidden
+						a 
+							display: block
+							width: 100%
+							height: 35px
+							color: #014343
+							font-size: 14px
+							line-height: 1.4
+							background: #FFF
+							text-decoration-line: none !important
+							display: flex
+							flex-direction: column
+							justify-content: center
+							align-items: flex-start
+							&:hover
+								color: #FFC517
+								text-decoration-line: underline !important
+					&:hover
+						a
+							
+							text-decoration-line: underline
+						.drop_down
+							display: block
+
+
+.join_member
+	background: #019E96
+	height: 40px !important
+	padding: 20px
+	border-radius: 50px
+	margin-left: 20px
+	color: #FFF !important
+	&:hover
+		background: #000
+
+.clear
+	clear: both
+.clearfix:before,.clearfix:after
+	content: ""
+	display: table
+.clearfix:after
+	clear: both
+.clearfix
+	zoom: 1 /* ie 6/7 */
+
+
+
+// footer
+// 	color: #a0a0a0
+// 	font-size: 11px
+// 	line-height: 1.4
+// 	text-align: center
+// 	padding: 10px 0
+// 	background: #FFF
+
+
+
+
+
+
+.footer_wrapper
+	background: #464646
+	padding: 30px 0	
+
+.footer_info
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
+		padding: 0 30px
+		
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: flex-start
+
+
+footer
+	background: #464646
+	height: 80px
+	color: #888
+	font-size: 13px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+
+
+

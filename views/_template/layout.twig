@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" lang="zh-TW">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-itunes-app" content="app-id=300915900, app-argument=https://www.kkbox.com/tw/tc/index.html">
+<!-- <link rel="shortcut icon" href="img/favicon.ico" /> -->
+
+
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title> 玉山銀行 e.Fingo </title>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content=""/>
+<meta property="og:url" content=""/>
+<meta property="og:description" content="" />
+<meta property="og:image" content=""/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+
+<!--#include virtual="/event_templates/fb_appid_meta.html" -->
+
+<!-- <link href="/frontend_lib/bootstrap-grid/bootstrap-grid.css" rel="stylesheet" />
+<link href="/css/event-component.css" rel="stylesheet" media="screen">
+-->
+
+
+<!-- 套件 CSS -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<!-- 所有自訂的 CSS -->
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+<link href="css/module.css" rel="stylesheet" />
+
+
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/ui.js"></script>
+
+<script>
+    $(document).on('ready', function() {
+        $(".main").slick({
+            dots: true,
+            infinite: true,
+            arrows: false,
+            autoplay: true,
+            adaptiveHeight: true
+        })
+
+    });
+
+</script>
+
+</head>
+<body>
+
+    {% block page %}{% endblock %}
+
+<div class="footer_wrapper" id="footer">
+	<div class="footer_info">
+
+
+
+        
+	</div>
+</div>
+</body>
+</html>
