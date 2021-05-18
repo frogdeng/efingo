@@ -4,3 +4,4 @@ report/
 sandbox/
 node_modules/
 package-lock.json
+sublime-gulp.log
