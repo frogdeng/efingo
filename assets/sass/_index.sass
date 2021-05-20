@@ -3,7 +3,7 @@
 
 
 // shorthand
-$desktop: 12 (70px 30px) split
+$desktop: 12 (80px 30px) split
 $pad: 6 (70px 30px) split
 
 $w_desktop: 12 split
@@ -12,57 +12,24 @@ $w_pad: 6 split
 $breakpoint_desktop: 891px
 $breakpoint_pad: 0 890px
 
-
 $susy: (debug: (image: hide))
 
 .slick-dots
 	bottom: 15px !important
 
+.slick-dotted.slick-slider
+	margin-bottom: 0
+
+
 .main_image_wrapper
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
-		width: 100%
-
-		.main_slider
-			margin-top: 70px
-			.new_photo
-				width: 100%
-				position: relative
-				display: flex
-				flex-direction: row
-				justify-content: center
-				align-items: center
-				.text
-					position: absolute
-					// background: rgba(0,0,0,.8)
-					padding: 14px
-					h6
-						color: #FFF
-						font-size: 16px
-				img
-					width: 100%
-
-		.detail_main_image
-			height: 300px
-			background-size: cover
-			display: flex
-			flex-direction: row
-			justify-content: center
-			align-items: center
-			margin-bottom: 50px
-			padding-top: 0px
-			h2
-				font-size: 30px
-				color: #FFF
-				font-weight: 900
+		
 
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		width: 100%
-		// height: 800px
-		// background: url('../img/main_img.jpg') center bottom 
-		
 		.main_slider
 			.new_photo
 				width: 100%
@@ -99,166 +66,631 @@ $susy: (debug: (image: hide))
 
 
 
+// video_section
+.video_section
+	background: url("../img/mobile_bg.jpg") center
+	background-size: cover
+	background-repeat: no-repeat
 
-.main_image
+.video_content
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		height: 800px
+		position: relative
+		overflow: hidden
+		.video_wave_top
+			position: absolute
+			width: 105%
+			top: -5px
+			img
+				display: block
+				width: 100%
+
+		.video_wave_bottom
+			position: absolute
+			position: absolute
+			width: 50%
+			bottom: -5px
+			right: 0
+			img
+				display: block
+				width: 100%
+		.play_btn
+			position: absolute
+			right: 5%
+			bottom: 10%
+			cursor: pointer
+			transition: all .3s
+			&:hover
+				transform: scale(1.1)
+
+
+
+// what_is_efingo
+.what_is_efingo
+	background: #FFB831
+.what_is_efingo_content
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		
+		position: relative
+		height: 800px
+		background: url("../img/wave-yellow-01.svg") 50% 255%
+		background-size: 2500px
+		background-repeat: no-repeat
+		.what_is_efingo_des
+			position: absolute
+			width: 50%
+			z-index: 100
+			top: 10%
+			left: 18%
+			// background: #eee
+			h5 
+				font-size: 55px
+				color: #FFF
+				font-weight: 600
+			h6
+				font-size: 20px
+				color: #FFF
+
+		.what_is_efingo_card_row
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			.what_is_efingo_card
+				width: 230px
+				height: 380px
+				border-radius: 50px
+				margin: 0 20px
+				margin-top: 270px
+				position: relative
+				overflow: hidden
+				.w-b-a
+					position: absolute
+					bottom: -5px
+					img 
+						display: block
+						width: 100%
+				.what_is_efingo_img
+					position: relative
+					width: 90%
+					padding: 20px
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					img
+						width: 100%
+				.what_is_efingo_text
+					position: absolute
+					width: 100%
+					padding: 0 20px
+					top: 220px
+					h6 
+						color: #014343
+						font-size: 18px
+						font-weight: 600
+					p
+						color: #014343
+						font-size: 13px
+					a 
+						display: block
+						width: 100px
+						height: 36px
+						background: #FFE893
+						font-weight: 600
+						font-size: 14px
+						color: #014343
+						border-radius: 50px
+						margin-top: 13px
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						transition: all .3s
+						&:hover
+							transform: scale(1.1)
+
+				
+
+
+
+
+
+// efingo_member
+.efingo_member
+	background: #2DC99A 
+.efingo_member_content
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		position: relative
+		height: 2000px
+		background: url("../img/green_hill.svg") 50% 145%
+		background-size: 2500px
+		background-repeat: no-repeat
+		.efingo_member_des
+			position: absolute
+			width: 90%
+			z-index: 100
+			top: 50px
+			left: 5%
+		
+			h5 
+				font-size: 25px
+				color: #FFF
+				font-weight: 600
+			h6
+				font-size: 20px
+				color: #FFF
+				margin-bottom: 500px
+			p 
+				font-size: 14px
+				color: #047B77
+		.green_hill
+			position: absolute
+			width: 100%
+			bottom: 0
+			img
+				display: block
+				width: 100%
+		.efingo_member_card_row
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.efingo_member_card_item
+				width: 350px
+				height: 400px
+				background: #B7F8E5
+				margin: 0 30px
+				margin-top: 250px
+				position: relative
+				border-radius: 60px
+				overflow: hidden
+				.w-b-w
+					width: 100%
+					position: absolute
+					bottom: 0
+					img
+						display: block
+						width: 100%
+				.member_img
+					position: absolute
+					width: 100%
+					padding: 30px
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					right: 0px
+					img
+						width: 90%
+				.member_text
+					position: absolute
+					width: 100%
+					padding: 0 30px
+					top: 240px
+					h6 
+						color: #014343
+						font-size: 25px
+						font-weight: 600
+					p
+						color: #014343
+						font-size: 13px
+					a 
+						display: block
+						width: 100px
+						height: 36px
+						background: #FFE893
+						font-weight: 600
+						font-size: 14px
+						color: #014343
+						border-radius: 50px
+						margin-top: 13px
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						transition: all .3s
+						&:hover
+							transform: scale(1.1)
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		position: relative
+		height: 800px
+		background: url("../img/green_hill.svg") 50% 145%
+		background-size: 2500px
+		background-repeat: no-repeat
+		.efingo_member_des
+			position: absolute
+			width: 50%
+			z-index: 100
+			top: 10%
+			left: 18%
+		
+			h5 
+				font-size: 55px
+				color: #FFF
+				font-weight: 600w
+			h6
+				font-size: 20px
+				color: #FFF
+			p 
+				font-size: 18px
+				color: #014343
+		.green_hill
+			position: absolute
+			width: 100%
+			bottom: 0
+			img
+				display: block
+				width: 100%
+		.efingo_member_card_row
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			.efingo_member_card_item
+				width: 350px
+				height: 400px
+				background: #B7F8E5
+				margin: 0 30px
+				margin-top: 250px
+				position: relative
+				border-radius: 60px
+				overflow: hidden
+				.w-b-w
+					width: 100%
+					position: absolute
+					bottom: 0
+					img
+						display: block
+						width: 100%
+				.member_img
+					position: absolute
+					width: 100%
+					padding: 30px
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					img
+						width: 90%
+				.member_text
+					position: absolute
+					width: 100%
+					padding: 0 30px
+					top: 240px
+					h6 
+						color: #014343
+						font-size: 25px
+						font-weight: 600
+					p
+						color: #014343
+						font-size: 13px
+					a 
+						display: block
+						width: 100px
+						height: 36px
+						background: #FFE893
+						font-weight: 600
+						font-size: 14px
+						color: #014343
+						border-radius: 50px
+						margin-top: 13px
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						transition: all .3s
+						&:hover
+							transform: scale(1.1)
+
+
+
+
+// efingo_activity
+.efingo_activity
+	background: #F59300
+.efingo_activity_content
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		position: relative
+		height: 900px
+		.cloud_w_left
+			display: none
+		.cloud_w_right
+			display: none
+		.mobile_phone
+			position: absolute
+			width: 90%
+			left: 8%
+			top: 150px
+		.efingo_activity_des
+			position: absolute
+			width: 100%
+			z-index: 100
+			padding: 0 30px
+			top: 50px
+			left: 0%
+			
+			h5 
+				font-size: 25px
+				color: #FFF
+				font-weight: 600
+			h6
+				font-size: 20px
+				color: #FFF
+				margin-bottom: 500px
+			p 
+				font-size: 14px
+				color: #047B77
+			.link_row
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: center
+				margin-top: 30px
+				.seemore
+					display: block
+					color: #195F5F
+					background: #FFE893
+					margin-right: 30px
+					padding: 8px 30px
+					border-radius: 50px
+					font-weight: 600
+					transition: all .3s
+					&:hover
+						transform: scale(1.1)
+
+				.notice
+					display: block
+					color: #195F5F
+					background: #FFF
+					padding: 8px 30px
+					border-radius: 50px
+					border: 2px solid #195F5F
+					font-weight: 600
+					transition: all .3s
+					&:hover
+						transform: scale(1.1)
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		position: relative
+		height: 800px
+		.cloud_w_left
+			position: absolute
+			width: 800px
+			left: 0
+			bottom: 0
+			z-index: 90
+			img 
+				width: 100%	
+				display: block
+		.cloud_w_right
+			position: absolute
+			width: 300px
+			right: 0
+			bottom: 0
+			z-index: 90
+			img 
+				width: 100%	
+				display: block
+		.mobile_phone
+			position: absolute
+			width: 520px
+			left: 48%
+			top: 20%
+		.efingo_activity_des
+			position: absolute
+			width: 30%
+			z-index: 100
+			top: 20%
+			left: 10%
+			
+			h5 
+				font-size: 55px
+				color: #FFF
+				font-weight: 600
+			h6
+				font-size: 20px
+				color: #FFF
+				margin-bottom: 200px
+			p 
+				font-size: 18px
+				color: #014343
+			.link_row
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: center
+				margin-top: 30px
+				.seemore
+					display: block
+					color: #195F5F
+					background: #FFE893
+					margin-right: 30px
+					padding: 8px 30px
+					border-radius: 50px
+					font-weight: 600
+					transition: all .3s
+					&:hover
+						transform: scale(1.1)
+
+				.notice
+					display: block
+					color: #195F5F
+					background: #FFF
+					padding: 8px 30px
+					border-radius: 50px
+					border: 2px solid #195F5F
+					font-weight: 600
+					transition: all .3s
+					&:hover
+						transform: scale(1.1)
+
+
+
+
+
+
+// efingo_info
+.efingo_info
+	background: #1484E3
+	width: 100%
+
+.efingo_info_content
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		display: flex
-		flex-direction: row
-		justify-content: center
-		align-items: center
-		height: 1200px
-		position: relative
+		padding: 50px 
+		.efingo_info_row
+			margin: 50px 0
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			margin: 50px 0
+			
+			.efingo_info_item
+				width: 100%
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				background: #CEE8FF
+				border-radius: 50px
+				margin-bottom: 30px
+				&:nth-last-child(2)
+					margin-top: 0px					
+				
+				.efingo_info_card
+					width: 160px
+					height: 200px
+					padding: 10px
+					border-radius: 50px
+					background: #CEE8FF
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					margin-bottom: 0px
+				a 
+					display: block
+					width: 180px
+					height: 50px
+					margin-left: 30px
+					background: #FFE893
+					font-weight: 600
+					color: #014343
+					border-radius: 50px
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		display: flex
-		flex-direction: row
-		justify-content: center
-		align-items: center
-		height: 900px
-		position: relative
-
-
-.img_a
-	background: url('../img/pixta_47630913_M.jpeg') center
-.img_b
-	background: url('../img/pixta_58103247_M.jpeg') center
-.img_c
-	background: url('../img/pixta_33407689_M.jpeg') center
-.img_d
-	background: url('../img/pixta_54540294_M.jpeg') center
-
-
-
-
-.section_a
-	+susy-breakpoint($breakpoint_pad, $w_pad)
-		+container
-		display: flex
-		flex-direction: column
-		justify-content: center
-		align-items: center
-		.m-img
-			width: 100%
-			height: 400px
-			background-size: cover
-			
-		.m-text
-			width: 100%
-			padding: 30px
+		padding: 50px 
+		.efingo_info_row
+			margin: 50px 0
 			display: flex
-			flex-direction: column
-			justify-content: center
+			flex-direction: row
+			justify-content: space-between
 			align-items: center
-			h6 
-				font-size: 28px
-				margin-bottom: 20px
-				color: #e9ac03
-				font-weight: 700
-			p 
-				font-size: 16px
+			margin: 50px 0
+			.efingo_info_item
+				width: 28%
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				&:nth-last-child(2)
+					margin-top: 180px					
+				
+				.efingo_info_card
+					width: 100%
+					height: 350px
+					border-radius: 40px
+					background: #CEE8FF
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					margin-bottom: 20px
+				a 
+					display: block
+					width: 180px
+					height: 50px
+					background: #FFE893
+					font-weight: 600
+					color: #014343
+					border-radius: 50px
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					transition: all .3s
+					&:hover
+						transform: scale(1.1)
 
-	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+
+				
+
+
+
+
+
+// digital_loan
+.digital_loan
+	width: 100%
+	background: #1484E3
+		
+.digital_loan_content
+	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		display: flex
-		flex-direction: row
-		justify-content: center
-		align-items: center
-		.m-img
-			width: 50%
-			height: 400px
-			background-size: cover
+		padding: 0 30px
+		// margin-bottom: 50px
+		background: #1484E3
+		.d-text
+			padding: 0 80px
+			padding-bottom: 90px
 			
-		.m-text
-			width: 50%
-			padding: 30px 80px 30px 80px
-			display: flex
-			flex-direction: column
-			justify-content: center
-			align-items: center
-			h6 
-				font-size: 28px
-				margin-bottom: 20px
-				color: #e9ac03
-				font-weight: 700
 			p 
-				font-size: 16px
+				color: #FFF
+				font-size: 11px
+				line-height: 2
+			a 
+				color: #FFC517
+				
 
-.section_b
-	+susy-breakpoint($breakpoint_pad, $w_pad)
+	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		display: flex
-		flex-direction: column
-		justify-content: center
-		align-items: center
-		.m-img
-			width: 100%
-			height: 400px
-			background-size: cover
+		padding: 0 50px
+		// margin-bottom: 50px
+		background: #1484E3
+		.d-text
+			padding: 0 80px
+			padding-bottom: 150px
 			
-		.m-text
-			width: 100%
-			padding: 30px
-			display: flex
-			flex-direction: column
-			justify-content: center
-			align-items: center
-			h6 
-				font-size: 28px
-				margin-bottom: 20px
-				color: #e9ac03
-				font-weight: 700
 			p 
-				font-size: 16px
-
-	+susy-breakpoint($breakpoint_desktop, $w_desktop)
-		+container
-		display: flex
-		flex-direction: row
-		justify-content: center
-		align-items: center
-		.m-img
-			width: 50%
-			height: 400px
-			background-size: cover
-			
-		.m-text
-			width: 50%
-			padding: 30px 80px 30px 80px
-			display: flex
-			flex-direction: column
-			justify-content: center
-			align-items: center
-			order: 1
-			h6 
-				font-size: 28px
-				margin-bottom: 20px
-				color: #e9ac03
-				font-weight: 700
-			p 
-				font-size: 16px
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+				color: #FFF
+				font-size: 11px
+				line-height: 2
+			a 
+				color: #FFC517
+				
 
 
 
