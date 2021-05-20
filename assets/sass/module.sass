@@ -27,13 +27,7 @@ p
 
 
 
-.brand
-	display: inline-block
-	width: 100px
-	height: 0
-	padding-top: 25px
-	overflow: hidden
-	background-image: url('../img/logo.png')
+
 
 
 header
@@ -45,7 +39,6 @@ header
 		height: 70px
 		padding: 0 0px
 		background: rgba(255,255,255,.9)
-		filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6))
 		z-index: 2000
 		display: flex
 		flex-direction: row
@@ -53,76 +46,99 @@ header
 		align-items: center
 		top: 0
 		.logo
-
-			width: 100px
+			width: 200px
 			margin-left: 20px
 			img 
 				display: block
 
 		.menu
-			width: 60%
+			display: none
+		.hamburg
+			display: block
+			position: absolute
+			height: 40px
+			width: 40px
+			top: 20px
+			right: 20px
+			cursor: pointer
+			z-index: 2800
+		.aside
+			position: fixed
+			width: 100%
+			height: 2000px
+			background: rgba(255,255,255, .9)
+			padding-top: 10px
+			transition: all .2s ease
+			right: -100%
+			top: 70px
+			z-index: 1200
+			overflow-x: hidden
 			ul
-				display: flex
-				flex-direction: row
-				justify-content: flex-end
-				align-items: center
-				li 
-					margin-left: 0px
-					height: 70px
-					padding: 0 8px
-					cursor: pointer
-					color: #999
-					font-size: 13px
-					font-weight: 900
-					display: flex
-					flex-direction: row
-					justify-content: center
-					align-items: center
-					position: relative
-					&:hover
-						background: #182e59
-						color: #FFF	
-					a 
-						display: block
-						// width: 140px
-						height: 70px
-						color: #999
-						// padding: 0 22px
-						font-size: 13px
-						font-weight: 900
+				margin-top: 60px
+				li
+					.m-first
 						display: flex
-						flex-direction: row
 						justify-content: center
 						align-items: center
-						transition: all .3s
-
-					.drop_down
-						position: absolute
-						display: none
-						width: 150px
-						// background: rgba(0,0,0,.8)
-						top: 70px
-						right: -10px
-						transition: all .3s
-						z-index: 3000
-						a 
-							display: block
-							width: 100%
-							height: 60px
-							color: #FFF
-							font-size: 16px
-							line-height: 1.4
-							background: rgba(0,0,0,.6)
-							border-bottom: 1px solid #666
+						height: 50px
+						width: 100%
+						padding: 0 0 0 0px
+						line-height: 1.4
+						color: #014343
+						font-size: 20px
+						font-weight: 700
+						margin-bottom: 20px
+						.go_submenu
+							width: 45px
+							height: 45px
+							background: #222
 							display: flex
-							flex-direction: column
 							justify-content: center
 							align-items: center
-							&:hover
-								background: rgba(23,45,88,.9)
-					&:hover
-						.drop_down
-							display: block
+							i
+								font-size: 30px
+					.m-second_bg
+						position: absolute
+						width: 100%
+						height: 2000px
+						background: #222
+						top: 110px
+						right: -100%
+						transition: all .5s ease
+						.goback
+							margin: 0 10px
+							color: #FFF
+							width: 200px
+							height: 48px
+							margin-top: -20px
+							margin-left: 20px
+							padding-left: 20px
+							cursor: pointer
+							background-color: #555
+							// border: 1px solid #444
+							display: flex
+							justify-content: flex-start
+							align-items: center
+							i
+								font-size: 20px
+								margin-right: 10px
+						ul
+							position: absolute
+							width: 100%
+							top: -20px
+							li
+								.m-second
+									display: block
+									height: 50px
+									width: 100%
+									padding: 0 0 0 30px
+									line-height: 1.4
+									color: #999
+									font-size: 15px
+									border-bottom: 1px solid #555
+									display: flex
+									justify-content: flex-start
+									align-items: center
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
@@ -146,7 +162,10 @@ header
 
 			img 
 				display: block
-
+		.hamburg
+			display: none
+		.aside
+			display: none
 		.menu
 			width: 90%
 			ul
@@ -219,6 +238,65 @@ header
 							text-decoration-line: underline
 						.drop_down
 							display: block
+
+
+
+.hamburg-open
+	right: 0% !important
+	transform: rotate(0deg) translate3d(0px, 0px, 0px)
+
+
+.hamburg
+	.aaa, .bbb, .ccc
+		display: block
+		width: 80%
+		margin: 0 auto
+		height: 4px
+		background: #014343
+		margin-bottom: 5px
+		margin-top: 5px
+		transition: all .5s ease
+		transform: rotate(0deg) translate3d(0px, 0px, 0px)
+
+
+.cross
+	.aaa
+		display: block
+		width: 80%
+		margin: 0 auto
+		height: 5px
+		background: #014343
+		margin-bottom: 6px
+		margin-top: 6px
+		transition: all .3s ease
+		transform: rotate(405deg) translate3d(8px, 8px, 0px)
+	.bbb
+		display: block
+		width: 80%
+		margin: 0 auto
+		height: 5px
+		background: #014343
+		margin-bottom: 6px
+		margin-top: 6px
+		transition(all .2s ease)
+		transform: rotate(0deg) translate3d(0px, 0px, 0px)
+		opacity: 0
+
+	.ccc
+		display: block
+		width: 80%
+		margin: 0 auto
+		height: 5px
+		background: #014343
+		margin-bottom: 6px
+		margin-top: 6px
+		transition: all .3s ease
+		transform: rotate(-405deg) translate3d(8px, -8px, 0px)
+
+
+.second-open
+	right: 0% !important
+	transition: all .5s ease
 
 
 .join_member

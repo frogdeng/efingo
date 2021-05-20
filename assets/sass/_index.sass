@@ -24,7 +24,41 @@ $susy: (debug: (image: hide))
 .main_image_wrapper
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
-		
+		width: 100%
+		margin-top: 70px
+		.main_slider
+			.new_photo
+				width: 100%
+				position: relative
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				.text
+					position: absolute
+					// background: rgba(0,0,0,.8)
+					padding: 30px
+
+					h6
+						color: #FFF
+						font-size: 40px
+						text-align: center
+				img
+					width: 100%
+
+		.detail_main_image
+			height: 400px
+			background-size: cover
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			margin-bottom: 80px
+			padding-top: 80px
+			h2
+				font-size: 40px
+				color: #FFF
+				font-weight: 900
 
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
@@ -68,14 +102,50 @@ $susy: (debug: (image: hide))
 
 // video_section
 .video_section
-	background: url("../img/mobile_bg.jpg") center
-	background-size: cover
-	background-repeat: no-repeat
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		background: url("../img/v-mobile.jpg") center
+		background-size: cover
+		background-repeat: no-repeat
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		background: url("../img/mobile_bg.jpg") center
+		background-size: cover
+		background-repeat: no-repeat
+
+
+
+
 
 .video_content
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
-		
+		height: 500px
+		position: relative
+		overflow: hidden
+		.video_wave_top
+			position: absolute
+			width: 105%
+			top: -5px
+			img
+				display: block
+				width: 100%
+
+		.video_wave_bottom
+			position: absolute
+			position: absolute
+			width: 80%
+			bottom: -5px
+			right: 0
+			img
+				display: block
+				width: 100%
+		.play_btn
+			position: absolute
+			right: 5%
+			bottom: 10%
+			cursor: pointer
+			transition: all .3s
+			&:hover
+				transform: scale(1.1)
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
@@ -113,14 +183,98 @@ $susy: (debug: (image: hide))
 // what_is_efingo
 .what_is_efingo
 	background: #FFB831
+	padding: 50px 30px
+	// overflow: hidden
 .what_is_efingo_content
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
-		
+		position: relative
+		// height: 800px
+		// background: url("../img/wave-yellow-01.svg") 50% 255%
+		// background-size: 2500px
+		// background-repeat: no-repeat
+
+		.what_is_efingo_des
+			// position: absolute
+			width: 100%
+			z-index: 100
+			top: 10%
+			left: 18%
+			// background: #eee
+			h5 
+				font-size: 30px
+				color: #FFF
+				font-weight: 600
+			h6
+				font-size: 20px
+				color: #FFF
+				margin-bottom: 50px
+			p 
+				font-size: 14px
+				color: #047B77
+		.for_scroll
+			overflow: scroll
+			.what_is_efingo_card_row
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				width: 1380px
+				.what_is_efingo_card
+					width: 230px
+					height: 380px
+					border-radius: 50px
+					margin: 0 20px
+					margin-top: 0px
+					position: relative
+					overflow: hidden
+					.w-b-a
+						position: absolute
+						bottom: -5px
+						img 
+							display: block
+							width: 100%
+					.what_is_efingo_img
+						position: relative
+						width: 90%
+						padding: 20px
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						img
+							width: 100%
+					.what_is_efingo_text
+						position: absolute
+						width: 100%
+						padding: 0 20px
+						top: 220px
+						h6 
+							color: #014343
+							font-size: 18px
+							font-weight: 600
+						p
+							color: #014343
+							font-size: 13px
+						a 
+							display: block
+							width: 100px
+							height: 36px
+							background: #FFE893
+							font-weight: 600
+							font-size: 14px
+							color: #014343
+							border-radius: 50px
+							margin-top: 13px
+							display: flex
+							flex-direction: row
+							justify-content: center
+							align-items: center
+							transition: all .3s
+	
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
-		
 		position: relative
 		height: 800px
 		background: url("../img/wave-yellow-01.svg") 50% 255%
@@ -209,21 +363,19 @@ $susy: (debug: (image: hide))
 // efingo_member
 .efingo_member
 	background: #2DC99A 
+	padding: 50px 30px
 .efingo_member_content
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		position: relative
-		height: 2000px
-		background: url("../img/green_hill.svg") 50% 145%
+		// height: 2000px
+		// background: url("../img/green_hill.svg") 50% 145%
 		background-size: 2500px
 		background-repeat: no-repeat
+
 		.efingo_member_des
-			position: absolute
 			width: 90%
 			z-index: 100
-			top: 50px
-			left: 5%
-		
 			h5 
 				font-size: 25px
 				color: #FFF
@@ -231,7 +383,7 @@ $susy: (debug: (image: hide))
 			h6
 				font-size: 20px
 				color: #FFF
-				margin-bottom: 500px
+				margin-bottom: 50px
 			p 
 				font-size: 14px
 				color: #047B77
@@ -249,36 +401,37 @@ $susy: (debug: (image: hide))
 			align-items: center
 			.efingo_member_card_item
 				width: 350px
-				height: 400px
-				background: #B7F8E5
+				// height: 400px
+				background: #FFF
 				margin: 0 30px
-				margin-top: 250px
+				// margin-top: 50px
+				margin-bottom: 30px
+				padding: 20px
 				position: relative
-				border-radius: 60px
+				border-radius: 30px
 				overflow: hidden
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
 				.w-b-w
-					width: 100%
-					position: absolute
-					bottom: 0
-					img
-						display: block
-						width: 100%
+					display: none
 				.member_img
-					position: absolute
-					width: 100%
-					padding: 30px
+					order: 2
+					width: 50%
+					padding: 0px
 					display: flex
 					flex-direction: row
 					justify-content: center
 					align-items: center
-					right: 0px
+
 					img
 						width: 90%
 				.member_text
-					position: absolute
-					width: 100%
-					padding: 0 30px
-					top: 240px
+					order: 1
+					width: 60%
+					padding: 0 0px
+	
 					h6 
 						color: #014343
 						font-size: 25px
@@ -315,13 +468,13 @@ $susy: (debug: (image: hide))
 			position: absolute
 			width: 50%
 			z-index: 100
-			top: 10%
+			top: 5%
 			left: 18%
 		
 			h5 
 				font-size: 55px
 				color: #FFF
-				font-weight: 600w
+				font-weight: 600
 			h6
 				font-size: 20px
 				color: #FFF
@@ -349,6 +502,9 @@ $susy: (debug: (image: hide))
 				position: relative
 				border-radius: 60px
 				overflow: hidden
+				&:nth-child(2)
+					margin-top: 180px
+					
 				.w-b-w
 					width: 100%
 					position: absolute
@@ -402,13 +558,18 @@ $susy: (debug: (image: hide))
 // efingo_activity
 .efingo_activity
 	background: #F59300
+	overflow: hidden
 .efingo_activity_content
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		position: relative
-		height: 900px
+		height: 800px
 		.cloud_w_left
-			display: none
+			position: absolute
+			width: 750px
+			left: 0
+			bottom: -28%
+			z-index: 90
 		.cloud_w_right
 			display: none
 		.mobile_phone
@@ -602,7 +763,7 @@ $susy: (debug: (image: hide))
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		padding: 50px 
+		padding: 50px 30px
 		.efingo_info_row
 			margin: 50px 0
 			display: flex
@@ -664,7 +825,7 @@ $susy: (debug: (image: hide))
 		// margin-bottom: 50px
 		background: #1484E3
 		.d-text
-			padding: 0 80px
+			padding: 0 10px
 			padding-bottom: 90px
 			
 			p 
