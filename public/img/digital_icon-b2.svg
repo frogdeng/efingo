@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="170" viewBox="0 0 210 170">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="20" y="24" width="210" height="170" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_3291" data-name="Group 3291" transform="translate(10789 2873)">
+    <g id="Scroll_Group_30" data-name="Scroll Group 30" transform="translate(-10809 -2897)" clip-path="url(#clip-path)" style="isolation: isolate">
+      <ellipse id="Ellipse_759" data-name="Ellipse 759" cx="106.5" cy="81.5" rx="106.5" ry="81.5" transform="translate(46.779) rotate(17)" fill="#fff"/>
+    </g>
+    <g id="Group_3287" data-name="Group 3287" transform="translate(-11234.313 -5264.745)">
+      <g id="Group_2241" data-name="Group 2241" transform="translate(-431.998 1667.708)">
+        <path id="Path_3136" data-name="Path 3136" d="M936.507,741.068,902.769,795.18a9.619,9.619,0,0,0,3.447,13.472l103.837,58.4a9.618,9.618,0,0,0,13.075-3.627l32.8-57.652a9.617,9.617,0,0,0-3.836-13.243l-102.9-54.862A9.616,9.616,0,0,0,936.507,741.068Z" transform="translate(0 1.836)" fill="#313131"/>
+        <path id="Path_3137" data-name="Path 3137" d="M938.051,738.569,904.315,792.68a9.619,9.619,0,0,0,3.445,13.472l103.839,58.4a9.619,9.619,0,0,0,13.075-3.628l32.8-57.65a9.62,9.62,0,0,0-3.834-13.245l-102.9-54.862A9.616,9.616,0,0,0,938.051,738.569Z" transform="translate(1.135 0)" fill="#019e96"/>
+        <path id="Path_3138" data-name="Path 3138" d="M921.394,825.893c1.107,15.5,24.9,21.582,46.487,22.136s55.9-9.408,68.071-33.757l12.175-24.351-12.728-7.194-20.477,27.116-2.767-6.087-34.5-2.486a63.167,63.167,0,0,0-46.942,16.182Z" transform="translate(14.756 35.775)" fill="#ff957c"/>
+        <path id="Path_3139" data-name="Path 3139" d="M996.638,798.357s-16.513,22.276-50.361,14.943" transform="translate(33.04 47.26)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <text id="E.SUN" transform="matrix(0.883, 0.469, -0.469, 0.883, 508.462, 2425.062)" fill="#fff" font-size="18" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-weight="500"><tspan x="0" y="0">E.SUN</tspan></text>
+      <circle id="Ellipse_673" data-name="Ellipse 673" cx="7.5" cy="7.5" r="7.5" transform="translate(617 2482)" fill="#ff957c"/>
+    </g>
+  </g>
+</svg>
