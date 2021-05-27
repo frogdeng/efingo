@@ -1,0 +1,228 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+{% block page %}
+
+{% include 'component/header.twig' %}
+
+<script>
+  $(document).ready(function(){
+
+    $(".qa_title").click(function(){
+      $(this).toggleClass('icon_animation');
+      $(this).parent().find(".qa_answer").toggleClass("show_answer")
+      $(this).parent().toggleClass('thick');
+    })
+
+  });
+
+
+</script>
+
+<div class="qa_wrapper">
+{# section top #}
+<div class="qa_top-bg">
+		<div class="t_description">
+			<h2>常見問題</h2>
+		</div>
+
+    <div class="four_card_section">
+      <div class="icon_row">
+        <div class="icon_item qa_on">
+          <img src="img/qa_a01.svg" alt="">
+          <p>會員相關</p>
+        </div>
+        <div class="icon_item ">
+          <img src="img/qa_a02.svg" alt="">
+          <p>點數相關</p>
+        </div>
+        <div class="icon_item">
+          <img src="img/qa_a03.svg" alt="">
+          <p>兌換相關</p>
+        </div>
+        <div class="icon_item">
+          <img src="img/qa_a04.svg" alt="">
+          <p>申請相關</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+{# qa content#}
+<div class="qa_content">
+  
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> 1. e.Fingo 是什麼？</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>加入e.Fingo 會員需具備以下 2 個條件，並透過玉山行動銀行App加入：</p> 
+      <ul>
+        <li>持有「臺幣帳戶（含數位帳戶）」</li>
+        <li>持有「玉山 U Bear 信用卡／玉山 Only 卡／玉山 Pi 拍錢包信用卡／玉山 Pi 拍兔 Debit卡」任一張指定卡片</li>
+      </ul>
+      <p>提醒您：</p>
+      <ul>
+        <li>請將玉山行動銀行App更新至最新版本。</li>
+        <li>如為新開戶或新核卡，請於次一工作日加入會員！</li>
+        <li>現階段僅提供本國自然人申請。</li>
+      </ul>
+      <img src="img/mobile_bg.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> 2. 誰可以加入e.Fingo會員？</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>加入e.Fingo 會員需具備以下 2 個條件，並透過玉山行動銀行App加入：</p> 
+      <ul>
+        <li>持有「臺幣帳戶（含數位帳戶）」</li>
+        <li>持有「玉山 U Bear 信用卡／玉山 Only 卡／玉山 Pi 拍錢包信用卡／玉山 Pi 拍兔 Debit卡」任一張指定卡片</li>
+      </ul>
+      <p>提醒您：</p>
+      <ul>
+        <li>請將玉山行動銀行App更新至最新版本。</li>
+        <li>如為新開戶或新核卡，請於次一工作日加入會員！</li>
+        <li>現階段僅提供本國自然人申請。</li>
+      </ul>
+      <img src="img/mobile_bg.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> 3. 如果好友已經加入會員，但他沒有填過好友邀請碼，可以再補填我的好友邀請碼嗎？</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>加入e.Fingo 會員需具備以下 2 個條件，並透過玉山行動銀行App加入：</p> 
+      <ul>
+        <li>持有「臺幣帳戶（含數位帳戶）」</li>
+        <li>持有「玉山 U Bear 信用卡／玉山 Only 卡／玉山 Pi 拍錢包信用卡／玉山 Pi 拍兔 Debit卡」任一張指定卡片</li>
+      </ul>
+      <p>提醒您：</p>
+      <ul>
+        <li>請將玉山行動銀行App更新至最新版本。</li>
+        <li>如為新開戶或新核卡，請於次一工作日加入會員！</li>
+        <li>現階段僅提供本國自然人申請。</li>
+      </ul>
+      <img src="img/mobile_bg.jpg" alt="">
+    </div>
+  </div>
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> 4. 如果好友已經加入會員，但他沒有填過好友邀請碼，可以再補填我的好友邀請碼嗎？</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>加入e.Fingo 會員需具備以下 2 個條件，並透過玉山行動銀行App加入：</p> 
+      <ul>
+        <li>持有「臺幣帳戶（含數位帳戶）」</li>
+        <li>持有「玉山 U Bear 信用卡／玉山 Only 卡／玉山 Pi 拍錢包信用卡／玉山 Pi 拍兔 Debit卡」任一張指定卡片</li>
+      </ul>
+      <p>提醒您：</p>
+      <ul>
+        <li>請將玉山行動銀行App更新至最新版本。</li>
+        <li>如為新開戶或新核卡，請於次一工作日加入會員！</li>
+        <li>現階段僅提供本國自然人申請。</li>
+      </ul>
+      <img src="img/mobile_bg.jpg" alt="">
+    </div>
+  </div>
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> 5. 如果好友已經加入會員，但他沒有填過好友邀請碼，可以再補填我的好友邀請碼嗎？</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>加入e.Fingo 會員需具備以下 2 個條件，並透過玉山行動銀行App加入：</p> 
+      <ul>
+        <li>持有「臺幣帳戶（含數位帳戶）」</li>
+        <li>持有「玉山 U Bear 信用卡／玉山 Only 卡／玉山 Pi 拍錢包信用卡／玉山 Pi 拍兔 Debit卡」任一張指定卡片</li>
+      </ul>
+      <p>提醒您：</p>
+      <ul>
+        <li>請將玉山行動銀行App更新至最新版本。</li>
+        <li>如為新開戶或新核卡，請於次一工作日加入會員！</li>
+        <li>現階段僅提供本國自然人申請。</li>
+      </ul>
+      <img src="img/mobile_bg.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="pagination">
+    <div class="num page_on">1</div>
+    <div class="num">2</div>
+    <div class="num">3</div>
+    <div class="num">4</div>
+    <div class="num">5</div>
+    <div class="num">6</div>
+    <div class="num">7</div>
+  </div>
+</div>
+
+<div class="customer_service">
+  <img src="img/customer_service.svg" alt="">
+  <p>找不到你想問的問題嗎？ <br>
+    讓智能客服幫你解答吧 !</p>
+  <div class="btn_row">
+    <a href="#" class="go_btn">找智能客服</a>
+  </div>
+</div>
+
+
+
+<div class="for_height"></div>
+</div>
+
+
+
+
+{# notice #}
+<div class="notice_section_top">
+    <img src="img/notice_wave.svg" alt="">
+</div>
+<div class="notice_section">
+    <div class="notice_loan_content">
+        <div class="d-text">
+            <p>  <b>數位貸款（如有說到利率）</b></p>   
+            <p>貸款總費用年百分率說明： 貸款總費用年百分率約2.61%~11.25%。最高可貸款金額：新臺幣30萬元。貸款期間：7年。貸款年利率：2.38%~11%。各項相關費用總金額1,688元（含申請時收取信用查詢費300元）。本廣告揭露之年百分率係按主管機關備查之標準計算範例予以計算，實際貸款條件，仍以銀行提供之產品為準，且每一顧客實際之年百分率仍以其個別貸款產品及授信條件而有所不同。總費用年百分率不等於貸款利率。本總費用年百分率之計算基準日係依據活動專案適用起日之本行定儲利率指數調整日期訂定之，請詳閱本行官網定儲利率指數說明。</p>
+            <br>
+            <p><a href=""><b> 共同基金投資警語</b></a></p>
+            <p>各基金經金管會核准或同意生效，惟不表示絕無風險，本行及基金經理公司以往之經理績效不保證基金之最低投資收益；本行及基金經理公司除盡善良管理人之注意義務外，不負責各基金之盈虧，亦不保證最低之收益，投資人申購前應詳閱基金公開說明書。投資基金所應承擔之相關風險及應負擔之費用(含分銷費用等)已揭露於基金公開說明書或投資人須知中，投資人可至<a href="">公開資訊觀測站</a>或<a href="">境外基金資訊觀測站</a>查閱。基金並非存款，基金投資非屬存款保險承保範圍投資人需自負盈虧。基金投資具投資風險，此一風險可能使本金發生虧損，其中可能之最大損失為全部信託本金。投資人應依其自行判斷進行投資。</p>
+            <p style="margin-left: 20px;">•「基金ｅ指選」所提供之資訊僅供參考用途。本行當盡力提供正確之資訊，所載資料均來自或本諸我們相信可靠之來源，但對其完整性、即時性和正確性不做任何擔保，如有錯漏或疏忽，本行並不負任何法律責任。任何人因信賴此等資料而做出或改變投資決策，應審慎衡量本身之需求及投資風險，並就投資結果自行負責。未經本行許可，相關資料及訊息不得逕行抄錄、翻印或另作派發。</p>
+            <p style="margin-left: 20px;">•「基金ｅ指選」非屬機器人理財及投資顧問服務，而屬於輔助性功能，投資人保有自主調整及最終決定之權利，故不適用「中華民國證券投資信託暨顧問商業同業公會證券投資顧問事業以自動化工具提供證券投資顧問服務(Robo-Advisor)作業要點」。顧客每次使用本服務需透過「玉山銀行基金e指選自主投資聲明書」進行意思表示確有投資理財需求，主動請求本行提供相關理財資訊。</p>
+            <br>
+            <p><b>謹慎理財 信用無價</b></p>
+            <p>信用卡循環利率：5.88%-15%(依本行電腦評等而訂，基準日：2015/9/1)預借現金手續費(依預借現金約定結付幣別區分)：預借現金金額x3.5%+(新臺幣100元/3.5美元/350日圓/2.5歐元) 。其他相關費率依本行網站及申請書公告</p>
+
+        </div>
+    </div>
+    <div class="for_height"></div>
+</div>
+
+{% endblock %}

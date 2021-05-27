@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="159.655" height="125.295" viewBox="0 0 159.655 125.295">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="14" y="18" width="159.656" height="125.295" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_3349" data-name="Path 3349" d="M1434.366,951.929s11.41-.951,16.639-.285c3.233,8.842,2.092,10.364,2.092,10.364l-5.9,7.987-9.889-.76-6.085-8.082Z" transform="translate(-1431.228 -951.407)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_3317" data-name="Group 3317" transform="translate(8455 -3962.66)">
+    <g id="Scroll_Group_32" data-name="Scroll Group 32" transform="translate(-8469 3944.66)" clip-path="url(#clip-path)" style="isolation: isolate">
+      <ellipse id="Ellipse_762" data-name="Ellipse 762" cx="79.79" cy="59.938" rx="79.79" ry="59.938" transform="translate(35.048) rotate(17)" fill="#fff1be"/>
+    </g>
+    <g id="Group_3316" data-name="Group 3316" transform="translate(-9155.145 2301.24)">
+      <g id="Group_3219" data-name="Group 3219" transform="translate(-0.032 -2.368)">
+        <ellipse id="Ellipse_714" data-name="Ellipse 714" cx="10.188" cy="10.188" rx="10.188" ry="10.188" transform="translate(838.543 1760.662) rotate(180)" fill="#e68c8c"/>
+        <text id="_" data-name="¥" transform="translate(824.355 1754.474)" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">¥</tspan></text>
+      </g>
+      <g id="Group_3109" data-name="Group 3109" transform="translate(726.069 1683.544)">
+        <path id="Path_3347" data-name="Path 3347" d="M1404.874,952.7s11.326-23.347,9.5-43.654c26.162-6.4,34.943-6.952,34.943-6.952l12.127,3.624-22.555,52.541" transform="translate(-1386.641 -873.935)" fill="#fec739"/>
+        <path id="Path_3348" data-name="Path 3348" d="M1475.6,952.48s-14.192-23.125-12.362-43.432c-26.161-6.4-34.942-6.952-34.942-6.952l-12.127,3.624,22.555,52.541" transform="translate(-1388.73 -873.935)" fill="#fec739"/>
+        <ellipse id="Ellipse_325" data-name="Ellipse 325" cx="34.436" cy="11.479" rx="34.436" ry="11.479" transform="translate(18.124 68.373)"/>
+        <ellipse id="Ellipse_326" data-name="Ellipse 326" cx="23.675" cy="23.675" rx="23.675" ry="23.675" transform="translate(27.45 8.111)" fill="#fec739"/>
+        <g id="Group_2333" data-name="Group 2333" transform="translate(39.713 68.352)">
+          <g id="Group_2332" data-name="Group 2332" clip-path="url(#clip-path-2)">
+            <ellipse id="Ellipse_327" data-name="Ellipse 327" cx="9.774" cy="9.774" rx="9.774" ry="9.774" transform="translate(1.638 -5.494)" fill="#019e96"/>
+          </g>
+        </g>
+        <ellipse id="Ellipse_328" data-name="Ellipse 328" cx="5.593" cy="5.593" rx="5.593" ry="5.593" transform="translate(45.391 0)" fill="#fec739"/>
+        <path id="Path_3350" data-name="Path 3350" d="M1407.715,922.889a11.636,11.636,0,0,1-10.4-12.45c.586-6.46,6.208-10.643,12.45-10.4,1.574.059,1.571-2.386,0-2.445-7.564-.289-14.328,5.092-14.895,12.849-.573,7.836,5.329,13.964,12.849,14.895,1.558.193,1.544-2.254,0-2.445Z" transform="translate(-1384.783 -873.099)" fill="#fec739"/>
+        <path id="Path_3351" data-name="Path 3351" d="M1402.53,929.7a19.475,19.475,0,0,1-17.516-20.812c.888-10.7,10.382-18.077,20.813-17.516,1.572.085,1.568-2.36,0-2.445-11.8-.634-22.328,7.99-23.258,19.961-.935,12.049,8.24,21.991,19.961,23.257,1.562.169,1.55-2.277,0-2.445Z" transform="translate(-1382.504 -871.493)" fill="#fec739"/>
+        <path id="Path_3352" data-name="Path 3352" d="M1478.552,925.334c7.519-.931,13.423-7.064,12.849-14.895-.568-7.755-7.329-13.138-14.895-12.849-1.569.06-1.576,2.505,0,2.445,6.21-.237,11.9,3.948,12.45,10.4a11.632,11.632,0,0,1-10.4,12.45c-1.541.191-1.561,2.638,0,2.445Z" transform="translate(-1399.672 -873.099)" fill="#fec739"/>
+        <path id="Path_3353" data-name="Path 3353" d="M1481.833,932.146c11.72-1.266,20.9-11.21,19.961-23.257a21.934,21.934,0,0,0-23.258-19.961c-1.565.085-1.575,2.53,0,2.445,10.444-.562,19.905,6.827,20.812,17.516a19.468,19.468,0,0,1-17.515,20.812c-1.548.168-1.565,2.615,0,2.445Z" transform="translate(-1400.048 -871.493)" fill="#fec739"/>
+      </g>
+      <g id="Group_3217" data-name="Group 3217" transform="translate(-0.032 -2.368)">
+        <ellipse id="Ellipse_715" data-name="Ellipse 715" cx="10.188" cy="10.188" rx="10.188" ry="10.188" transform="translate(806.756 1701.164) rotate(180)" fill="#e68c8c"/>
+        <text id="_2" data-name="€" transform="translate(791.863 1694.233)" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">€</tspan></text>
+      </g>
+      <g id="Group_3218" data-name="Group 3218" transform="translate(-0.032 -2.368)">
+        <ellipse id="Ellipse_716" data-name="Ellipse 716" cx="10.188" cy="10.188" rx="10.188" ry="10.188" transform="translate(741.553 1743.546) rotate(180)" fill="#e68c8c"/>
+        <text id="_3" data-name="$" transform="translate(727.865 1737.286)" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">$</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="159.655" height="125.295" viewBox="0 0 159.655 125.295">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="14" y="18" width="159.656" height="125.295" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_3315" data-name="Group 3315" transform="translate(8468.229 -3779.882)">
+    <g id="Scroll_Group_31" data-name="Scroll Group 31" transform="translate(-8482.229 3761.882)" clip-path="url(#clip-path)" style="isolation: isolate">
+      <ellipse id="Ellipse_761" data-name="Ellipse 761" cx="79.79" cy="59.938" rx="79.79" ry="59.938" transform="translate(35.048) rotate(17)" fill="#fff1be"/>
+    </g>
+    <g id="Group_3314" data-name="Group 3314" transform="translate(-9179.729 2302.811)">
+      <rect id="Rectangle_289" data-name="Rectangle 289" width="15.342" height="57.958" transform="translate(738.859 1510.262)" fill="#fec739"/>
+      <rect id="Rectangle_290" data-name="Rectangle 290" width="15.342" height="53.697" transform="translate(761.019 1512.819)" fill="#fec739"/>
+      <rect id="Rectangle_291" data-name="Rectangle 291" width="15.342" height="42.616" transform="translate(783.18 1517.933)" fill="#e68c8c"/>
+      <rect id="Rectangle_292" data-name="Rectangle 292" width="15.342" height="38.355" transform="translate(805.34 1520.49)" fill="#e68c8c"/>
+      <rect id="Rectangle_293" data-name="Rectangle 293" width="15.342" height="66.482" transform="translate(827.501 1506)" fill="#fec739"/>
+      <line id="Line_118" data-name="Line 118" x2="129.554" transform="translate(726.5 1539.667)" fill="none" stroke="#019e96" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
