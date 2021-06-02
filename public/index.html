@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="apple-itunes-app" content="app-id=300915900, app-argument=https://www.kkbox.com/tw/tc/index.html">
-<!-- <link rel="shortcut icon" href="img/favicon.ico" /> -->
+<link rel="shortcut icon" href="img/e.Fingo_favicon.svg" />
 
 
 <meta name="keywords" content="">
@@ -34,16 +34,18 @@
 <link rel="stylesheet" href="css/slick-theme.css">
 
 <link href="css/jquery.bxslider.css" rel="stylesheet" />
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css' integrity='sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==' crossorigin='anonymous'/>
+
 <link href="css/module.css" rel="stylesheet" />
-
-
 
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="js/slick.min.js"></script>
-
 <script src="js/jquery.bxslider.min.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js' integrity='sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==' crossorigin='anonymous'></script>
+
 <script src="js/ui.js"></script>
 
 <script>
@@ -52,7 +54,7 @@
             dots: true,
             infinite: true,
             arrows: false,
-            autoplay: true,
+            autoplay: false,
             adaptiveHeight: true
         })
 
@@ -65,7 +67,7 @@
 
     
 
-<header>
+<header class="index_menu">
     <div class="logo"><a href="index.html"><img src="img/e-fingo_logo.svg" alt=""></a></div>
 	<div class="menu">
 		<ul>
@@ -104,15 +106,25 @@
                 <div class="drop_down">
                     <a href="activity_news.html">最新消息 </a>
                     <a href="activity_announcement.html">公告消息</a>
+                    <a href="activity_blog.html">部落格</a>
                 </div>
             </li>
 			<li><a href="qa.html">常見問題 </a></li>
 			<li><a href="#" class="join_member">加入會員 </a></li>
-
 		</ul>
 	</div>
 
 
+<script>
+    $(document).ready(function(){
+        $('.m-first').click(function(){
+            $(".m-second_bg").removeClass("show")
+            $(this).parent().find(".m-second_bg").addClass("show")
+
+        })
+
+    });   
+</script>
 
 <!-- hamburg -->
 <div class="hamburg ">
@@ -122,40 +134,40 @@
 </div>
 
 <div class="aside ">
+    
     <ul>
         <li>
-            <a href="#" class="m-first">認識 e.Fingo + </a>
-
+            <div class="m-first ">認識 e.Fingo +</div>
+            <div class="m-second_bg show">
+                <ul >
+                    <li><a href="understand_feature.html" class="m-second">專屬特色</a></li>
+                    <li><a href="understand_feature.html" class="m-second">如何加入</a></li>
+                    <li><a href="understand_feature.html" class="m-second">如何使用</a></li>
+                    <li><a href="understand_brand-story.html" class="m-second">品牌故事</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="m-first">數位服務 +</div>
             <div class="m-second_bg">
-                <div class="goback second-goback"><i class="fa fa-add" aria-hidden="true"></i>資料目錄 </div>
-                <ul class="ul-second">
-                    <li><a href="understand_feature.html">專屬特色</a></li>
-                    <li><a href="understand_how-to-join.html">如何加入</a></li>
-                    <li> <a href="understand_how-to-use.html">如何使用</a></li>
-                    <li><a href="understand_brand-story.html">品牌故事</a></li>
+                <ul >
+                    <li><a href="digital_account.html" class="m-second">數位帳戶</a></li>
+                    <li><a href="digital_creditcard_pay.html" class="m-second">信用卡／支付</a></li>
+                    <li> <a href="digital_loan.html" class="m-second">數位貸款</a></li>
+                    <li> <a href="digital_finance.html" class="m-second">數位理財</a></li>
+                    <li><a href="digital_exchange.html" class="m-second">數位外匯</a></li>
                 </ul>
             </div>
         </li>
 
         <li>
-            <a href="#" class="m-first">數位服務 +</a>
+            <div class="m-first">e.Fingo 登頂攻略 +</div>
             <div class="m-second_bg">
-                <div class="goback second-goback"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>開發應用 </div>
-                <ul class="ul-second">
-                    <li><a href="#" class="m-second">開發指南</a></li>
-                    <li><a href="#" class="m-second">應用實例</a></li>
-                </ul>
-            </div>
-        </li>
-
-        <li>
-            <a href="#" class="m-first"> e.Fingo 登頂攻略 + </a>
-            <div class="m-second_bg">
-                <div class="goback second-goback"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>會員專區 </div>
-                <ul class="ul-second">
-                    <li><a href="#" class="m-second">我想要更多</a></li>
-                    <li><a href="#" class="m-second">意見回應</a></li>
-                    <li><a href="#" class="m-second">我的收藏</a></li>
+                <ul >
+                    <li><a href="mountaineer_roaming.html" class="m-second">步道漫遊 </a></li>
+                    <li><a href="mountaineer_cable_car_viewing.html" class="m-second">纜車觀景</a></li>
+                    <li><a href="mountaineer_secretpath_adventure.html" class="m-second">秘徑探險</a></li>
+                    <li><a href="mountaineer_rock_climbing.html" class="m-second">攀岩攻頂</a></li>
                 </ul>
             </div>
 
@@ -163,30 +175,78 @@
         <li>
             <a href="#" class="m-first">活動訊息 + </a>
             <div class="m-second_bg">
-                <div class="goback second-goback"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>關於網站 </div>
                 <ul class="ul-second">
-                    <li><a href="#" class="m-second">關於我們</a></li>
-                    <li><a href="#" class="m-second">使用說明</a></li>
-                    <li><a href="#" class="m-second">網站地圖</a></li>
-                    <li><a href="#" class="m-second">數位儀表板</a></li>
+                    <li><a href="activity_news.html" class="m-second">最新消息</a></li>
+                    <li><a href="activity_announcement.html" class="m-second">公告消息</a></li>
+                    <li><a href="activity_blog.html" class="m-second">部落格</a></li>
                 </ul>
             </div>
         </li>
-        <li><a href="#" class="m-first">常見問題 </a></li>
-        
+        <li><a href="qa.html" class="m-first">常見問題 </a></li> 
     </ul>
+    <a href="" class="join_member_m">加入會員</a>
 </div>
 </header>
 
 
 
 <div class="main_image_wrapper">
+    <!-- mobile   -->
+    <div class="main_slider_m">
+		<section class="main slider">
+            <!-- 1 -->
+			<div class="new_photo">
+                <div class="main_des_a">
+                    <img src="img/efingo_logo.svg" alt="">
+                    <h2>數位金融 </h2>
+                    <h2>Keep Going, Keep Smiling </h2>
+                </div>
+				<img src="img/main_01m.jpg"> 
+			</div>
+
+
+            <!-- 2 -->
+            <div class="new_photo">
+                <div class="main_des_b">
+                    <h2>玉山邀你一起 <br>
+                        遇見五月天 </h2>
+                    <p>五月天-好好好想見到你
+                        MAYSAY  Fly to 2021</p>
+                    <div class="btn_row">
+                        <a href="" class="go_btn">了解更多</a>
+                    </div>
+                </div>
+				<img src="img/main_02m.jpg"> 
+			</div>
+
+		</section>
+	</div>
+
+    <!-- desktop   -->
 	<div class="main_slider">
 		<section class="main slider">
+            <!-- 1 -->
 			<div class="new_photo">
+                <div class="main_des_a">
+                    <img src="img/efingo_logo.svg" alt="">
+                    <h2>數位金融 </h2>
+                    <h2>Keep Going, <br> Keep Smiling </h2>
+                </div>
 				<img src="img/main_01.jpg"> 
 			</div>
+
+
+            <!-- 2 -->
             <div class="new_photo">
+                <div class="main_des_b">
+                    <h2>玉山邀你一起 <br>
+                        遇見五月天 </h2>
+                    <p>五月天-好好好想見到你
+                        MAYSAY  Fly to 2021</p>
+                    <div class="btn_row">
+                        <a href="" class="go_btn">了解更多</a>
+                    </div>
+                </div>
 				<img src="img/main_02.jpg"> 
 			</div>
 
@@ -196,15 +256,21 @@
 
 
 
+
 <div class="video_section">
     <div class="video_content">
+
+        <div class="img-des"><img src="img/mobile_bg.jpg" alt=""></div>
+        <div class="img-m"><img src="img/mobile_bg-m.jpg" alt=""></div>
+        
+
         <div class="video_wave_top">
             <img src="img/video_green_top.svg" alt="">
         </div>
         <div class="video_wave_bottom">
             <img src="img/video_green_bottom.svg" alt="">
         </div>
-        <div class="play_btn">
+        <div class="play_btn js-open-video-index hover-finger">
             <img src="img/play_btn.svg" alt="">
         </div>
 
@@ -225,7 +291,7 @@
         <div class="what_is_efingo_card_row">
             <div class="what_is_efingo_card" style="background: #FFD24E;">
                 <div class="w-b-a"><img src="img/w-b-a_01.svg" alt=""></div>
-                <div class="what_is_efingo_img"><img src="img/whatis_01.svg" alt=""></div>
+                <div class="what_is_efingo_img"><img src="img/whatis_01.png" alt=""></div>
                 <div class="what_is_efingo_text">
                     <h6>數位帳戶</h6>
                     <p>線上開戶免出門，獨享好康優惠申辦數位帳戶加入 e.Fingo ，獲得 200 點 e.Fingo 點數</p>
@@ -234,7 +300,7 @@
             </div>
             <div class="what_is_efingo_card" style="background: #ED5248;">
                 <div class="w-b-a"><img src="img/w-b-a_02.svg" alt=""></div> 
-                <div class="what_is_efingo_img"><img src="img/whatis_02.svg" alt=""></div>
+                <div class="what_is_efingo_img"><img src="img/whatis_02.png" alt=""></div>
                 <div class="what_is_efingo_text">
                     <h6>信用卡/支付</h6>
                     <p>3 步驟，線上快速完成辦卡申請線上補件、辦卡進度、額度調整提供一站式查詢服務</p>
@@ -243,7 +309,7 @@
             </div>
             <div class="what_is_efingo_card" style="background: #2DC99A;">
                 <div class="w-b-a"><img src="img/w-b-a_03.svg" alt=""></div> 
-                <div class="what_is_efingo_img"><img src="img/whatis_03.svg" alt=""></div>
+                <div class="what_is_efingo_img"><img src="img/whatis_03.png" alt=""></div>
                 <div class="what_is_efingo_text">
                     <h6>數位貸款</h6>
                     <p>全程線上申辦，手機就可輕鬆貸多種貸款，適合不同的你</p>
@@ -252,7 +318,7 @@
             </div>
             <div class="what_is_efingo_card" style="background: #FF7600;">
                 <div class="w-b-a"><img src="img/w-b-a_04.svg" alt=""></div>
-                <div class="what_is_efingo_img"><img src="img/whatis_04.svg" alt=""></div>
+                <div class="what_is_efingo_img"><img src="img/whatis_04.png" alt=""></div>
                 <div class="what_is_efingo_text">
                     <h6>數位理財</h6>
                     <p>大數據找出適合你的基金，優雅又輕鬆，線上申購設定停損停利通知，隨時掌握投資報酬率</p>
@@ -261,7 +327,7 @@
             </div>
             <div class="what_is_efingo_card" style="background: #00AFFF;">
                 <div class="w-b-a"><img src="img/w-b-a_05.svg" alt=""></div> 
-                <div class="what_is_efingo_img"><img src="img/whatis_05.svg" alt=""></div>
+                <div class="what_is_efingo_img"><img src="img/whatis_05.png" alt=""></div>
                 <div class="what_is_efingo_text">
                     <h6>數位外匯</h6>
                     <p>行銀、網銀輕鬆買賣外幣，還享匯率優惠，不定期舉辦特匯日 e.Fingo 會員專屬場</p>
@@ -322,32 +388,76 @@
 
 
 
+<script>
+    $(document).on('ready', function() {
+        $(".activity_phone").slick({
+            dots: true,
+            infinite: true,
+            arrows: true,
+            autoplay: false,
+            adaptiveHeight: true
+        })
+
+    });
+</script>
+
+
 <div class="efingo_activity">
     <div class="efingo_activity_content">
         <div class="cloud_w_left"><img src="img/cloud_w_left.svg" alt=""></div>
         <div class="cloud_w_right"><img src="img/cloud_w_right.svg" alt=""></div>
-        <div class="mobile_phone"><img src="img/iphone.png" alt=""></div>
-        <div class="efingo_activity_des">
-            <h5>會員專屬活動</h5>  
-            <h6>熊朋友邀請賽</h6>
-            <p>2021 / 04 / 01 ～ 2021 / 08 / 31 <br>
-                月月抽 iPhone 12 Pro 128G、e.Fingo 點數 200 點 <br>
-                現在加入 e.Fingo 會員，馬上獲得 1 次抽獎機會喔！ </p>
-            <div class="link_row">
-                <a href="" class="seemore">了解更多</a>
-                <a href="" class="notice">注意事項 <img src="img/add_icon.svg" alt=""></a>
+        <div class="for_flex">
+            <div class="efingo_activity_des for_order_a">
+                <h5>會員專屬活動</h5>  
+                <h6>熊朋友邀請賽</h6>
+                <p>2021 / 04 / 01 ～ 2021 / 08 / 31 <br>
+                    月月抽 iPhone 12 Pro 128G、e.Fingo 點數 200 點。現在加入 e.Fingo 會員，馬上獲得 1 次抽獎機會喔！ </p>
+                <div class="link_row">
+                    <a href="#" class="seemore">了解更多</a>
+                    <a href="#" class="notice js-open-notice-index">注意事項  <i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+            <div class="mobile_circle_bg for_order_b">
+                <div class="mobile_phone">
+                    <section class="activity_phone slider">
+                        <img src="img/member_iphone.png" alt="">
+                        <img src="img/member_iphone.png" alt="">
+                    </section>
+                </div>
             </div>
         </div>
-
-
     </div>
-    
 </div>
 
 
 
-
 <div class="efingo_info">
+
+    <!-- for mobile -->
+    <div class="efingo_info_content-m">
+        <div class="efingo_info_row">
+            
+            <div class="efingo_info_item">
+                <div class="b-bg"><img src="img/b-01.svg" alt=""></div>
+                <div class="efingo_info_card">
+                    <img src="img/person-01.svg" alt="">
+                </div>
+                <a href="">加入 e.Fingo</a> 
+            </div>
+            <div class="efingo_info_item">
+                <div class="b-bg"><img src="img/b-02.svg" alt=""></div>
+                <div class="efingo_info_card"><img src="img/person-02.svg" alt=""></div>
+                <a href="">更多活動訊息</a>
+            </div>
+            <div class="efingo_info_item">
+                <div class="b-bg"><img src="img/b-01.svg" alt=""></div>
+                <div class="efingo_info_card"><img src="img/person-03.svg" alt=""></div>
+                <a href="">e.Fingo 登山攻略</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- for desktop -->
     <div class="efingo_info_content">
         <div class="efingo_info_row">
             
@@ -367,7 +477,15 @@
             </div>
         </div>
     </div>
+
+
+
 </div>
+
+
+
+
+
 
 
 <div class="digital_loan">
@@ -386,13 +504,80 @@
 
         </div>
     </div>
-
-
-
 </div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<div id="js-open-video-index" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/bjXOeJTK0OI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div id="js-open-notice-index" class="notice-popup_text mfp-hide">
+
+    <div class="notice-popup_content">
+        <h6>注意事項</h6>
+        <p>活動名稱：熊朋友邀請賽</p>
+        <p>本活動期間：2021 年 1 月 1 日至 2021 年 3 月 31 日止。</p>
+        <p>活動內容：</p>
+        <p>於活動期間內，首次加入 e.Fingo 會員或成為推薦人，即可累積對應抽獎機會。
+        <p>玉山銀行(下稱本行)將於每月以隨機方式抽出得獎者各可獲得 iPhone 12 Pro 128G乙台(3名)、e.Fingo點數200點(150名)、全家購物金 200元（80名）。同一得獎者每月至多中獎一次，活動期間內至多中獎三次。</p>
+            
+        <p>抽獎機會獲得方式如下：</p>
+        <p>活動期間內，首次成功加入 e.Fingo 會員，即可獲得1次抽獎機會。</p>
+        <p>活動期間內，推薦人進入玉山行動銀行 e.Fingo 專區查詢「好友邀請碼」，並提供該邀請碼予被推薦人。經被推薦人於e.Fingo 會員加入流程中填入該好友邀請碼，並成功加入 e.Fingo 會員，推薦人即可獲得 5 次抽獎機會，推薦人數及抽獎機會於活動期間內累積無上限。</p>
+        <p>上述抽獎機會將持續累積至活動期間結束，每次抽獎均以各參加人於活動期間內持續累積至抽獎日之抽獎機會為準。</p>
+            
+        <p>活動資格</p>
+        <p>本活動限居住於台澎金馬地區本國國人參加，贈品亦僅限寄送至台澎金馬地區。</p>
+        <p>推薦人資格：已成為玉山 e.Fingo 會員者，且推薦人參加本活動時，即視同已詳閱並同意接受活動辦法及相關注意事項規定。推薦人如於活動期間失去會員資格，玉山銀行有權取消活動資格。</p>
+        <p>被推薦人資格：尚未成為玉山 e.Fingo 會員者。</p>
+            
+        <p>贈獎方式
+            <p>每月得獎名單將於次月21日抽獎日於e.Fingo會員專區及玉山銀行官方網站公告，若抽獎日遇例假日、國定假日時，則將順延至次一營業日進行。得獎者需於每月得獎名單公告後一個月內回覆得獎公告之問卷，逾期未回覆或個人資料有誤者視同放棄得獎資格，不再另行通知。</p>
+            <p>本行將於2021年6月21日起陸續將抽獎贈品iPhone 12 Pro 128G以掛號寄出至「得獎者問卷」 所回填地址，詳細贈獎方式請參閱得獎公告。倘因提供之資料有誤或可歸責於得獎者事由，致有獎項無法送達之情事，恕不另行補發，資格亦不遞補。</p>
+            <p>本行將於2021年6月21日起陸續將抽獎贈品全家購物金200元，以簡訊陸續發送至「得獎者問卷」所回填之聯絡手機，詳細贈獎方式請參閱得獎公告。倘因提供之資料有誤或可歸責於得獎者事由，致有獎項無法送達之情事，恕不另行補發，資格亦不遞補。</p>
+            <p>本行將於2021年6月21日起陸續將抽獎贈品e.Fingo點數200點匯入得獎者之e.Fingo點數專區，詳細贈獎方式請參閱得獎公告。倘因提供之資料有誤或可歸責於得獎者事由，致有獎項無法送達之情事，恕不另行補發，資格亦不遞補。</p>
+            <p>抽獎贈品僅限得獎者本人領取，亦不得要求將贈品讓與他人或更換其他品項或折換現金。本行保留隨時修改、變更、終止或暫停本活動及替換其他等值贈品權利，且無須為事前通知。若有其他未盡事宜，悉依本行相關規定或解釋。獎項所衍生之費用皆由得獎者自行負擔。</p>
+            <p>贈品之規格以實物為準，恕不提供選色、退換服務。相關產品問題、維修及保固，需依該品牌業者相關規定辦理，與本行無涉。</p>
+            <p>如有任何因電腦、網路、電話、技術或不可歸責本行之事由，而使參加活動者，所提供之資料有遺失、錯誤、無法辨識或毀損等情況，本行不負任何法律責任，參與本活動者或得獎者亦不得因此異議。</p>
+            <p>本活動之抽獎、中獎或兌獎紀錄均以本行電腦系統紀錄為準。本行有權檢視各項交易及抽獎紀錄，若參加者有違反活動注意事項之行為或涉及不正當得利及非法行為，本行除公告排除參與活動及兌領資格外，並對任何破壞活動之行為保留法律追訴權。</p>
+            <p>依中華民國稅法規定，得獎者本年度兌領獎品價值累計超過新臺幣1,000元，將列入本年度之個人綜合所得稅申報，中獎贈品價值為超過新臺幣20,000元者，本行將代扣得獎者需繳納之10%機會中獎所得稅。</p>
+            <p>得獎者參加本活動而需支付之任何稅捐係屬得獎者依稅法之規定所須履行之義務，概與本行無關，倘有稅務法令適用之爭議者，概由得獎者自行向開徵機關提出申訴。</p>
+            <p>個資告知事項：參加人瞭解及同意本行為抽獎活動及行銷之需要進行蒐集、處理及利用其個人資料。本行係基於遵守我國法令規定、提供本網路查詢服務或您可能需要本行或玉山金控所屬子公司之其他金融商品或服務資訊等特定目的，本於誠實信用原則及必要性原則蒐集、處理或利用您於本網路登載及後續基於上開特定目的與本行往來之個人資料。除事先取得您同意或法令另有規定外，本行處理或利用上開資料之期間、地區、對象及方式，將限於達成上開特定目的之必要範圍內為之。除法令另有規定或本行執行職務、業務所必須外，您可透過撥打本行客服電話(02)2182-1313，請本行對上開資料(1)查詢或閱覽(2)製給複製本(3)補充或更正(4)停止蒐集、處理或利用(5)刪除。本告知事項內容如有更新，請詳見本行網站公告。</p>
+            <p>本行保留隨時修改、暫停、變更、終止本活動與替換其他等值獎項之權利，若有其他未盡事宜，悉依本行相關規定或解釋辦理。若有相關活動問題請電洽本行客服(02)2182-1313或至本行官網「訪客留言板」留言。</p>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $('.js-open-video-index').magnificPopup({
+            items: {
+                src: '#js-open-video-index',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+        $('.js-open-notice-index').magnificPopup({
+            items: {
+                src: '#js-open-notice-index',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+
+
+
+    });
+</script>
 
 <div class="footer_wrapper">
     <div class="footer_topwave">
@@ -410,23 +595,24 @@
                 </div>
                 <div class="pillar">
                     <h6>數位服務</h6>
-                    <a href="#" class="link">數位帳戶</a>
-                    <a href="#" class="link">信用卡 / 支付 </a>
-                    <a href="#" class="link">數位貸款</a>
-                    <a href="#" class="link">數位理財</a>
-                    <a href="#" class="link">數位外匯</a>
+                    <a href="digital_account.html" class="link">數位帳戶</a>
+                    <a href="digital_creditcard_pay.html" class="link">信用卡／支付</a>
+                    <a href="digital_loan.html" class="link">數位貸款</a>
+                    <a href="digital_finance.html" class="link">數位理財</a>
+                    <a href="digital_exchange.html" class="link">數位外匯</a>
                 </div>
                 <div class="pillar">
                     <h6>e.Fingo 登山攻略</h6>
-                    <a href="#" class="link">步道漫遊</a>
-                    <a href="#" class="link">纜車觀景</a>
-                    <a href="#" class="link">秘徑探險</a>
-                    <a href="#" class="link">攀岩攻頂</a>
+                    <a href="mountaineer_roaming.html" class="link">步道漫遊 </a>
+                    <a href="mountaineer_cable_car_viewing.html" class="link">纜車觀景</a>
+                    <a href="mountaineer_secretpath_adventure.html" class="link">秘徑探險</a>
+                    <a href="mountaineer_rock_climbing.html" class="link">攀岩攻頂</a>
                 </div>
                 <div class="pillar">
                     <h6>活動訊息</h6>
-                    <a href="#" class="link">最新活動</a>
-                    <a href="#" class="link">公告消息</a>
+                    <a href="activity_news.html" class="link">最新消息 </a>
+                    <a href="activity_announcement.html" class="link">公告消息</a>
+                    <a href="activity_blog.html" class="link">部落格</a>
 
                 </div>
                 <div class="pillar">

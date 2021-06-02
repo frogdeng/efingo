@@ -42,7 +42,8 @@ header
 		height: 70px
 		padding: 0 0px
 		background: rgba(255,255,255,.9)
-		z-index: 2000
+		z-index: 200
+		border-bottom: 1px solid #eee
 		display: flex
 		flex-direction: row
 		justify-content: space-between
@@ -68,14 +69,32 @@ header
 		.aside
 			position: fixed
 			width: 100%
-			height: 2000px
+			height: 90vh
 			background: rgba(255,255,255, .9)
 			padding-top: 10px
 			transition: all .2s ease
 			right: -100%
+			// right: 0%
 			top: 70px
 			z-index: 1200
 			overflow-x: hidden
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center
+			.join_member_m
+				width: 80%	
+				height: 50px
+				margin: 0 auto
+				background: #019E96
+				color: #FFF
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				bottom: 0
+				font-weight: 700
+				border-radius: 50px
 			ul
 				margin-top: 60px
 				li
@@ -83,7 +102,6 @@ header
 						display: flex
 						justify-content: center
 						align-items: center
-						height: 50px
 						width: 100%
 						padding: 0 0 0 0px
 						line-height: 1.4
@@ -101,46 +119,28 @@ header
 							i
 								font-size: 30px
 					.m-second_bg
-						position: absolute
 						width: 100%
-						height: 2000px
-						background: #222
-						top: 110px
-						right: -100%
+						display: none
+						flex-direction: row
+						justify-content: flex-start
+						align-items: flex-start
 						transition: all .5s ease
-						.goback
-							margin: 0 10px
-							color: #FFF
-							width: 200px
-							height: 48px
-							margin-top: -20px
-							margin-left: 20px
-							padding-left: 20px
-							cursor: pointer
-							background-color: #555
-							// border: 1px solid #444
-							display: flex
-							justify-content: flex-start
-							align-items: center
-							i
-								font-size: 20px
-								margin-right: 10px
 						ul
-							position: absolute
 							width: 100%
-							top: -20px
+							margin-top: 0px
+							margin-bottom: 30px
 							li
 								.m-second
 									display: block
-									height: 50px
 									width: 100%
-									padding: 0 0 0 30px
-									line-height: 1.4
-									color: #999
+									text-align: center
+									color: #014343
 									font-size: 15px
-									border-bottom: 1px solid #555
+									padding: 8px 20px
+									text-align: center
 									display: flex
-									justify-content: flex-start
+									flex-direction: row
+									justify-content: center
 									align-items: center
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
@@ -150,15 +150,19 @@ header
 		width: 90%
 		height: 60px
 		padding: 0 0px
-		background: rgba(255,255,255,1)
+		// background: rgba(255,255,255,1)
 		// filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3))
-		z-index: 2000
+		z-index: 200
 		display: flex
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
 		top: 10px
 		left: 5%
+		transition: all .2s
+		&:hover
+			background: rgba(255,255,255,1)
+			filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3))
 		.logo
 			width: 250px
 			margin-left: 30px
@@ -243,6 +247,8 @@ header
 							display: block
 
 
+.show
+	display: flex !important
 
 .hamburg-open
 	right: 0% !important
@@ -310,7 +316,8 @@ header
 	margin-left: 20px
 	color: #FFF !important
 	&:hover
-		background: #000
+		background: #014343
+		text-decoration: none !important
 
 .clear
 	clear: both
@@ -323,7 +330,9 @@ header
 	zoom: 1 /* ie 6/7 */
 
 
-
+.index_menu_bg
+	background: rgba(255,255,255,1)
+	filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3))
 
 
 
@@ -388,8 +397,19 @@ header
 					margin-bottom: 30px
 					.s_link
 						display: block
+						width: 40px
 						margin-left: 25px
+						padding: 8px
+						border-radius: 50%
 						transition: all .2s
+						background: #047B77
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center  
+						img 
+							display: block
+							width: 100%
 				.s_bottom_link
 					color: #047B77
 					font-size: 12px
@@ -423,6 +443,9 @@ header
 					color: #047B77
 					height: 30px
 					font-size: 13px
+					&:hover
+						color: #014343
+						text-decoration: underline
 
 			.social_media
 				width: 30%
@@ -438,13 +461,24 @@ header
 					display: flex
 					flex-direction: row
 					justify-content: center
-					align-items: 
+					align-items: center  
 					.s_link
 						display: block
+						width: 40px
 						margin-left: 25px
+						padding: 8px
+						border-radius: 50%
 						transition: all .2s
+						background: #047B77
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center  
+						img 
+							display: block
+							width: 100%
 						&:hover
-							transform: scale(1.2)
+							background: #014343
 
 				.s_bottom_link
 					color: #047B77
@@ -452,4 +486,57 @@ header
 					a	
 						font-size: 12px
 						color: #047B77
+						&:hover
+							color: #014343
+							text-decoration: underline
+							
+
+
+
+.notice-popup
+	position: relative
+	max-width: 1000px
+	padding: 20px 0
+	margin: 0 auto
+	background: #000
+	iframe
+		width: 100%
+		height: 600px
+
+
+.mfp-close-btn-in .mfp-close
+	position: absolute
+	width: 70px
+	height: 40px
+	border-radius: 30px
+	background: #FFE893
+	color: #014343
+	right: 0px
+	top: -50px
+
+.notice-popup_text
+	position: relative
+	max-width: 1000px
+	padding: 20px 0
+	margin: 0 auto
+	background: #FFF
+	border-radius: 50px
+	padding: 50px 40px
+	.notice-popup_content
+		background: #FFF
+		padding-right: 10px
+		height: 60vh
+		overflow: auto
+
+		h6
+			font-size: 22px
+			color: #047B77
+			font-weight: 700
+			text-align: center
+			margin-bottom: 20px
+		p 
+			color: #047B77
+			font-size: 13px
+			margin-bottom: 5px
+		
 

@@ -29,7 +29,8 @@ $susy: (debug: (image: hide))
 	font-weight: 500
 	transition: all .2s
 	&:hover
-		transform: scale(1.1)
+		background: #FFC517
+		color: #195F5F
 
 
 .understand_feature_wrapper
@@ -284,7 +285,7 @@ $susy: (debug: (image: hide))
 				h6 
 					text-align: center
 					margin-bottom: 5px
-					margin-top: 90px
+					margin-top: 130px
 				p 
 					font-size: 14px
 		.exchange_row
@@ -296,29 +297,35 @@ $susy: (debug: (image: hide))
 			a
 				display: block
 				margin: 0 30px
-				color: #014343
+				color: #195F5F
 				display: flex
 				flex-direction: row
 				justify-content: center
 				align-items: center
+				transition: all .3s
 				img 
 					margin-left: 8px
+				&:hover
+					color: #014343
+					text-decoration: underline
+					font-weight: 700
+		
 				
 
 
 
 .shapping_svg_1
 	background: url("../img/feature_b_01.svg") center
-	background-size: 400px
+	background-size: 100%
 	background-repeat: no-repeat
 	
 .shapping_svg_2
 	background: url("../img/feature_b_02.svg") center
-	bbackground-size: 400px
+	background-size: 100%
 	background-repeat: no-repeat
 .shapping_svg_3
 	background: url("../img/feature_b_03.svg") center
-	bbackground-size: 400px
+	background-size: 100%
 	background-repeat: no-repeat
 
 
@@ -330,7 +337,7 @@ $susy: (debug: (image: hide))
 		flex-direction: column
 		justify-content: center
 		align-items: center
-		padding: 90px 0
+		padding: 80px 0
 		h6 
 			width: 90%
 			text-align: center
@@ -357,7 +364,7 @@ $susy: (debug: (image: hide))
 			width: 50%
 			text-align: center
 		p
-			width: 50%
+			width: 100%
 			text-align: center
 		.btn_row
 			display: flex
@@ -371,7 +378,7 @@ $susy: (debug: (image: hide))
 
 
 .notice_section_top
-	margin-top: -100px
+	margin-top: -150px
 	img 
 		display: block
 
@@ -569,16 +576,17 @@ $susy: (debug: (image: hide))
 		.how_to_use_row
 			display: flex
 			flex-direction: row
-			justify-content: center
+			justify-content: space-between
 			align-items: center
 			padding: 60px 0
 			.mobile_screen
-				width: 50%
+				width: 40%
 				display: flex
 				flex-direction: row
 				justify-content: center
 				align-items: center
 				position: relative
+
 				.y-cloud
 					position: absolute
 				.mobile_wrap
@@ -597,7 +605,10 @@ $susy: (debug: (image: hide))
 						align-items: center
 						transition: all .3s
 			.icon_switch
-				width: 50%
+				width: 58%
+				&:last-child
+					width: 43%
+					
 				.icon_btn_row
 					width: 100%
 					display: flex
@@ -606,6 +617,9 @@ $susy: (debug: (image: hide))
 					justify-content: flex-start
 					align-items: center
 					margin-bottom: 30px
+					img 
+						width: 70%
+					
 					.icon_btn
 						width: 124px
 						height: 124px
@@ -644,7 +658,7 @@ $susy: (debug: (image: hide))
 		color: #FFF !important
 
 .for_height
-	height: 100px
+	height: 150px
 
 
 
@@ -653,17 +667,96 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
 		order: 2
-
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		order: 1
+		max-width: none
+		margin: 0
 
 
 .for_order_b
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
 		order: 1
-
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		order: 2
+		max-width: none
+		margin: 0
+
+
+.understand-lightbox
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		h2 
+			font-size: 35px
+			color: #014343
+			font-weight: 700
+			margin-bottom: 10px
+		.item_row
+			display: flex
+			flex-wrap: wrap
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center
+			position: relative
+			.women
+				display: none
+			
+			.lightbox_item
+				width: 100%
+				background: #FDF7E0
+				border-radius: 30px
+				padding: 20px
+				margin: 2% 0%
+				h6 
+					text-align: left
+				p 
+					text-align: left
+					span 
+						font-size: 25px
+						font-weight: 700
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		h2 
+			font-size: 35px
+			color: #014343
+			font-weight: 700
+			margin-bottom: 10px
+		.item_row
+			display: flex
+			flex-wrap: wrap
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			position: relative
+			.women
+				position: absolute
+				bottom: -10%
+				right: 3%
+			
+			.lightbox_item
+				width: 31%
+				background: #FDF7E0
+				border-radius: 30px
+				padding: 20px
+				margin: 2% 1%
+				h6 
+					text-align: left
+				p 
+					text-align: left
+					span 
+						font-size: 25px
+						font-weight: 700
+
+
+			
+				

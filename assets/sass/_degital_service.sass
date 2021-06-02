@@ -26,8 +26,8 @@ $susy: (debug: (image: hide))
 	font-weight: 500
 	transition: all .2s
 	&:hover
-		transform: scale(1.1)
-
+		background: #FFC517
+		color: #195F5F
 
 .digital_service_wrapper
 	+susy-breakpoint($breakpoint_pad, $w_pad)
@@ -294,6 +294,7 @@ $susy: (debug: (image: hide))
 		background: url("../img/digital_wave_03.svg") bottom #FFD24E
 		background-size: 100%
 		background-repeat: no-repeat
+		margin-top: -3px
 .two_card_section
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
@@ -502,8 +503,6 @@ $susy: (debug: (image: hide))
 		+container
 		background: 
 		background: #DF4647
-
-
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		background: 
@@ -511,28 +510,29 @@ $susy: (debug: (image: hide))
 		background-size: 100%
 		background-repeat: no-repeat
 
+
 .three_card_section_wrap_green
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		background: #2DC99A
-
-
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		background: url("../img/digital_wave_03c.svg") bottom #2DC99A
 		background-size: 100%
 		background-repeat: no-repeat
+		margin-top: -3px
+
 
 .three_card_section_wrap_blue
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		background: #00AFFF
-
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		background: url("../img/digital_wave_03d.svg") bottom #00AFFF
 		background-size: 100%
 		background-repeat: no-repeat
+		margin-top: -3px
 
 
 
@@ -784,3 +784,146 @@ $susy: (debug: (image: hide))
 		align-items: center
 		h6, p
 			text-align: center
+
+
+
+
+
+.digital-lightbox
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		position: relative
+		.robat
+			display: none
+		h2 
+			font-size: 35px
+			color: #014343
+			font-weight: 700
+			margin-bottom: 10px
+		.item_row
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center
+			.lightbox_item
+				width: 100%
+				background: #FDF7E0
+				border-radius: 30px
+				padding: 20px
+				margin: 2% 1%
+				border-radius: 30px
+				.btn_row
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					margin: 10px 0
+					.chip
+						width: 80%
+						border: 1px solid #014343
+						padding: 5px 20px
+						border-radius: 20px
+						margin: 10px 10px
+						text-align: center
+						color: #014343
+						cursor: pointer
+
+				h6 
+					text-align: center
+					margin-bottom: 20px
+				p 
+					text-align: center
+					font-size: 16px
+					span 
+						font-size: 25px
+						font-weight: 700
+		.summary
+			width: 100%
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+			align-items: center
+			color: #014343
+			font-weight: 900
+			.total
+				width: 100%
+				margin-left: 0%
+				text-align: center
+				margin: 8px 0
+			.btn_row
+				margin: 0 10px
+				
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		position: relative
+		.robat
+			position: absolute
+			bottom: -10%
+			left: 0%
+		h2 
+			font-size: 35px
+			color: #014343
+			font-weight: 700
+			margin-bottom: 10px
+		.item_row
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center
+			.lightbox_item
+				width: 100%
+				background: #FDF7E0
+				border-radius: 30px
+				padding: 20px
+				margin: 2% 1%
+				border-radius: 80px
+				.btn_row
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					margin: 10px 0
+					.chip
+						border: 1px solid #014343
+						padding: 5px 20px
+						border-radius: 20px
+						margin: 0 10px
+						color: #014343
+						cursor: pointer
+
+				h6 
+					text-align: center
+					margin-bottom: 20px
+				p 
+					text-align: center
+					font-size: 16px
+					span 
+						font-size: 25px
+						font-weight: 700
+		.summary
+			width: 100%
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+			align-items: center
+			color: #014343
+			font-weight: 900
+			.total
+				width: 40%
+				margin-left: 30%
+			.btn_row
+				width: 280px
+				margin: 0 10px
+				

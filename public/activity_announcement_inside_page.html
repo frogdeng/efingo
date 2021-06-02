@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="apple-itunes-app" content="app-id=300915900, app-argument=https://www.kkbox.com/tw/tc/index.html">
-<!-- <link rel="shortcut icon" href="img/favicon.ico" /> -->
+<link rel="shortcut icon" href="img/e.Fingo_favicon.svg" />
 
 
 <meta name="keywords" content="">
@@ -34,16 +34,18 @@
 <link rel="stylesheet" href="css/slick-theme.css">
 
 <link href="css/jquery.bxslider.css" rel="stylesheet" />
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css' integrity='sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==' crossorigin='anonymous'/>
+
 <link href="css/module.css" rel="stylesheet" />
-
-
 
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="js/slick.min.js"></script>
-
 <script src="js/jquery.bxslider.min.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js' integrity='sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==' crossorigin='anonymous'></script>
+
 <script src="js/ui.js"></script>
 
 <script>
@@ -52,7 +54,7 @@
             dots: true,
             infinite: true,
             arrows: false,
-            autoplay: true,
+            autoplay: false,
             adaptiveHeight: true
         })
 
@@ -65,7 +67,7 @@
 
     
 
-<header>
+<header class="index_menu">
     <div class="logo"><a href="index.html"><img src="img/e-fingo_logo.svg" alt=""></a></div>
 	<div class="menu">
 		<ul>
@@ -104,15 +106,25 @@
                 <div class="drop_down">
                     <a href="activity_news.html">最新消息 </a>
                     <a href="activity_announcement.html">公告消息</a>
+                    <a href="activity_blog.html">部落格</a>
                 </div>
             </li>
 			<li><a href="qa.html">常見問題 </a></li>
 			<li><a href="#" class="join_member">加入會員 </a></li>
-
 		</ul>
 	</div>
 
 
+<script>
+    $(document).ready(function(){
+        $('.m-first').click(function(){
+            $(".m-second_bg").removeClass("show")
+            $(this).parent().find(".m-second_bg").addClass("show")
+
+        })
+
+    });   
+</script>
 
 <!-- hamburg -->
 <div class="hamburg ">
@@ -122,40 +134,40 @@
 </div>
 
 <div class="aside ">
+    
     <ul>
         <li>
-            <a href="#" class="m-first">認識 e.Fingo + </a>
-
+            <div class="m-first ">認識 e.Fingo +</div>
+            <div class="m-second_bg show">
+                <ul >
+                    <li><a href="understand_feature.html" class="m-second">專屬特色</a></li>
+                    <li><a href="understand_feature.html" class="m-second">如何加入</a></li>
+                    <li><a href="understand_feature.html" class="m-second">如何使用</a></li>
+                    <li><a href="understand_brand-story.html" class="m-second">品牌故事</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="m-first">數位服務 +</div>
             <div class="m-second_bg">
-                <div class="goback second-goback"><i class="fa fa-add" aria-hidden="true"></i>資料目錄 </div>
-                <ul class="ul-second">
-                    <li><a href="understand_feature.html">專屬特色</a></li>
-                    <li><a href="understand_how-to-join.html">如何加入</a></li>
-                    <li> <a href="understand_how-to-use.html">如何使用</a></li>
-                    <li><a href="understand_brand-story.html">品牌故事</a></li>
+                <ul >
+                    <li><a href="digital_account.html" class="m-second">數位帳戶</a></li>
+                    <li><a href="digital_creditcard_pay.html" class="m-second">信用卡／支付</a></li>
+                    <li> <a href="digital_loan.html" class="m-second">數位貸款</a></li>
+                    <li> <a href="digital_finance.html" class="m-second">數位理財</a></li>
+                    <li><a href="digital_exchange.html" class="m-second">數位外匯</a></li>
                 </ul>
             </div>
         </li>
 
         <li>
-            <a href="#" class="m-first">數位服務 +</a>
+            <div class="m-first">e.Fingo 登頂攻略 +</div>
             <div class="m-second_bg">
-                <div class="goback second-goback"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>開發應用 </div>
-                <ul class="ul-second">
-                    <li><a href="#" class="m-second">開發指南</a></li>
-                    <li><a href="#" class="m-second">應用實例</a></li>
-                </ul>
-            </div>
-        </li>
-
-        <li>
-            <a href="#" class="m-first"> e.Fingo 登頂攻略 + </a>
-            <div class="m-second_bg">
-                <div class="goback second-goback"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>會員專區 </div>
-                <ul class="ul-second">
-                    <li><a href="#" class="m-second">我想要更多</a></li>
-                    <li><a href="#" class="m-second">意見回應</a></li>
-                    <li><a href="#" class="m-second">我的收藏</a></li>
+                <ul >
+                    <li><a href="mountaineer_roaming.html" class="m-second">步道漫遊 </a></li>
+                    <li><a href="mountaineer_cable_car_viewing.html" class="m-second">纜車觀景</a></li>
+                    <li><a href="mountaineer_secretpath_adventure.html" class="m-second">秘徑探險</a></li>
+                    <li><a href="mountaineer_rock_climbing.html" class="m-second">攀岩攻頂</a></li>
                 </ul>
             </div>
 
@@ -163,18 +175,16 @@
         <li>
             <a href="#" class="m-first">活動訊息 + </a>
             <div class="m-second_bg">
-                <div class="goback second-goback"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>關於網站 </div>
                 <ul class="ul-second">
-                    <li><a href="#" class="m-second">關於我們</a></li>
-                    <li><a href="#" class="m-second">使用說明</a></li>
-                    <li><a href="#" class="m-second">網站地圖</a></li>
-                    <li><a href="#" class="m-second">數位儀表板</a></li>
+                    <li><a href="activity_news.html" class="m-second">最新消息</a></li>
+                    <li><a href="activity_announcement.html" class="m-second">公告消息</a></li>
+                    <li><a href="activity_blog.html" class="m-second">部落格</a></li>
                 </ul>
             </div>
         </li>
-        <li><a href="#" class="m-first">常見問題 </a></li>
-        
+        <li><a href="qa.html" class="m-first">常見問題 </a></li> 
     </ul>
+    <a href="" class="join_member_m">加入會員</a>
 </div>
 </header>
 
@@ -395,23 +405,24 @@
                 </div>
                 <div class="pillar">
                     <h6>數位服務</h6>
-                    <a href="#" class="link">數位帳戶</a>
-                    <a href="#" class="link">信用卡 / 支付 </a>
-                    <a href="#" class="link">數位貸款</a>
-                    <a href="#" class="link">數位理財</a>
-                    <a href="#" class="link">數位外匯</a>
+                    <a href="digital_account.html" class="link">數位帳戶</a>
+                    <a href="digital_creditcard_pay.html" class="link">信用卡／支付</a>
+                    <a href="digital_loan.html" class="link">數位貸款</a>
+                    <a href="digital_finance.html" class="link">數位理財</a>
+                    <a href="digital_exchange.html" class="link">數位外匯</a>
                 </div>
                 <div class="pillar">
                     <h6>e.Fingo 登山攻略</h6>
-                    <a href="#" class="link">步道漫遊</a>
-                    <a href="#" class="link">纜車觀景</a>
-                    <a href="#" class="link">秘徑探險</a>
-                    <a href="#" class="link">攀岩攻頂</a>
+                    <a href="mountaineer_roaming.html" class="link">步道漫遊 </a>
+                    <a href="mountaineer_cable_car_viewing.html" class="link">纜車觀景</a>
+                    <a href="mountaineer_secretpath_adventure.html" class="link">秘徑探險</a>
+                    <a href="mountaineer_rock_climbing.html" class="link">攀岩攻頂</a>
                 </div>
                 <div class="pillar">
                     <h6>活動訊息</h6>
-                    <a href="#" class="link">最新活動</a>
-                    <a href="#" class="link">公告消息</a>
+                    <a href="activity_news.html" class="link">最新消息 </a>
+                    <a href="activity_announcement.html" class="link">公告消息</a>
+                    <a href="activity_blog.html" class="link">部落格</a>
 
                 </div>
                 <div class="pillar">

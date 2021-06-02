@@ -26,7 +26,8 @@ $susy: (debug: (image: hide))
 	font-weight: 500
 	transition: all .2s
 	&:hover
-		transform: scale(1.1)
+		background: #FFC517
+		color: #195F5F
 
 
 .activity_wrapper
@@ -199,6 +200,27 @@ $susy: (debug: (image: hide))
 			flex-direction: column
 			justify-content: space-between
 			align-items: center
+			.blog_item
+				display: block
+				width: 100%
+				margin-bottom: 50px
+				img 
+					display: block
+					width: 100%
+					margin-bottom: 16px
+				h6
+					font-size: 25px 
+				p
+					font-size: 18px
+					margin-bottom: 20px
+					
+				.item_bottom
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					align-items: center
+					font-size: 16px
+					color: #014343
 			.activity_item
 				width: 100%
 				margin-bottom: 50px
@@ -262,6 +284,7 @@ $susy: (debug: (image: hide))
 				align-items: center
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
+		padding: 0 50px
 		.item_row
 			width: 100%
 			display: flex
@@ -269,7 +292,32 @@ $susy: (debug: (image: hide))
 			flex-direction: row
 			justify-content: space-between
 			align-items: center
+			margin-bottom: 80px
+			.blog_item
+				display: block
+				width: 47%
+				margin-bottom: 50px
+				img 
+					display: block
+					width: 100%
+					margin-bottom: 16px
+				h6
+					font-size: 25px 
+				p
+					font-size: 18px
+					margin-bottom: 20px
+					
+				.item_bottom
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					align-items: center
+					font-size: 16px
+					color: #014343
+
+
 			.activity_item
+				display: block
 				width: 30%
 				margin-bottom: 50px
 				img 
@@ -347,8 +395,6 @@ $susy: (debug: (image: hide))
 
 
 
-
-				
 				
 .filter_section
 	+susy-breakpoint($breakpoint_pad, $pad)
@@ -364,6 +410,7 @@ $susy: (debug: (image: hide))
 		border-radius: 50px
 		padding: 8px 8px
 		margin-bottom: 50px
+		overflow: auto
 		a 
 			display: block
 			margin-right: 30px
@@ -396,6 +443,11 @@ $susy: (debug: (image: hide))
 			font-weight: 600
 			&:nth-last-child(1)
 				margin: 0
+
+
+
+
+	
 
 .filter_on
 	background: #014343 
@@ -505,7 +557,7 @@ $susy: (debug: (image: hide))
 					align-items: center
 					cursor: pointer
 					p 
-						display: inline
+						display: block
 						font-size: 16px
 						margin-left: 10px
 		
@@ -757,3 +809,40 @@ $susy: (debug: (image: hide))
 			i 
 				color: #014343
 				font-size: 20px
+
+
+.blog_content
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		padding: 0 30px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-bottom: 90px
+		p 
+			width: 80%
+			font-size: 18px
+			margin-bottom: 20px
+			
+		img 
+			display: block
+			margin: 50px 0
+			width: 100%
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 50px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-bottom: 90px
+		p 
+			width: 80%
+			font-size: 18px
+			margin-bottom: 20px
+			
+		img 
+			display: block
+			margin: 50px 0
+			width: 100%

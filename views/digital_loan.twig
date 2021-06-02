@@ -19,7 +19,7 @@
 					</div> #}
 
 			</div>
-			<div class="svg_img"><img src="img/digital_service_03.svg" alt=""></div>
+			<div class="svg_img"><img src="img/digital_service_03.png" alt=""></div>
 			
 		</div>
 	</div>
@@ -89,9 +89,11 @@
 			<p>讓你線上快速算出每月應付貸款，財務規劃
 				好輕鬆。還可以免費下載與列印你的專屬月付金
 				試算表喔！</p>
+
 			<div class="btn_row">
-					<a href="#" class="go_btn">立即體驗</a>
+					<a href="#" class="go_btn js-open-notice-01">立即試算</a>
 			</div>
+
 		</div>
 	</div>
 </div>
@@ -148,4 +150,73 @@
 	<div class="for_height"></div>
 </div>
 
+
+<!-- lightbox 1 -->
+<div id="js-open-notice-01" class="notice-popup_text mfp-hide">
+	<div class="notice-popup_content">
+			<div class="digital-lightbox">
+				<div class="robat">
+					<img src="img/robat.png" alt="">
+				</div>
+					<h2>月付金試算</h2>
+					<div class="item_row">
+						
+						<div class="lightbox_item">
+							<p>STEP 1 </p>
+							<h6>點選需要的資金額度？</h6>
+							<div class="btn_row">
+								<div class="chip">10 萬</div>
+								<div class="chip">50 萬</div>
+								<div class="chip">100 萬</div>
+								<div class="chip">150 萬</div>
+							</div>
+						</div>
+					</div>
+					<div class="item_row">
+						<div class="lightbox_item">
+							<p>STEP 2 </p>
+							<h6>選擇無壓力的還款期限？</h6>
+							<div class="btn_row">
+								<div class="chip">1 年</div>
+								<div class="chip">3 年</div>
+								<div class="chip">5 年</div>
+				
+							</div>
+						</div>
+					</div>
+					<div class="summary">
+						<div class="total">
+							<h5>月付約 14,000 元</h5>
+							<p>預設利率 2.68 %</p>
+					</div>
+					<div class="btn_row">
+						<a href="#" class="go_btn">立即補足，資金缺口</a>
+				</div>
+					</div>
+
+
+
+					
+			</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+			$('.js-open-notice-01').magnificPopup({
+					items: {
+							src: '#js-open-notice-01',
+							type: 'inline'
+					},
+					mainClass: 'mfp-fade',
+					removalDelay: 300,
+					midClick: true
+			});
+
+
+
+
+
+});
+</script>
 {% endblock %}
