@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119.91" height="110.402" viewBox="0 0 119.91 110.402">
+  <g id="Group_3274" data-name="Group 3274" transform="translate(-469.314 -2401.745)">
+    <g id="Group_2241" data-name="Group 2241" transform="translate(469.314 2401.745)">
+      <path id="Path_3136" data-name="Path 3136" d="M927.253,739.877,902.386,779.76a7.09,7.09,0,0,0,2.541,9.93l76.534,43.047a7.089,7.089,0,0,0,9.637-2.674l24.178-42.493a7.089,7.089,0,0,0-2.827-9.761L936.6,737.372A7.087,7.087,0,0,0,927.253,739.877Z" transform="translate(-901.311 -733.341)" fill="#313131"/>
+      <path id="Path_3137" data-name="Path 3137" d="M928.8,737.378l-24.866,39.883a7.09,7.09,0,0,0,2.539,9.93l76.536,43.047a7.089,7.089,0,0,0,9.637-2.674l24.177-42.492a7.09,7.09,0,0,0-2.826-9.762l-75.847-40.437A7.088,7.088,0,0,0,928.8,737.378Z" transform="translate(-900.881 -734.038)" fill="#019e96"/>
+      <path id="Path_3138" data-name="Path 3138" d="M921.394,814.542c.816,11.421,18.356,15.908,34.264,16.315s41.2-6.934,50.172-24.881l8.974-17.948-9.381-5.3-15.093,19.986-2.039-4.487-25.428-1.832a46.558,46.558,0,0,0-34.6,11.927Z" transform="translate(-895.716 -720.471)" fill="#ffc517"/>
+      <path id="Path_3139" data-name="Path 3139" d="M983.4,798.357s-12.171,16.419-37.119,11.014" transform="translate(-888.782 -716.116)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <text id="E.SUN" transform="matrix(0.883, 0.469, -0.469, 0.883, 498.862, 2417.625)" fill="#fff" font-size="12" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-weight="500"><tspan x="0" y="0">E.SUN</tspan></text>
+    <circle id="Ellipse_673" data-name="Ellipse 673" cx="5.528" cy="5.528" r="5.528" transform="translate(578.168 2460.898)" fill="#ffc517"/>
+  </g>
+</svg>

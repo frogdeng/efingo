@@ -39,8 +39,11 @@
 <link href="css/module.css" rel="stylesheet" />
 
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+
+
+
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
 
@@ -64,7 +67,11 @@
 
 </head>
 <body>
-
+    <!-- scroll down  -->
+    <div class="scroll">
+        <h6>Scroll</h6>
+        <div class="l-line"></div>
+    </div>
     
 
 <header class="index_menu">
@@ -106,7 +113,7 @@
                 <div class="drop_down">
                     <a href="activity_news.html">最新消息 </a>
                     <a href="activity_announcement.html">公告消息</a>
-                    <a href="activity_blog.html">部落格</a>
+                    
                 </div>
             </li>
 			<li><a href="qa.html">常見問題 </a></li>
@@ -178,7 +185,7 @@
                 <ul class="ul-second">
                     <li><a href="activity_news.html" class="m-second">最新消息</a></li>
                     <li><a href="activity_announcement.html" class="m-second">公告消息</a></li>
-                    <li><a href="activity_blog.html" class="m-second">部落格</a></li>
+                    
                 </ul>
             </div>
         </li>
@@ -190,15 +197,16 @@
 
 
 <div class="understand_feature_wrapper">
+
   
 	<div class="understand_feature_top_section">
 		<div class="t_description">
-			<h2>如何加入 e.Fingo ？</h2>
-			<h4 style="margin-bottom: 20px">
-        Step 1 : 擁有一張指定卡片＋臺幣帳戶 <br>
-        Step 2 : 下載玉山行動銀行 App <br>
-        Step 3 : 在 App 中找到「e.Fingo 會員專區」</h4>
-			<p style="font-size: 12px; text-align: right">（側邊欄，或是首頁介紹卡片）</p>
+			<h1>如何加入 e.Fingo ？</h1>
+			<h2>Step 1 : 擁有一張指定卡片＋臺幣帳戶 <span>（含數位存款帳戶）</span></h2>
+      
+      <h2>Step 2 : 下載玉山行動銀行 App </h2>
+      <h2>Step 3 : 在 App 中找到「e.Fingo 會員專區」<span>（側邊欄，或是首頁介紹卡片）</span> </h2>
+			<p ></p>
 
 		</div>
 		<div class="svg_img"><img src="img/join_01.svg" alt=""></div>
@@ -206,28 +214,63 @@
 
   <div class="join_section_b">
     <div class="item_row">
+      <!-- join_item -->
       <div class="join_item">
-        <img src="img/e-step_01.svg" alt="">
+        <div class="step_bg">
+          <h4>1</h4>
+          <h4>STEP </h4>
+        </div>
+        <!--apl-1-->
+        <div class="apl-1">
+          <img src="img/go_apply_i01.svg" alt="">
+          <div class="t-des">
+            <p>玉山 Only 卡</p>
+            <p>玉山 U Bear 信用卡</p>
+            <p>玉山 Pi 拍錢包信用卡</p>
+            <p>玉山 Pi 拍兔簽帳金融卡</p>
+          </div>
+        </div>
         <div class="item_link">
-          <h6>臺幣帳戶</h6>
+          <h4>指定卡片</h4>
+          <a href="https://card.esunbank.com.tw/EsunCreditweb/txnproc/preApplyCard?ven=efingo">立即辦卡</a>
+        </div>
+
+        <img src="img/go_apply_i02.svg" alt="">
+        <img src="img/go_apply_i03.svg" alt="">
+        
+        <div class="item_link">
+          <h4>臺幣帳戶</h4>
           <p>（含數位存款帳戶）</p>
-          <a href="">立即開戶</a>
+          <a href="https://www.esunbank.com.tw/event/OpenAccount/marketing/index.html?ven=efingo">立即開戶</a>
         </div>
       </div>
+
+      <!-- join_item -->
       <div class="join_item">
-        <img src="img/e-step_02.svg" alt="">
+        <div class="step_bg">
+          <h4>2</h4>
+          <h4>STEP </h4>
+        </div>
+        <div class="phone"><img src="img/go_apply_i04.png" alt=""></div>
         <div class="item_link">
-          <h6>行動銀行 App</h6>
-          <a href="">立即下載</a>
+          <h4>行動銀行 App</h4>
+          <a href="https://esb.page.link/Launch-App-efingo">立即下載</a>
         </div>
       </div>
+
+      <!-- join_item -->
       <div class="join_item">
-        <img src="img/e-step_03.svg" alt="">
+        <div class="step_bg">
+          <h4>3</h4>
+          <h4>STEP </h4>
+        </div>
+        <div class="phone"><img src="img/go_apply_i05.png" alt=""></div>
         <div class="item_link">
-          <h6>e.Fingo 會員專區</h6>
-          <a href="">馬上加入</a>
+          <h4>e.Fingo 會員專區</h4>
+          <a href="https://esb.page.link/eFingo-web">馬上加入</a>
         </div>
       </div>
+
     </div>
 
 
@@ -308,12 +351,12 @@
                 </div>
                 <div class="social_media">
                     <div class="s_link_row">
-                        <a href="" class="s_link"><img src="img/s_01.svg" alt=""></a>
-                        <a href="" class="s_link"><img src="img/s_02.svg" alt=""></a>
-                        <a href="" class="s_link"><img src="img/s_03.svg" alt=""></a>
+                        <a href="https://www.facebook.com/esunbank/" class="s_link" target="_blank"><img src="img/s_01.svg" alt=""></a>
+                        <a href="https://lin.ee/u8kwvI9" class="s_link" target="_blank"><img src="img/s_02.svg" alt=""></a>
+                        <a href="https://www.instagram.com/esun.efingo/" class="s_link" target="_blank"><img src="img/s_03.svg" alt=""></a>
                     </div>
                     <div class="s_bottom_link">
-                        <a href="#">玉山 e 客服</a> ｜ <a href="#">常見問題</a> ｜ <a href="#">個資法定告知事項</a>｜ © E.SUN BANK
+                        <a href="https://robot.esunbank.com.tw/?eservice=eFingo&qaCategory=general">玉山 e 客服</a> ｜ <a href="https://www.esunbank.com.tw/bank/about/faq/digital/mobile">常見問題</a> ｜ <a href="https://www.esunbank.com.tw/bank/about/announcement/privacy/privacy-statement">個資法定告知事項</a>｜ © E.SUN BANK
                     </div>
                 </div>
 

@@ -44,7 +44,7 @@ $susy: (debug: (image: hide))
 					padding: 30px
 					left: 10%
 					top: 15%
-					h2 
+					h1
 						font-size: 40px
 						font-weight: 900
 						color: #014343
@@ -57,7 +57,7 @@ $susy: (debug: (image: hide))
 					padding: 30px
 					left: 10%
 					top: 15%
-					h2 
+					h1
 						font-size: 40px
 						font-weight: 900
 						color: #014343
@@ -108,7 +108,7 @@ $susy: (debug: (image: hide))
 					padding: 30px
 					left: 10%
 					top: 15%
-					h2 
+					h1
 						font-size: 50px
 						font-weight: 900
 						color: #014343
@@ -121,7 +121,13 @@ $susy: (debug: (image: hide))
 					padding: 30px
 					left: 10%
 					top: 15%
-					h2 
+					h1
+						font-size: 50px
+						font-weight: 900
+						color: #014343
+						line-height: 1.3
+						margin-bottom: 30px	
+					h2
 						font-size: 50px
 						font-weight: 900
 						color: #014343
@@ -211,6 +217,7 @@ $susy: (debug: (image: hide))
 		// height: 800px
 		position: relative
 		overflow: hidden
+		margin-top: -2px
 		.img-des
 			display: block
 			img
@@ -253,9 +260,19 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		background: #FFB831
+		position: relative
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		background: #FFB831
+		position: relative
+		overflow: hidden
+
+
+
+
+
+
+
 	// overflow: hidden
 .what_is_efingo_content
 	+susy-breakpoint($breakpoint_pad, $w_pad)
@@ -274,7 +291,7 @@ $susy: (debug: (image: hide))
 			top: 10%
 			left: 18%
 			// background: #eee
-			h5 
+			h2 
 				font-size: 30px
 				color: #FFF
 				font-weight: 600
@@ -322,7 +339,7 @@ $susy: (debug: (image: hide))
 						width: 100%
 						padding: 0 20px
 						top: 220px
-						h6 
+						h3
 							color: #014343
 							font-size: 18px
 							font-weight: 600
@@ -360,7 +377,7 @@ $susy: (debug: (image: hide))
 			top: 10%
 			left: 18%
 			// background: #eee
-			h5 
+			h2
 				font-size: 55px
 				color: #FFF
 				font-weight: 600
@@ -410,7 +427,7 @@ $susy: (debug: (image: hide))
 					flex-direction: column
 					justify-content: space-around
 					align-items: flex-start
-					h6 
+					h3
 						color: #014343
 						font-size: 18px
 						font-weight: 600
@@ -446,6 +463,9 @@ $susy: (debug: (image: hide))
 .efingo_member
 	background: #2DC99A 
 	padding: 0px 0px
+	position: relative
+	overflow: hidden
+
 .efingo_member_content
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
@@ -459,7 +479,7 @@ $susy: (debug: (image: hide))
 		.efingo_member_des
 			width: 90%
 			z-index: 100
-			h5 
+			h2
 				font-size: 25px
 				color: #FFF
 				font-weight: 600
@@ -515,7 +535,7 @@ $susy: (debug: (image: hide))
 					width: 60%
 					padding: 0 0px
 	
-					h6 
+					h3
 						color: #014343
 						font-size: 25px
 						font-weight: 600
@@ -554,7 +574,7 @@ $susy: (debug: (image: hide))
 			top: 5%
 			left: 18%
 		
-			h5 
+			h2
 				font-size: 55px
 				color: #FFF
 				font-weight: 600
@@ -610,7 +630,7 @@ $susy: (debug: (image: hide))
 					width: 100%
 					padding: 0 30px
 					top: 240px
-					h6 
+					h3
 						color: #014343
 						font-size: 25px
 						font-weight: 600
@@ -644,6 +664,7 @@ $susy: (debug: (image: hide))
 .efingo_activity
 	background: #F59300
 	overflow: hidden
+	position: relative
 .efingo_activity_content
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
@@ -693,17 +714,14 @@ $susy: (debug: (image: hide))
 					.slick-prev,.slick-next
 						display: none !important
 
-					
 			.efingo_activity_des
 				width: 100%
 				margin-bottom: 30px
-
-				
-				h5 
+				h2 
 					font-size: 25px
 					color: #FFF
 					font-weight: 600
-				h6
+				h3
 					font-size: 20px
 					color: #FFF
 					margin-bottom: 30px
@@ -734,7 +752,6 @@ $susy: (debug: (image: hide))
 						border: 2px solid #195F5F
 						font-weight: 600
 			
-
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		position: relative
@@ -833,11 +850,11 @@ $susy: (debug: (image: hide))
 				top: 20%
 				left: 20%
 				
-				h5 
+				h2
 					font-size: 55px
 					color: #FFF
 					font-weight: 600
-				h6
+				h3
 					font-size: 20px
 					color: #FFF
 					margin-bottom: 120px
@@ -885,11 +902,10 @@ $susy: (debug: (image: hide))
 
 // efingo_info
 .efingo_info
-	background: url("../img/index_bg-06.svg") #1484E3 center
-	background-size: cover
-	background-repeat: no-repeat
+	background: #1484E3
 	width: 100%
-
+	position: relative
+	overflow: hidden
 
 
 .efingo_info_content-m
@@ -965,6 +981,7 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		padding: 50px 30px
+		position: relative
 		.efingo_info_row
 			margin: 50px 0
 			display: flex
