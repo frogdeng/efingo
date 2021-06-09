@@ -39,9 +39,10 @@
 <link href="css/module.css" rel="stylesheet" />
 
 
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
 
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous'></script> 
+<script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
 
 
 <script src="js/slick.min.js"></script>
@@ -51,19 +52,7 @@
 
 <script src="js/ui.js"></script>
 
-<script>
-    $(document).on('ready', function() {
-        $(".main").slick({
-            dots: true,
-            infinite: true,
-            arrows: false,
-            autoplay: false,
-            adaptiveHeight: true
-        })
 
-    });
-
-</script>
 
 </head>
 <body>
@@ -196,6 +185,18 @@
 </header>
 
 
+<!-- svg animation -->
+<div class="svg_curve_line_digital_a d_position_1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="734.147" viewBox="0 0 916.512 734.147" class="go">
+        <path id="Path_1637" data-name="Path 1637" d="M-1457,426.681s106.95,103.349,210.063,35.625-4.913-203.191,100.858-293.219,217.285-7.639,377.924-91.927,222.07-325.547,227.266-324.995" transform="translate(1457.345 248.333)" fill="none" stroke="#d8c750" stroke-width=".7"/>
+    </svg>
+</div>
+
+<div class="svg_curve_line_digital_b d_position_2">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1497.912 409.655" class="go">
+        <path id="Path_1637" data-name="Path 1637" d="M226.481,1485.745s146.741-117.18,129.045-281.876S160.055,1147.93,122.35,972.635,213.52,667.321,206.132,417.3-2.878,7.075,0,0" transform="matrix(-0.035, -0.999, 0.999, -0.035, 12.665, 409.162)" fill="none" stroke="#d8c750" stroke-width=".5"/>
+    </svg>
+</div>
 
 <div class="main_image_wrapper">
     
@@ -235,14 +236,18 @@
 		<section class="main slider">
             <!-- 1 -->
 			<div class="new_photo">
+                <div class="img_a mountain"><img src="img/index_mountain.svg" alt=""></div>
+                <div class="img_b"><img src="img/index_wave.svg" alt=""></div>
+                <div class="img_c"><img src="img/running.svg" alt=""></div>
+                <div class="img_d"><img src="img/index_robat.png" alt=""></div>
+
                 <div class="main_des_a">
                     <img src="img/efingo_logo.svg" alt="">
                     <h1>數位金融 </h1>
                     <h1>Keep Going, <br> Keep Smiling </h1>
                 </div>
-				<img src="img/main_01.jpg"> 
+                <div class="img_c"></div>
 			</div>
-
 
             <!-- 2 -->
             <div class="new_photo">
@@ -413,18 +418,7 @@
 
 
 
-<script>
-    $(document).on('ready', function() {
-        $(".activity_phone").slick({
-            dots: true,
-            infinite: true,
-            arrows: true,
-            autoplay: false,
-            adaptiveHeight: true
-        })
 
-    });
-</script>
 
 
 <div class="efingo_activity">
@@ -615,10 +609,39 @@
             midClick: true
         });
 
+        // scroll Animation	
+		$(window).scroll(function (event) {
+			var scrollTop = $(window).scrollTop() ;
+			if(scrollTop > 50){
+				$(".mountain").addClass('go_large')
+				$(".img_c").addClass('go_running')
+			}else{
+                $(".mountain").removeClass('go_large')
+                $(".img_c").removeClass('go_running')
+            }
+			
+		});
 
+    });
+</script>
+<script>
+    $(document).on('ready', function() {
 
-
-
+        $(".main").slick({
+            dots: true,
+            infinite: true,
+            arrows: true,
+            autoplay: false,
+            adaptiveHeight: true
+        })
+        
+        $(".activity_phone").slick({
+            dots: true,
+            infinite: true,
+            arrows: true,
+            autoplay: false,
+            adaptiveHeight: true
+        })
     });
 </script>
 

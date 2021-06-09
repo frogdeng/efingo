@@ -94,10 +94,8 @@ $susy: (debug: (image: hide))
 @keyframes curve_b
 	from
 		d: path("M-784.157,1923.533s88.069,177.688,288.748,183.207,379.459,12.081,442.96,186.22")
-	
 	50%
 		d: path("M-784.157,1923.533s277.527-72.127,374.171,134.7,294.036,60.586,357.537,234.726")
-
 	to
 		d: path("M-784.157,1923.533s88.069,177.688,288.748,183.207,379.459,12.081,442.96,186.22")
 
@@ -118,10 +116,8 @@ $susy: (debug: (image: hide))
 @keyframes curve_c
 	from
 		d: path("M-784.157,1923.533s88.069,177.688,288.748,183.207,379.459,12.081,442.96,186.22")
-	
 	50%
 		d: path("M-784.157,1923.533s277.527-72.127,374.171,134.7,294.036,60.586,357.537,234.726")
-
 	to
 		d: path("M-784.157,1923.533s88.069,177.688,288.748,183.207,379.459,12.081,442.96,186.22")
 
@@ -143,10 +139,8 @@ $susy: (debug: (image: hide))
 @keyframes curve_d
 	from
 		d: path("M-784.157,1923.533s88.069,177.688,288.748,183.207,379.459,12.081,442.96,186.22")
-	
 	50%
 		d: path("M-784.157,1923.533s277.527-72.127,374.171,134.7,294.036,60.586,357.537,234.726")
-
 	to
 		d: path("M-784.157,1923.533s88.069,177.688,288.748,183.207,379.459,12.081,442.96,186.22")
 
@@ -172,14 +166,331 @@ $susy: (debug: (image: hide))
 	from
 		d: path("M-1550.263,4317.257s487.7-88.547,725.977-44.281,308.886,310.2,586.221,285.511,312.382-260.1,312.382-260.1")
 		opacity: .8
-	
 	50%
 		d: path("M-1550.263,4317.257s68.417-124.9,331.2-92.251,720.51,146.184,989.2,133.827,304.183-60.446,304.183-60.446")
 		opacity: .8
-
 	to
 		d: path("M-1550.263,4317.257s487.7-88.547,725.977-44.281,308.886,310.2,586.221,285.511,312.382-260.1,312.382-260.1")
 		opacity: .8
 
 	
 
+
+
+
+	
+// === digital === 
+// digital_a
+.svg_curve_line_digital_a
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		position: absolute
+		.go
+			path
+				animation: digital_a 50s linear infinite
+@keyframes digital_a
+	from
+		d: path("M-1457,426.681s106.95,103.349,210.063,35.625-4.913-203.191,100.858-293.219,217.285-7.639,377.924-91.927,222.07-325.547,227.266-324.995")
+		opacity: .8
+	50%
+		d: path("M-1457,426.681s98.508-127.536,249.587-166.841,238.593,61.491,325.644-21S-955.233,39.233-821.288-86.65s275.206-161.736,280.4-161.185")
+		opacity: .8
+	to
+		d: path("M-1457,426.681s106.95,103.349,210.063,35.625-4.913-203.191,100.858-293.219,217.285-7.639,377.924-91.927,222.07-325.547,227.266-324.995")
+		opacity: .8
+
+// digital_b
+.svg_curve_line_digital_b
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		position: absolute
+		width: 100%
+		.go
+			width: 110%
+			path
+				animation: digital_b 40s linear infinite
+
+@keyframes digital_b
+	from
+		d: path("M226.481,1485.745s146.741-117.18,129.045-281.876S160.055,1147.93,122.35,972.635,213.52,667.321,206.132,417.3-2.878,7.075,0,0")
+		opacity: .8
+		
+	50%
+		d: path("M226.481,1485.745s146.741-117.18,129.045-281.876S218.022,925.882,193.26,785.914,243.294,668.027,206.132,417.3-2.878,7.075,0,0")
+		opacity: .8
+	to
+		d: path("M226.481,1485.745s146.741-117.18,129.045-281.876S160.055,1147.93,122.35,972.635,213.52,667.321,206.132,417.3-2.878,7.075,0,0")
+		opacity: .8
+
+
+
+// digital_c
+.svg_curve_line_digital_c
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		position: absolute
+		width: 100%
+		.go
+			width: 110%
+			path
+				animation: digital_c 48s linear infinite
+
+@keyframes digital_c
+	from
+		d: path("M595.352,611.267S365.228,205.535,16.726,165.033-480.481,412.066-998.942,250.319")
+		opacity: .8
+		
+	50%
+		d: path("M595.352,611.267S351.523,100.2,8.444,271.938-480.481,412.066-998.942,250.319")
+		opacity: .8
+	to
+		d: path("M595.352,611.267S365.228,205.535,16.726,165.033-480.481,412.066-998.942,250.319")
+		opacity: .8
+
+// digital_d
+.svg_curve_line_digital_d
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		position: absolute
+		width: 100%
+		.go
+			width: 110%
+			path
+				animation: digital_d 50s linear infinite
+
+@keyframes digital_d
+	from
+		d: path("M-1457,820.272s164.811,163.654,323.709,56.413-7.572-321.755,155.424-464.317,334.839-12.1,582.387-145.568S-53.265-248.708-45.258-247.834")
+		opacity: .8
+		
+	50%
+		d: path("M-1457,820.272s81.41-151.242,250.443-196.118,224.276,53.43,387.272-38.788S-723.688,280.1-509.861,82.987s456.6-331.695,464.6-330.821")
+		opacity: .8
+	to
+		d: path("M-1457,820.272s164.811,163.654,323.709,56.413-7.572-321.755,155.424-464.317,334.839-12.1,582.387-145.568S-53.265-248.708-45.258-247.834")
+		opacity: .8
+
+// digital_e
+.svg_curve_line_digital_e
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		position: absolute
+		width: 100%
+		left: -5%
+		top: 1550px
+		.go
+			width: 110%
+			path
+				animation: digital_e 60s linear infinite
+
+@keyframes digital_e
+	from
+		d: path("M252.851,250.319c-407.08,161.747-523.838-125.789-797.472-85.286s-340.74,334.675-454.32,446.234-195.473,99.307-195.473,99.307")
+		opacity: .8
+		
+	50%
+		d: path("M252.851,250.319c-407.08,161.747-391.965,181.486-586.1,211.015s-412.187-128.672-580.7-53.77-280.466,303.009-280.466,303.009")
+		opacity: .8
+	to
+		d: path("M252.851,250.319c-407.08,161.747-523.838-125.789-797.472-85.286s-340.74,334.675-454.32,446.234-195.473,99.307-195.473,99.307")
+		opacity: .8
+
+
+.u_position_1
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		top: -5%
+		left: 0%
+
+.u_position_2
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 550px
+
+.u_position_3
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 850px
+
+.u_position_4
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 1250px
+
+.u_position_5
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 2300px
+
+.u_position_6
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 2600px
+
+.u_position_7
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 3300px
+
+.u_position_8
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 4000px
+
+
+.d_position_1
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		top: -7%
+		left: 0%
+
+.d_position_2
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 300px
+
+
+.d_position_3
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 1750px
+
+.d_position_4
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 1450px
+	
+.d_position_5
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 1750px
+
+.d_position_6
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 1050px
+
+
+
+
+.m_position_1
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		top: -20%
+		left: 0%
+
+		
+.m_position_2
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 1200px
+.m_position_3
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 1400px
+.m_position_4
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		left: -5%
+		top: 1800px

@@ -1,14 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="170" viewBox="0 0 210 170">
-  <defs>
-    <clipPath id="clip-path">
-      <rect x="20" y="24" width="210" height="170" fill="none"/>
-    </clipPath>
-  </defs>
-  <g id="Group_3315" data-name="Group 3315" transform="translate(-2036 2241.092)">
-    <g id="Scroll_Group_31" data-name="Scroll Group 31" transform="translate(2016 -2265.092)" clip-path="url(#clip-path)" style="isolation: isolate">
-      <path id="Path_4555" data-name="Path 4555" d="M106.5,0C165.318,0,213,36.489,213,81.5S165.318,163,106.5,163,0,126.511,0,81.5,47.682,0,106.5,0Z" transform="translate(46.779) rotate(17)" fill="#cbeeff"/>
-    </g>
-    <g id="Group_3313" data-name="Group 3313" transform="translate(2650.607 -3200.781)">
+<svg xmlns="http://www.w3.org/2000/svg" width="184" height="210" viewBox="0 0 184 210">
+  <g id="Group_3338" data-name="Group 3338" transform="translate(-1238 2604)">
+    <g id="Group_3333" data-name="Group 3333" transform="translate(1839.607 -3537.175)">
       <rect id="Rectangle_1473" data-name="Rectangle 1473" width="144.93" height="26.277" rx="13.138" transform="translate(-581.607 987.69)" fill="#313131"/>
       <path id="Path_4256" data-name="Path 4256" d="M-560.182,1005.878h96.2c4.419,0,8.864.135,13.282,0,.063,0,.127,0,.192,0,3.093,0,3.1-4.808,0-4.808h-96.2c-4.419,0-8.863-.135-13.281,0-.064,0-.128,0-.192,0-3.094,0-3.1,4.808,0,4.808Z" transform="translate(-3.795 -2.646)" fill="#fff"/>
       <path id="Path_4247" data-name="Path 4247" d="M-557.417,1005.759l-18.931,86.777a10.353,10.353,0,0,0,10.026,12.558l115.74,1a10.352,10.352,0,0,0,10.248-12.345l-17.262-87.992Z" transform="translate(-0.997 -3.59)" fill="#019e96"/>
@@ -27,5 +19,6 @@
         <path id="Path_4255" data-name="Path 4255" d="M-520.672,1048.663l-13.8,5.639-.077.712-.64,5.923,13.037,1.409-.081.749-29.894-3.229.712-6.6q.47-4.349,2.949-6.223a8.676,8.676,0,0,1,6.387-1.454,8.8,8.8,0,0,1,5.58,2.423,7.671,7.671,0,0,1,2.035,5.416l13.891-5.705Zm-14.682,6.264q.417-3.861-1.455-6.016a7.9,7.9,0,0,0-5.354-2.532q-7.557-.816-8.4,6.981l-.632,5.849,15.2,1.642Z" transform="translate(559.953 -1045.514)"/>
       </g>
     </g>
+    <rect id="Rectangle_1566" data-name="Rectangle 1566" width="184" height="210" transform="translate(1238 -2604)" fill="none"/>
   </g>
 </svg>

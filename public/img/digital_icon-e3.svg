@@ -1,32 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 212.6 187.1" style="enable-background:new 0 0 212.6 187.1;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FCF4D7;}
-	.st1{fill:#313131;}
-	.st2{fill:#E68C8C;}
-	.st3{font-family:'SourceHanSansTW-Bold-B5pc-H';}
-	.st4{font-size:37.9952px;}
-	.st5{font-size:38.9951px;}
-	.st6{font-size:38px;}
-	.st7{font-family:'SourceHanSansTW-Regular-B5pc-H';}
-	.st8{font-size:11.0016px;}
-</style>
-<g id="Scroll_Group_30" transform="translate(1801 -2264)">
-	
-		<ellipse id="Ellipse_760" transform="matrix(0.2924 -0.9563 0.9563 0.2924 -3453.072 45.0464)" class="st0" cx="-1696.1" cy="2355.8" rx="81.5" ry="106.5"/>
-</g>
-<g id="Group_3301" transform="translate(1094.085 -5222.717)">
-	<path id="Path_4267" class="st1" d="M-1016.3,5382.9l62.6,2.7c5.2,0.2,9.6-3.8,9.8-9c0-0.1,0-0.3,0-0.4l-0.2-117
-		c0-5.2-4.2-9.4-9.4-9.4l-65.2-0.2c-5.2,0-9.5,4.2-9.5,9.4c0,0.1,0,0.2,0,0.3l2.8,114.5C-1025.2,5378.6-1021.3,5382.7-1016.3,5382.9
-		z"/>
-	<path id="Path_4268" class="st2" d="M-1022.4,5382.9l62.6,2.7c5.2,0.2,9.6-3.8,9.8-9c0-0.1,0-0.3,0-0.4l-0.2-117
-		c0-5.2-4.2-9.4-9.4-9.4l-65.2-0.2c-5.2,0-9.5,4.2-9.5,9.4c0,0.1,0,0.2,0,0.3l2.8,114.5C-1031.3,5378.6-1027.3,5382.7-1022.4,5382.9
-		z"/>
-	<text transform="matrix(0.9781 0.208 -0.208 0.9781 -995.5468 5300.1094)" class="st0 st3 st4">$</text>
-	<text transform="matrix(0.9781 -0.208 0.208 0.9781 -1023.3833 5329.8867)" class="st0 st3 st5"> ¥</text>
-	<text transform="matrix(0.9744 0.225 -0.225 0.9744 -992.6889 5344.1724)" class="st0 st3 st6">€</text>
-	<text transform="matrix(0.9999 1.699754e-02 -1.699754e-02 0.9999 -1005.8817 5372.8384)" class="st0 st7 st8">BANK</text>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="212.388" height="206.366" viewBox="0 0 212.388 206.366">
+  <g id="Group_3327" data-name="Group 3327" transform="translate(3219 1941.366)">
+    <g id="Group_3326" data-name="Group 3326">
+      <g id="Group_3325" data-name="Group 3325">
+        <path id="Path_4267" data-name="Path 4267" d="M2.486,98.808l42.347,46.158a9.448,9.448,0,0,0,13.658.279l82.575-82.927a9.448,9.448,0,0,0,0-13.329L95.128,2.786a9.449,9.449,0,0,0-13.544.149L2.605,85.907A9.448,9.448,0,0,0,2.486,98.808Z" transform="translate(-3212.977 -1839.671) rotate(-45)" fill="#313131"/>
+        <path id="Path_4268" data-name="Path 4268" d="M2.486,98.808l42.347,46.158a9.448,9.448,0,0,0,13.658.279l82.575-82.927a9.448,9.448,0,0,0,0-13.329L95.128,2.786a9.449,9.449,0,0,0-13.544.149L2.605,85.907A9.448,9.448,0,0,0,2.486,98.808Z" transform="translate(-3219 -1839.671) rotate(-45)" fill="#e68c8c"/>
+        <text id="_" data-name="$" transform="matrix(0.978, 0.208, -0.208, 0.978, -3120.567, -1854.334)" fill="#fcf4d7" font-size="38" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-weight="700"><tspan x="0" y="0">$</tspan></text>
+        <text id="_2" data-name=" ¥" transform="matrix(0.978, -0.208, 0.208, 0.978, -3148.404, -1824.557)" fill="#fcf4d7" font-size="39" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-weight="700"><tspan x="0" y="0" xml:space="preserve"> ¥</tspan></text>
+        <text id="_3" data-name="€" transform="translate(-3117.708 -1810.271) rotate(13)" fill="#fcf4d7" font-size="38" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-weight="700"><tspan x="0" y="0">€</tspan></text>
+        <text id="BANK" transform="matrix(1, 0.017, -0.017, 1, -3130.902, -1781.606)" fill="#fcf4d7" font-size="11" font-family="SourceHanSansTW-Regular, Source Han Sans TW"><tspan x="0" y="0">BANK</tspan></text>
+      </g>
+    </g>
+  </g>
 </svg>

@@ -39,9 +39,10 @@
 <link href="css/module.css" rel="stylesheet" />
 
 
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
 
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous'></script> 
+<script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
 
 
 <script src="js/slick.min.js"></script>
@@ -51,19 +52,7 @@
 
 <script src="js/ui.js"></script>
 
-<script>
-    $(document).on('ready', function() {
-        $(".main").slick({
-            dots: true,
-            infinite: true,
-            arrows: false,
-            autoplay: false,
-            adaptiveHeight: true
-        })
 
-    });
-
-</script>
 
 </head>
 <body>
@@ -198,10 +187,46 @@
 
 
 <div class="activity_wrapper">
+	<!-- svg animation -->
+	<div class="svg_curve_line_digital_a u_position_1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="800" height="734.147" viewBox="0 0 916.512 734.147" class="go">
+            <path id="Path_1637" data-name="Path 1637" d="M-1457,426.681s106.95,103.349,210.063,35.625-4.913-203.191,100.858-293.219,217.285-7.639,377.924-91.927,222.07-325.547,227.266-324.995" transform="translate(1457.345 248.333)" fill="none" stroke="#d8c750" stroke-width=".7"/>
+        </svg>
+    </div>
+
+    <div class="svg_curve_line_digital_b u_position_2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1497.912 409.655" class="go">
+            <path id="Path_1637" data-name="Path 1637" d="M226.481,1485.745s146.741-117.18,129.045-281.876S160.055,1147.93,122.35,972.635,213.52,667.321,206.132,417.3-2.878,7.075,0,0" transform="matrix(-0.035, -0.999, 0.999, -0.035, 12.665, 409.162)" fill="none" stroke="#d8c750" stroke-width=".5"/>
+        </svg>
+    </div>
+
+    <div class="svg_curve_line_digital_c u_position_3">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1631.098 1104.353" class="go">
+            <path id="Path_1638" data-name="Path 1638" d="M595.352,611.267S365.228,205.535,16.726,165.033-480.481,412.066-998.942,250.319" transform="translate(827.539 116.755) rotate(-26)" fill="none" stroke="#d8c750" stroke-width=".5"/>
+        </svg>
+    </div>
+
+    <div class="svg_curve_line_digital_d u_position_4">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1592.463 1389.514" class="go">
+            <path id="Path_1637" data-name="Path 1637" d="M-1457,820.272s164.811,163.654,323.709,56.413-7.572-321.755,155.424-464.317,334.839-12.1,582.387-145.568S-53.265-248.708-45.258-247.834" transform="matrix(0.985, 0.174, -0.174, 0.985, 1593.858, 497.626)" fill="none" stroke="#d8c750" stroke-width=".5"/>
+        </svg>
+    </div>
+
+    <div class="svg_curve_line_digital_e u_position_5">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1447.525 550.823" class="go">
+            <path id="Path_1638" data-name="Path 1638" d="M252.851,250.319c-407.08,161.747-523.838-125.789-797.472-85.286s-340.74,334.675-454.32,446.234-195.473,99.307-195.473,99.307" transform="translate(1194.489 -160.682)" fill="none" stroke="#d8c750" stroke-width=".5"/>
+        </svg>
+    </div>
+
+    <div class="svg_curve_line_digital_c u_position_6">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1631.098 1104.353" class="go">
+            <path id="Path_1638" data-name="Path 1638" d="M595.352,611.267S365.228,205.535,16.726,165.033-480.481,412.066-998.942,250.319" transform="translate(827.539 116.755) rotate(-26)" fill="none" stroke="#d8c750" stroke-width=".5"/>
+        </svg>
+    </div>
 
 	<div class="activity_top_section ">
 		<div class="top_description for_order_a">
-      <h5>2O21.O4.26 e.Fingo 會員限定</h5>
+		<h5>2O21.O4.26 e.Fingo 會員限定</h5>
 			<h1>熊朋友邀請賽 <br>
         活動說明 </h1>
 			<p>推薦好友填入你的「好友邀請碼」，當好友成功加入會員，你就可以再獲得 5 次抽獎機會...</p>
@@ -221,7 +246,7 @@
 	</div>
 
 
-  <div class="activity_list">
+	<div class="activity_list">
 			<div class="for_flex">
 				<div class="filter_section">
 					<a href="#" class="filter_on"><h2>全部分類</h2></a>

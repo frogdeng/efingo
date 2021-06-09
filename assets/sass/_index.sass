@@ -93,6 +93,40 @@ $susy: (debug: (image: hide))
 		.main_slider_m
 			display: none
 		.main_slider
+			.main
+				.slick-prev
+					width: 69px
+					height: 69px
+					background: #190
+					top: 90%
+					left: 84%
+					z-index: 500
+					background: url(../img/btn_to_left.svg)
+					background-repeat: no-repeat
+					background-size: 100%
+					&::before
+						display: none
+					&:hover
+						background: url(../img/btn_to_left-hover.svg)
+						background-repeat: no-repeat
+						background-size: 100%
+				.slick-next
+					width: 69px
+					height: 69px
+					background: #190
+					top: 90%
+					left: 90%
+					z-index: 501
+					background: url(../img/btn_to_right.svg)
+					background-repeat: no-repeat
+					background-size: 100%
+					&::before
+						display: none
+					&:hover
+						background: url(../img/btn_to_right-hover.svg)
+						background-repeat: no-repeat
+						background-size: 100%
+
 			.new_photo
 				width: 100%
 				position: relative
@@ -100,6 +134,30 @@ $susy: (debug: (image: hide))
 				flex-direction: row
 				justify-content: center
 				align-items: center
+				overflow: hidden
+				.img_a
+					width: 100%
+					transition: all .8s
+					overflow: hidden
+					
+					
+				.img_b
+					width: 100%
+					position: absolute
+					bottom: 0
+				.img_c
+					position: absolute
+					width: 12%
+					right: 20%
+					bottom: 10%
+					transition: all 1s
+					
+				.img_d
+					position: absolute
+					width: 6%
+					left: 20%
+					bottom: 20%
+					animation: index_robat 12s linear infinite
 				img
 					width: 100%
 				.main_des_a
@@ -115,6 +173,8 @@ $susy: (debug: (image: hide))
 						line-height: 1.3
 					img 
 						width: 420px !important
+
+
 				.main_des_b
 					position: absolute
 					width: 20%
@@ -155,6 +215,30 @@ $susy: (debug: (image: hide))
 				font-size: 40px
 				color: #FFF
 				font-weight: 900
+
+
+.go_large
+	transform: scale(1.4) !important
+
+.go_running
+	right: 30% !important
+
+@keyframes index_robat
+	from
+		left: 20%
+		bottom: 20%
+	25%
+		left: 33%
+		bottom: 34%
+
+	50%
+		left: 32%
+		bottom: 30%
+
+	to
+		left: 20%
+		bottom: 20%
+
 
 
 

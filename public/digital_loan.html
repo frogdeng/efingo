@@ -39,9 +39,10 @@
 <link href="css/module.css" rel="stylesheet" />
 
 
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
 
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous'></script> 
+<script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
 
 
 <script src="js/slick.min.js"></script>
@@ -51,19 +52,7 @@
 
 <script src="js/ui.js"></script>
 
-<script>
-    $(document).on('ready', function() {
-        $(".main").slick({
-            dots: true,
-            infinite: true,
-            arrows: false,
-            autoplay: false,
-            adaptiveHeight: true
-        })
 
-    });
-
-</script>
 
 </head>
 <body>
@@ -197,8 +186,40 @@
 
 
 
+
+
+
+
+
 <div class="digital_service_wrapper ">
+	<!-- svg animation -->
+	<div class="svg_curve_line_digital_a d_position_1">
+		<svg xmlns="http://www.w3.org/2000/svg" width="800" height="734.147" viewBox="0 0 916.512 734.147" class="go">
+			<path id="Path_1637" data-name="Path 1637" d="M-1457,426.681s106.95,103.349,210.063,35.625-4.913-203.191,100.858-293.219,217.285-7.639,377.924-91.927,222.07-325.547,227.266-324.995" transform="translate(1457.345 248.333)" fill="none" stroke="#d8c750" stroke-width=".7"/>
+		</svg>
+	</div>
+
+	<div class="svg_curve_line_digital_b d_position_2">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1497.912 409.655" class="go">
+			<path id="Path_1637" data-name="Path 1637" d="M226.481,1485.745s146.741-117.18,129.045-281.876S160.055,1147.93,122.35,972.635,213.52,667.321,206.132,417.3-2.878,7.075,0,0" transform="matrix(-0.035, -0.999, 0.999, -0.035, 12.665, 409.162)" fill="none" stroke="#d8c750" stroke-width=".5"/>
+		</svg>
+	</div>
+
+	<div class="svg_curve_line_digital_c d_position_4">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1631.098 1104.353" class="go">
+            <path id="Path_1638" data-name="Path 1638" d="M595.352,611.267S365.228,205.535,16.726,165.033-480.481,412.066-998.942,250.319" transform="translate(827.539 116.755) rotate(-26)" fill="none" stroke="#d8c750" stroke-width=".5"/>
+        </svg>
+    </div>
+
+	<div class="svg_curve_line_digital_d d_position_5">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1592.463 1389.514" class="go">
+            <path id="Path_1637" data-name="Path 1637" d="M-1457,820.272s164.811,163.654,323.709,56.413-7.572-321.755,155.424-464.317,334.839-12.1,582.387-145.568S-53.265-248.708-45.258-247.834" transform="matrix(0.985, 0.174, -0.174, 0.985, 1593.858, 497.626)" fill="none" stroke="#d8c750" stroke-width=".5"/>
+        </svg>
+    </div>
+
 	
+
+
 	
 	<div class="loan_top-bg">
 		<div class="digital_service_top_section ">
@@ -211,7 +232,13 @@
 					
 
 			</div>
-			<div class="svg_img"><img src="img/digital_service_03.png" alt=""></div>
+			<div class="m_img">
+				<img src="img/digital_service_03m.png" alt="">
+			</div>
+			<div class="svg_img">
+				<div class="e_img_00"><img src="img/digital_service_03.png" alt=""></div>		
+				<div class="e_img_c1"><img src="img/robat_c1.png" alt=""></div>
+			</div>
 			
 		</div>
 	</div>
@@ -275,9 +302,10 @@
 <div class="digital_two_mobile">
 	<div class="two_mobile_row">
 		<div class="mobile_item for_order_a">
-			<img src="img/digital_mobile_a01.svg" alt="">
+			<div class="bg_circle circle_01"><img src="img/green_circle.svg" alt=""></div>
+			<div class="p-img m_mobile_01"><img src="img/digital_mobile_a01.png" alt=""></div>
 		</div>
-		<div class="des_text for_order_b">
+		<div class="des_text text-show_01 for_order_b">
 			<h2>月付金試算</h2>
 			<p>讓你線上快速算出每月應付貸款，財務規劃
 				好輕鬆。還可以免費下載與列印你的專屬月付金
@@ -294,24 +322,25 @@
 
 <div class="digital_two_mobile">
 	<div class="two_mobile_row">
-		<div class="des_text">
+		<div class="des_text text-show_02">
 			<h2>貸款 e 管家</h2>
 			<p>貸款資訊讓你 e 手掌握，你隨身的貸款管家，
 				設定推播提醒繳款，貸你安心便利！</p>
-			<div class="btn_row ">
-					<a href="#" class="go_btn">了解更多</a>
-					<a href="https://esb.page.link/as2" class="go_btn">立即體驗</a>
+			<div class="btn_row">
+				<a href="#" class="go_btn">了解更多</a>
+				<a href="https://esb.page.link/as2" class="go_btn">立即體驗</a>
 			</div>
 		</div>
 			<div class="mobile_item">
-				<img src="img/digital_mobile_a02.svg" alt="">
+				<div class="bg_circle circle_02"><img src="img/green_circle.svg" alt=""></div>
+				<div class="p-img m_mobile_02"><img src="img/digital_mobile_a02.png" alt=""></div>
 			</div>
 		</div>
 	
 	</div>
+	<div class="for_height"></div>
 </div>
 
-</div>
 
 
 
@@ -396,16 +425,45 @@
 </div>
 
 <script>
-	$(function(){
-			$('.js-open-notice-01').magnificPopup({
-					items: {
-							src: '#js-open-notice-01',
-							type: 'inline'
-					},
-					mainClass: 'mfp-fade',
-					removalDelay: 300,
-					midClick: true
-			});
+$(function(){
+	$('.js-open-notice-01').magnificPopup({
+		items: {
+				src: '#js-open-notice-01',
+				type: 'inline'
+		},
+		mainClass: 'mfp-fade',
+		removalDelay: 300,
+		midClick: true
+	});
+
+	$(".m_mobile_01").scrollTop
+
+	// scroll Animation	
+	$(window).scroll(function (event) {
+		var scrollTop = $(window).scrollTop() ;
+		if(scrollTop > $(".m_mobile_01").offset().top -500){
+			$(".circle_01").addClass('go_big')
+			$(".m_mobile_01").addClass('go_big')
+			$(".text-show_01").addClass('show_text')
+			
+		}else{
+			$(".circle_01").removeClass('go_big')
+			$(".m_mobile_01").removeClass('go_big')
+			$(".text-show_01").removeClass('show_text')
+		}
+
+		if(scrollTop > $(".m_mobile_02").offset().top -500){
+			$(".circle_02").addClass('go_big')
+			$(".m_mobile_02").addClass('go_big')
+			$(".text-show_02").addClass('show_text')
+		}else{
+			$(".circle_02").removeClass('go_big')
+			$(".m_mobile_02").removeClass('go_big')
+			$(".text-show_02").removeClass('show_text')
+		}
+		
+	});
+	
 
 
 

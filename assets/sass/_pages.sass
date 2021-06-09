@@ -82,6 +82,7 @@ $susy: (debug: (image: hide))
 		background: #FFFBF0
 		padding: 0 50px
 		padding-top: 90px
+		position: relative
 		h1
 			font-size: 45px
 			color: #014343
@@ -130,6 +131,7 @@ $susy: (debug: (image: hide))
 		justify-content: center
 		align-items: center
 		padding: 120px 0 30px 0
+		position: relatives
 		.t_description
 			width: 100%
 			h2
@@ -137,8 +139,6 @@ $susy: (debug: (image: hide))
 				margin-bottom: 6px
 				span
 					font-size: 12px
-
-			
 		.svg_img
 			width: 150%
 			display: flex
@@ -148,7 +148,9 @@ $susy: (debug: (image: hide))
 			overflow: hidden
 			img
 				width: 150%
-
+		.top_img
+			display: none
+		
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		display: flex
@@ -156,6 +158,8 @@ $susy: (debug: (image: hide))
 		justify-content: center
 		align-items: center
 		padding: 80px 0
+		position: relative
+
 		.t_description
 			width: 43%
 			h2
@@ -163,13 +167,128 @@ $susy: (debug: (image: hide))
 				margin-bottom: 15px
 				span
 					font-size: 12px
-
 		.svg_img
+			display: none
+		.top_img
 			width: 60%
 			display: flex
 			flex-direction: row
 			justify-content: center
 			align-items: center
+			position: relative
+			.img_a01
+				width: 100%
+				transform: scale(.3)
+				transition: all .4s
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+			.img_a02
+				position: absolute
+				width: 100%
+				transform: scale(.2)
+				transition: all .3s
+				top: 0%
+				left: 10%
+				animation: img_a02 16s linear infinite
+			.img_a03
+				position: absolute
+				width: 100%
+				transform: scale(.2)
+				transition: all .4s
+				opacity: 0
+				top: 5%
+				left: 30%
+			.img_a04
+				position: absolute
+				width: 100%
+				transform: scale(.2)
+				transition: all .7s
+				top: 40%
+				left: 12%
+				animation: img_a04 5s linear infinite
+
+			.img_b01
+				width: 100%
+				transform: scale(.3)
+				transition: all .4s
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				margin-top: 40px
+			.img_b02
+				position: absolute
+				width: 100%
+				transform: scale(.2)
+				transition: all .5s
+				top: 0%
+				left: 10%
+				animation: img_a02 16s linear infinite
+			.img_b03
+				position: absolute
+				width: 100%
+				transform: scale(.2)
+				transition: all .5s
+				opacity: 0
+				top: 10%
+				left: 0%
+	
+
+
+
+.main_show_a02
+	transform: scale(1) !important
+.main_show_a03
+	transform: scale(1) !important
+	opacity: 1 !important
+.main_show_a04
+	transform: scale(1) !important
+.main_show_b02
+	transform: scale(1) !important
+.main_show_b03
+	transform: scale(1) !important
+	opacity: 1 !important
+	top: -18% !important
+	left: 30% !important
+
+	
+
+@keyframes img_a02
+	from
+		top: -2%
+		left: 10%
+	25%
+		top: 8%
+		left: 12%
+
+	50%
+		top: -8%
+		left: 14%
+	to
+		top: -2%
+		left: 10%
+
+
+@keyframes img_a04
+	from
+		top: 40%
+		left: 12%
+	25%
+		top: 42%
+		left: 14%
+
+	50%
+		top: 45%
+		left: 14%
+	to
+		top: 40%
+		left: 12%
+
+
+
+
 
 
 
@@ -182,6 +301,7 @@ $susy: (debug: (image: hide))
 		justify-content: center
 		align-items: center
 		padding: 80px 0
+		position: relative
 		.t_description
 			width: 100%
 			margin-bottom: 30px
@@ -200,18 +320,25 @@ $susy: (debug: (image: hide))
 					width: 80%
 					text-align: center
 					margin-bottom: 20px
-
-					
-
 		.svg_img
 			width: 100%
 			display: flex
 			flex-direction: row
 			justify-content: center
 			align-items: center
+			position: relative
+			.bg_circle
+				position: relative
+				transform: scale(.4)
+				transition: all .3s
+			.p-img
+				position: absolute
+				transform: scale(.6)
+				transition: all .8s
+				top: 20px
 			
-
-
+			
+			
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		display: flex
@@ -219,8 +346,12 @@ $susy: (debug: (image: hide))
 		justify-content: center
 		align-items: center
 		padding: 80px 0
+		position: relative
 		.t_description
 			width: 40%
+			opacity: .2
+			transform: scale(.4)
+			transition: all .3s
 			.btn_row
 				display: flex
 				flex-direction: row
@@ -229,14 +360,28 @@ $susy: (debug: (image: hide))
 				margin-top: 40px
 				.go_btn
 					+yellow_btn
-
 		.svg_img
 			width: 60%
 			display: flex
 			flex-direction: row
 			justify-content: center
 			align-items: center
+			.bg_circle
+				position: relative
+				transform: scale(.4)
+				transition: all .3s
+			.p-img
+				position: absolute
+				transform: scale(.6)
+				transition: all .8s
+				top: 20px
 			
+
+
+
+
+
+
 
 
 // section_b -- 3 item
@@ -248,6 +393,7 @@ $susy: (debug: (image: hide))
 		justify-content: center
 		align-items: center
 		padding: 80px 0
+		position: relative
 		.item_row
 			width: 100%
 			display: flex
@@ -293,6 +439,7 @@ $susy: (debug: (image: hide))
 		justify-content: center
 		align-items: center
 		padding: 80px 0
+		position: relative
 		.item_row
 			width: 100%
 			display: flex
@@ -354,7 +501,9 @@ $susy: (debug: (image: hide))
 	background-repeat: no-repeat
 
 
-
+.bottom_w
+	background: url("../img/icon_bg.svg") center
+	background-repeat: no-repeat
 .bottom_text
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
@@ -384,7 +533,7 @@ $susy: (debug: (image: hide))
 		flex-direction: column
 		justify-content: center
 		align-items: center
-		padding: 90px 0
+		padding: 120px 0
 		h6 
 			width: 50%
 			text-align: center
@@ -404,13 +553,15 @@ $susy: (debug: (image: hide))
 
 .notice_section_top
 	margin-top: -150px
+	position: relative
 	img 
 		display: block
 
 .notice_section
 	background: #F5F2EA
+	position: relative
+	margin-top: -5px
 	
-
 .notice_loan_content
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container

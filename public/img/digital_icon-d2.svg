@@ -1,21 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="170" viewBox="0 0 210 170">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="178" height="178" viewBox="0 0 178 178">
   <defs>
     <clipPath id="clip-path">
-      <rect x="20" y="24" width="210" height="170" fill="none"/>
-    </clipPath>
-    <clipPath id="clip-path-2">
       <circle id="Ellipse_308" data-name="Ellipse 308" cx="62.056" cy="62.056" r="62.056" fill="none"/>
     </clipPath>
   </defs>
-  <g id="Group_3306" data-name="Group 3306" transform="translate(8085 2882)">
-    <g id="Scroll_Group_37" data-name="Scroll Group 37" transform="translate(-8105 -2906)" clip-path="url(#clip-path)" style="isolation: isolate">
-      <ellipse id="Ellipse_766" data-name="Ellipse 766" cx="106.5" cy="81.5" rx="106.5" ry="81.5" transform="translate(46.779) rotate(17)" fill="#ffe2e0"/>
-    </g>
-    <g id="Group_3301" data-name="Group 3301" transform="translate(-9055.113 -3535.997)">
+  <g id="Group_3317" data-name="Group 3317" transform="translate(6135 1867)">
+    <rect id="Rectangle_1559" data-name="Rectangle 1559" width="178" height="178" transform="translate(-6135 -1867)" fill="none"/>
+    <g id="Group_2279" data-name="Group 2279" transform="translate(-7123.113 -2522.997)">
       <path id="Path_3219" data-name="Path 3219" d="M1060.991,790.3l-72.878-64.095,87.505-41.425Z" transform="translate(0 1.062)" fill="#313131"/>
       <circle id="Ellipse_307" data-name="Ellipse 307" cx="62.056" cy="62.056" r="62.056" transform="translate(1037.614 680.997)" fill="#efb635"/>
       <g id="Group_2278" data-name="Group 2278" transform="translate(1037.614 680.997)">
-        <g id="Group_2277" data-name="Group 2277" clip-path="url(#clip-path-2)">
+        <g id="Group_2277" data-name="Group 2277" clip-path="url(#clip-path)">
           <g id="Group_2276" data-name="Group 2276" transform="matrix(0.087, 0.996, -0.996, 0.087, 134.476, -31.173)">
             <path id="Path_3220" data-name="Path 3220" d="M42.031,5.411,1.742,70.034A11.487,11.487,0,0,0,5.858,86.123L129.865,155.87a11.487,11.487,0,0,0,15.615-4.332l39.175-68.851a11.487,11.487,0,0,0-4.581-15.816L57.181,1.353A11.485,11.485,0,0,0,42.031,5.411Z" fill="#019e96"/>
             <g id="Group_2275" data-name="Group 2275" transform="matrix(-0.087, -0.996, 0.996, -0.087, 43.056, 75.403)">

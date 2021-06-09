@@ -39,9 +39,10 @@
 <link href="css/module.css" rel="stylesheet" />
 
 
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
 
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous'></script> 
+<script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
 
 
 <script src="js/slick.min.js"></script>
@@ -51,19 +52,7 @@
 
 <script src="js/ui.js"></script>
 
-<script>
-    $(document).on('ready', function() {
-        $(".main").slick({
-            dots: true,
-            infinite: true,
-            arrows: false,
-            autoplay: false,
-            adaptiveHeight: true
-        })
 
-    });
-
-</script>
 
 </head>
 <body>
@@ -198,6 +187,25 @@
 
 
 <div class="digital_service_wrapper ">
+	<!-- svg animation -->
+	<div class="svg_curve_line_digital_a d_position_1">
+		<svg xmlns="http://www.w3.org/2000/svg" width="800" height="734.147" viewBox="0 0 916.512 734.147" class="go">
+			<path id="Path_1637" data-name="Path 1637" d="M-1457,426.681s106.95,103.349,210.063,35.625-4.913-203.191,100.858-293.219,217.285-7.639,377.924-91.927,222.07-325.547,227.266-324.995" transform="translate(1457.345 248.333)" fill="none" stroke="#d8c750" stroke-width=".7"/>
+		</svg>
+	</div>
+
+	<div class="svg_curve_line_digital_b d_position_2">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1497.912 409.655" class="go">
+			<path id="Path_1637" data-name="Path 1637" d="M226.481,1485.745s146.741-117.18,129.045-281.876S160.055,1147.93,122.35,972.635,213.52,667.321,206.132,417.3-2.878,7.075,0,0" transform="matrix(-0.035, -0.999, 0.999, -0.035, 12.665, 409.162)" fill="none" stroke="#d8c750" stroke-width=".5"/>
+		</svg>
+	</div>
+
+	<div class="svg_curve_line_digital_b d_position_3">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1497.912 409.655" class="go">
+			<path id="Path_1637" data-name="Path 1637" d="M226.481,1485.745s146.741-117.18,129.045-281.876S160.055,1147.93,122.35,972.635,213.52,667.321,206.132,417.3-2.878,7.075,0,0" transform="matrix(-0.035, -0.999, 0.999, -0.035, 12.665, 409.162)" fill="none" stroke="#d8c750" stroke-width=".5"/>
+		</svg>
+	</div>
+
 
 <div class="accounting_top-bg">
 	<div class="digital_service_top_section ">
@@ -210,7 +218,14 @@
 				</div>
 
 		</div>
-		<div class="svg_img"><img src="img/digital_service_01.png" alt=""></div>
+		<div class="m_img">
+            <img src="img/digital_service_01m.png" alt="">
+        </div>
+		<div class="svg_img">
+			<div class="e_img_00"><img src="img/digital_service_01.png" alt=""></div>		
+			<div class="e_img_a1"><img src="img/robat_a1.png" alt=""></div>
+			<div class="e_img_a2"><img src="img/robat_a2.png" alt=""></div>
+		</div>
 		
 	</div>
 </div>
@@ -260,28 +275,39 @@
 </div>
 
 
-<div class="four_card_section">
+<div class="four_card_section go_01">
 	<div class="robat"><img src="img/robat_b1.png" alt=""></div>
-
 	<h2>擁有玉山數位帳戶
 		<br> 暖心便利的金融服務通通享有！</h2>
 	<h3>網路銀行、行動銀行 App 多元便捷服務完整享有</h3>
 	<div class="icon_row">
 		<div class="icon_item">
-			<img src="img/digital_icon-a1.svg" alt="">
+			<div class="bg_circle c-boom_1">
+				<img src="img/yellow_circle.svg" alt="">
+			</div>
+			<div class="icon_img img-boom_1"><img src="img/digital_icon-a1.svg" alt=""></div>
 			<h3>帳戶用處多元 不受限</h3>
 		</div>
 		<div class="icon_item">
-			<img src="img/digital_icon-a2.svg" alt="">
+			<div class="bg_circle c-boom_1">
+				<img src="img/yellow_circle.svg" alt="">
+			</div>
+			<div class="icon_img img-boom_1"><img src="img/digital_icon-a2.svg" alt=""></div>
 			<h3>沒有紙本存摺 <br>
 				線上也能下載</h3>
 		</div>
 		<div class="icon_item">
-			<img src="img/digital_icon-a3.svg" alt="">
+			<div class="bg_circle c-boom_1">
+				<img src="img/yellow_circle.svg" alt="">
+			</div>
+			<div class="icon_img img-boom_1"><img src="img/digital_icon-a3.svg" alt=""></div>
 			<h3>多種驗證方式 任你選</h3>
 		</div>
 		<div class="icon_item">
-			<img src="img/digital_icon-a4.svg" alt="">
+			<div class="bg_circle c-boom_1">
+				<img src="img/yellow_circle.svg" alt="">
+			</div>
+			<div class="icon_img img-boom_1"><img src="img/digital_icon-a4.svg" alt=""></div>
 			<h3>各式生活優惠禮包</h3>
 		</div>
 	
@@ -297,24 +323,36 @@
 	<img src="img/digital_wave_04.svg" alt="">
 </div>
 <div style="background: #FFF4CC;">
-	<div class="four_card_section">
+	<div class="four_card_section go_02">
 		<h2>申請流程</h2>
-		<p>線上開戶超便利！準備好身分證、第二證件，多種任證方式自由選		</p>
+		<h3>線上開戶超便利！準備好身分證、第二證件，多種任證方式自由選</h3>
 		<div class="icon_row">
 			<div class="icon_item">
-				<img src="img/digital_icon-b1.svg" alt="">
+				<div class="bg_circle c-boom_2">
+				<img src="img/white_circle.svg" alt="">
+				</div>
+				<div class="icon_img img-boom_2"><img src="img/digital_icon-b1.svg" alt=""></div>
 				<h3>自然人憑證</h3>
 			</div>
 			<div class="icon_item">
-				<img src="img/digital_icon-b2.svg" alt="">
+				<div class="bg_circle c-boom_2">
+				<img src="img/white_circle.svg" alt="">
+				</div>
+				<div class="icon_img img-boom_2"><img src="img/digital_icon-b2.svg" alt=""></div>
 				<h3>玉山帳戶</h3>
 			</div>
 			<div class="icon_item">
-				<img src="img/digital_icon-b3.svg" alt="">
+				<div class="bg_circle c-boom_2">
+				<img src="img/white_circle.svg" alt="">
+				</div>
+				<div class="icon_img img-boom_2"><img src="img/digital_icon-b3.svg" alt=""></div>
 				<h3>他行帳戶</h3>
 			</div>
 			<div class="icon_item">
-				<img src="img/digital_icon-b4.svg" alt="">
+				<div class="bg_circle c-boom_2">
+				<img src="img/white_circle.svg" alt="">
+				</div>
+				<div class="icon_img img-boom_2"><img src="img/digital_icon-b4.svg" alt=""></div>
 				<h3>玉山信用卡</h3>
 			</div>
 		
@@ -331,7 +369,7 @@
 
 
 <div class="slider_section">
-	<div class="robat"><img src="img/robat_b2.png" alt=""></div>
+	<div class="robat"><img src="img/robat-mm.png" alt=""></div>
 	<h2>e.Fingo X 數位帳戶</h2>
 	<p>最新任務</p>
 
@@ -356,11 +394,6 @@
 
 
 
-
-
-
-
-
 <div class="notice_section_top">
 		<img src="img/notice_wave.svg" alt="">
 </div>
@@ -376,6 +409,39 @@
 	</div>
 	<div class="for_height"></div>
 </div>
+
+
+<script>
+    $(function(){
+
+    // scroll Animation	
+    $(window).scroll(function (event) {
+        var scrollTop = $(window).scrollTop()
+
+        if(scrollTop > $(".go_01").offset().top -300){
+            $(".c-boom_1").addClass('go_big')
+            $(".img-boom_1").addClass('go_big')
+
+        }else{
+			$(".c-boom_1").removeClass('go_big')
+			$(".img-boom_1").removeClass('go_big')
+        }
+
+		if(scrollTop > $(".go_02").offset().top -300){
+            $(".c-boom_2").addClass('go_big')
+            $(".img-boom_2").addClass('go_big')
+
+        }else{
+			$(".c-boom_2").removeClass('go_big')
+			$(".img-boom_2").removeClass('go_big')
+        }
+
+	
+        
+    });
+
+});
+</script>
 
 
 <div class="footer_wrapper">
