@@ -13,16 +13,7 @@ $(document).ready(function(){
 		}
 	});
 
-		$(window).scroll(function (event) {
-
-		var sc_1 = $(window).scrollTop() ;
-
-		if(sc_1 > 200){
-			$(".index_menu").addClass('index_menu_bg')
-		}
-		else{
-			$(".index_menu").removeClass('index_menu_bg')
-		}
+		
 
       // if(sc_1 > inside_slider_h){
       //   $(".inside_menu").addClass('index_menu_bg')
@@ -35,7 +26,7 @@ $(document).ready(function(){
 
 	
 
-});
+
 
 
 

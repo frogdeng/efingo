@@ -112,6 +112,11 @@ $susy: (debug: (image: hide))
 		background: url("../img/mountain.svg") bottom 
 		background-size: 900px
 		background-repeat: no-repeat
+		h6 
+			font-size: 26px
+			color: #014343
+			font-weight: 600
+
 		.t_description
 			margin-top: 30px
 			h2
@@ -162,11 +167,14 @@ $susy: (debug: (image: hide))
 		padding: 80px 50px
 		background: url("../img/mountain.svg") bottom
 		background-repeat: no-repeat
-		background-size: 100%
+		background-size: 1700px
 		position: relative
 		.go_btn
 			background: #FFF
-			margin-top: -120px
+			&:hover
+				background: #014343
+				color: #FFF
+			
 		.t_description
 			width: 40%
 			.btn_row
@@ -178,40 +186,92 @@ $susy: (debug: (image: hide))
 				margin-bottom: 50px
 				.go_btn
 					+yellow_btn
-	
+
 		.p_01_roaming
 			position: absolute
-			left: 52%
-			bottom: 18%
-			.go_btn
-				background: #FFF
-				margin-top: -120px
+			left: 55%
+			bottom: 16%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.p_img
+				position: absolute
+				top: 50px
+			.y-bg
+				opacity: 0
+				transition: all .1s
+			.btn_row
+				position: relative
+				margin: 0
+				top: -140px
+
+
 			
 		.p_02_cable_car
 			position: absolute
-			right: 10%
-			top: 31%
-			.go_btn
-				background: #FFF
-				margin-top: -30px
+			right: 1%
+			top: 17%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.p_img
+				position: absolute
+				top: 50px
+			.y-bg
+				opacity: 0
+			.btn_row
+				position: relative
+				margin: 0
+				top: -140px
+
 			
 		.p_03_adventure
 			position: absolute
 			left: 12%
 			bottom: 21%
-			.go_btn
-				background: #FFF
-				margin-top: -120px
-			
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.p_img
+				position: absolute
+				top: 50px
+			.y-bg
+				opacity: 0
+			.btn_row
+				position: relative
+				margin: 0
+				top: -140px
+
 		.p_04_climbing
 			position: absolute
-			left: 42%
-			top: 20%
-			.go_btn
-				background: #FFF
-				margin-top: -100px
-			
+			left: 38%
+			top: 4%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.p_img
+				position: absolute
+				top: 50px
+			.y-bg
+				opacity: 0
+			.btn_row
+				position: relative
+				margin: 0
+				top: -140px
 
+
+.go_btn_on
+	background: #014343 !important
+	color: #FFF !important
+
+.opacity_on
+	opacity: 1 !important
+
+	
 .mountaineer_content_wraper	
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
@@ -233,7 +293,7 @@ $susy: (debug: (image: hide))
 			flex-direction: column
 			justify-content: center
 			align-items: center
-			padding: 50px 60px
+			padding: 50px 0px
 			.subject
 				display: flex
 				flex-direction: column
@@ -241,7 +301,7 @@ $susy: (debug: (image: hide))
 				align-items: center
 				margin-bottom: 50px
 				.subject_des
-					width: 100%
+					width: 90%
 					margin-bottom: 30px
 					h2
 						text-align: left
@@ -306,9 +366,13 @@ $susy: (debug: (image: hide))
 		margin-bottom: 50px
 		.m-page-p
 			position: absolute
-			top: 5px
+			width: 130px
+			top: -22px
 			left: 10%
-			z-index: 1000
+			z-index: 200
+			img 
+				display: block
+				width: 100%
 		.t-t
 			display: block
 			h2 
@@ -334,6 +398,7 @@ $susy: (debug: (image: hide))
 				margin-bottom: 50px
 				.subject_des
 					width: 50%
+					
 					h6 
 						text-align: left
 					p 
@@ -385,7 +450,7 @@ $susy: (debug: (image: hide))
 								text-align: left
 								margin-bottom: 10px
 							p 
-								font-size: 14px
+								font-size: 16px
 								text-align: left
 
 	
@@ -397,6 +462,7 @@ $susy: (debug: (image: hide))
 	flex-direction: column
 	justify-content: center
 	align-items: center
-	h5 
+	p 
 		font-size: 45px
 		text-align: center
+		font-weight: 700

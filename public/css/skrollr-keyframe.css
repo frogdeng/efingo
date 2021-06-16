@@ -1,0 +1,110 @@
+#foo {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background: url("../images/big_02.jpg") center;
+  background-size: cover;
+  z-index: -100;
+  -skrollr-animation-name: foo; }
+
+@-skrollr-keyframes foo {
+  skrollr-0 {
+    top: 0px; }
+  skrollr-1000 {
+    top: 500px; } }
+.bottom_image {
+  position: relative;
+  width: 100%;
+  background: #888;
+  height: 780px;
+  padding-top: 30px;
+  background: url("../images/big_03.jpg") bottom center;
+  background-size: cover;
+  z-index: -110;
+  -skrollr-animation-name: _bottom_image; }
+
+@-skrollr-keyframes _bottom_image {
+  skrollr-4800 {
+    top: 0px; }
+  skrollr-5800 {
+    top: 350px; } }
+.art-font_1 {
+  position: absolute;
+  z-index: 100;
+  right: 0px;
+  -skrollr-animation-name: _art-font_1; }
+
+@-skrollr-keyframes _art-font_1 {
+  skrollr-2000 {
+    top: 100px;
+    opacity: 0; }
+  skrollr-2200 {
+    top: 330px;
+    opacity: 1; } }
+.art-font_2 {
+  position: absolute;
+  width: 40%;
+  z-index: 100;
+  -skrollr-animation-name: _art-font_2; }
+
+@-skrollr-keyframes _art-font_2 {
+  skrollr-3050 {
+    top: 0px;
+    opacity: 0; }
+  skrollr-3250 {
+    top: 260px;
+    opacity: 1; } }
+.art-font_3 {
+  position: absolute;
+  width: 30%;
+  z-index: 100;
+  right: 0;
+  -skrollr-animation-name: _art-font_3; }
+
+@-skrollr-keyframes _art-font_3 {
+  skrollr-4067 {
+    top: 0px;
+    opacity: 0; }
+  skrollr-4267 {
+    top: 300px;
+    opacity: 1; } }
+#qoo {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background: #090;
+  -skrollr-animation-name: animation1; }
+
+@-skrollr-keyframes animation1 {
+  skrollr-300 {
+    left: -100%;
+    transform: rotate(-390deg);
+    opacity: 0; }
+  skrollr-600 {
+    left: 0%;
+    transform: rotate(0deg);
+    opacity: 1; } }
+.go {
+  position: relative;
+  -skrollr-animation-name: animation2; }
+
+@-skrollr-keyframes animation2 {
+  skrollr-150 {
+    top: -20px;
+    opacity: 0; }
+  skrollr-200 {
+    top: 0px;
+    opacity: 1; } }
+.haha {
+  -skrollr-animation-name: gg;
+  z-index: 110; }
+
+@-skrollr-keyframes gg {
+  skrollr-0 {
+    opacity: 1;
+    top: 500px; }
+  skrollr-1000 {
+    opacity: 1;
+    top: -100px; } }
+
+/*# sourceMappingURL=skrollr-keyframe.css.map */

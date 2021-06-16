@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="624" viewBox="0 0 375 624">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1534" data-name="Rectangle 1534" width="375" height="118" transform="translate(0 549)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-e.Fingo-index-mobile-1_2">
+      <rect width="375" height="624"/>
+    </clipPath>
+  </defs>
+  <g id="e.Fingo-index-mobile-1_2" data-name="e.Fingo-index-mobile-1 – 2" clip-path="url(#clip-e.Fingo-index-mobile-1_2)">
+    <rect id="Rectangle_213" data-name="Rectangle 213" width="375" height="629" transform="translate(0 -2)" fill="none"/>
+    <g id="Mask_Group_83" data-name="Mask Group 83" transform="translate(0 -40)" clip-path="url(#clip-path)">
+      <path id="Path_1934" data-name="Path 1934" d="M0,126.619S211.224,60.784,442.327,60.784s270.511,103.022,442.4,103.022,324.736-67.425,410.683-67.425,137.038,45.356,137.038,45.356V354.816H0Z" transform="matrix(0.999, -0.035, 0.035, 0.999, -1034.147, 500.381)" fill="#00c08b"/>
+    </g>
+    <path id="Path_1637" data-name="Path 1637" d="M-1457,197.469s70.606,68.229,138.68,23.519-3.244-134.143,66.585-193.579,143.448-5.043,249.5-60.689S-855.626-248.2-852.2-247.835" transform="translate(1224.383 80.102)" fill="none" stroke="#fdda6e" stroke-width="1"/>
+    <path id="Path_1638" data-name="Path 1638" d="M-998.942,405.853s98.242-220.6,247.022-242.625,212.263,134.316,433.6,46.372" transform="translate(978.728 49.716)" fill="none" stroke="#fdda6e" stroke-width="1"/>
+    <circle id="Ellipse_210" data-name="Ellipse 210" cx="7.5" cy="7.5" r="7.5" transform="translate(288 61)" fill="#fddb72"/>
+    <line id="Line_56" data-name="Line 56" y1="18" x2="18" transform="translate(347 192.792)" fill="none" stroke="#fddb72" stroke-width="4"/>
+    <rect id="Rectangle_125" data-name="Rectangle 125" width="18" height="18" transform="translate(48 67)" fill="#fddb72"/>
+  </g>
+</svg>

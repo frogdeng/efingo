@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="322.713" height="240.079" viewBox="0 0 322.713 240.079">
+  <g id="Group_3372" data-name="Group 3372" transform="translate(-876.492 -1038.072)">
+    <g id="Group_1608" data-name="Group 1608" transform="translate(926.832 1070.071)">
+      <g id="Group_1607" data-name="Group 1607" transform="translate(0 0)">
+        <path id="Path_237" data-name="Path 237" d="M221.248,24,113.3-163.321l-.353-.353-.353-.353-.352-.353a2.446,2.446,0,0,0-3.528,1.058L.058,24v1.764a3.027,3.027,0,0,0,2.47,2.116H219.484a2.577,2.577,0,0,0,2.47-2.116C222.307,25.414,221.954,24.356,221.248,24ZM108.36-152.385V-38.792L60.383-10.922,9.583,18.359ZM12.406,22.945,62.5-5.983l48.683-28.222,98.424,57.15ZM113.652-38.792V-152.385l98.424,170.39Z" transform="translate(-0.058 164.732)" fill="#195f5f"/>
+        <g id="Group_1606" data-name="Group 1606" transform="translate(38.032 68.782)" opacity="0.503">
+          <path id="Path_238" data-name="Path 238" d="M182.064,1.929,140.436-77.215v55.122Z" transform="translate(-64.858 79.145)" fill="#ffc517"/>
+          <path id="Path_239" data-name="Path 239" d="M121.163-3.428,72.48,24.794,52.364,36.41l111.1-15.274Z" transform="translate(-48.053 65.067)" fill="#ffc517"/>
+          <path id="Path_240" data-name="Path 240" d="M117.324-22.548V-79.6L47.037,18.18,69.346,5.321Z" transform="translate(-47.037 79.6)" fill="#ffc517"/>
+        </g>
+      </g>
+    </g>
+    <text id="裝備" transform="translate(1182.205 1272.151)" fill="#195f5f" font-size="17" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600"><tspan x="-17" y="0">裝備</tspan></text>
+    <text id="經驗" transform="translate(893.492 1272.151)" fill="#195f5f" font-size="17" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600"><tspan x="-17" y="0">經驗</tspan></text>
+    <text id="難易" transform="translate(1037.017 1056.072)" fill="#195f5f" font-size="17" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600"><tspan x="-17" y="0">難易</tspan></text>
+  </g>
+</svg>

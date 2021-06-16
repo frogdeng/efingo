@@ -1,6 +1,15 @@
 
 <header class="index_menu">
-    <div class="logo"><a href="index.html"><img src="img/e-fingo_logo.svg" alt=""></a></div>
+    <div class="logo">
+        <a href="https://www.esunbank.com.tw/" class="logo_a"><img src="img/logo.svg" alt="" ></a>
+        <div class="l-l"></div>
+        <a href="index.html" class="logo_b"><img src="img/efingo_logo.svg" alt=""></a>
+
+        <!-- <a href="index.html"><img src="img/e-fingo_logo.svg" alt=""></a> -->
+
+
+
+    </div>
 	<div class="menu">
 		<ul>
 			<!-- <li><a href="index.html">首頁</a></li> -->
@@ -36,7 +45,7 @@
 			<li>
                 <a href="#">活動訊息</a>
                 <div class="drop_down">
-                    <a href="activity_news.html">最新消息 </a>
+                    <a href="activity_news.html">最新活動 </a>
                     <a href="activity_announcement.html">公告消息</a>
                     {# <a href="activity_blog.html">部落格</a> #}
                 </div>
@@ -48,14 +57,11 @@
 
 
 <script>
-    $(document).ready(function(){
-        $('.m-first').click(function(){
-            $(".m-second_bg").removeClass("show")
-            $(this).parent().find(".m-second_bg").addClass("show")
+    $('.m-first').click(function(){
+        $(".m-second_bg").removeClass("show")
+        $(this).parent().find(".m-second_bg").addClass("show")
 
-        })
-
-    });   
+    })
 </script>
 
 <!-- hamburg -->
@@ -66,7 +72,6 @@
 </div>
 
 <div class="aside ">
-    
     <ul>
         <li>
             <div class="m-first ">認識 e.Fingo +</div>
@@ -108,7 +113,7 @@
             <a href="#" class="m-first">活動訊息 + </a>
             <div class="m-second_bg">
                 <ul class="ul-second">
-                    <li><a href="activity_news.html" class="m-second">最新消息</a></li>
+                    <li><a href="activity_news.html" class="m-second">最新活動</a></li>
                     <li><a href="activity_announcement.html" class="m-second">公告消息</a></li>
                     {# <li><a href="activity_blog.html" class="m-second">部落格</a></li> #}
                 </ul>
@@ -120,4 +125,13 @@
 </div>
 </header>
 
+<script>
+
+    $('.m-first').click(function(){
+        $(this).siblings(".m-second_bg").toggleClass('show')
+        $(this).parents().siblings().find(".m-second_bg").removeClass('show')
+    })
+
+
+</script>
 

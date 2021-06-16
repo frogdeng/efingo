@@ -18,14 +18,13 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		background: #FFFBF0
-		padding-top: 
+		padding-top: 120px
 		overflow: hidden
 		h1 
 			font-size: 30px
 			color: #014343
 			line-height: 1.2
 			font-weight: 700
-			margin-bottom: 30px
 		h2 
 			font-size: 16px
 			color: #014343
@@ -100,29 +99,33 @@ $susy: (debug: (image: hide))
 .qa_top-bg
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 0 20px
 		.t_description
-			padding-left: 100px
-			margin-bottom: 30px
+			margin-left: 20px
+			margin-bottom: 10px
 		.four_card_section
-			padding: 0 50px
-			margin-bottom: 50px
+			padding: 0 0px
+			margin-bottom: 10px
 			overflow: auto
 			.icon_row
-				width: 200%
-				flex-wrap: nowrap
-				
+				width: 650px
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: center
+			
 				.icon_item
+					width: 150px
 					background: url("../img/qa_yellow_bg.svg")
 					background-size: 100%
 					background-repeat: no-repeat
 					padding-bottom: 50px
-					margin: 0 8px
-					
-					p 
+					margin: 0 5px
+					h2 
 						font-weight: 700
 					img
 						margin-bottom: 0
-						width: 90%
+						width: 80%
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		.t_description
@@ -137,13 +140,18 @@ $susy: (debug: (image: hide))
 				background-repeat: no-repeat
 				padding-bottom: 50px
 				cursor: pointer
-				p 
+				h2 
 					font-weight: 700
 				img
 					margin-bottom: 0
 					width: 90%
-					
-
+				&:hover
+					background: url("../img/qa_green_bg.svg")
+					background-size: 100% 
+					background-repeat: no-repeat
+					h2 
+						font-weight: 700
+						color: #FFF
 .qa_on
 	background: url("../img/qa_green_bg.svg") !important
 	background-size: 100% !important
@@ -224,9 +232,10 @@ $susy: (debug: (image: hide))
 				flex-direction: row
 				justify-content: center
 				align-items: center
+				
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		padding: 0 50px
+		padding: 0 90px
 		margin-bottom: 90px
 		.qa_content_item
 			border: 1px solid #014343
@@ -234,7 +243,9 @@ $susy: (debug: (image: hide))
 			padding: 0px 30px
 			margin-bottom: 30px
 			overflow: hidden
-			
+			transition: all .3s
+			&:hover
+				transform: scale(1.01)
 			.qa_title
 				display: flex
 				flex-direction: row
@@ -252,6 +263,7 @@ $susy: (debug: (image: hide))
 					color: #047B77
 					margin-left: 20px
 					transition: all .3s
+
 					
 			.qa_answer
 				margin-top: 0px
@@ -295,6 +307,10 @@ $susy: (debug: (image: hide))
 				justify-content: center
 				align-items: center
 				cursor: pointer
+				transition: all .3s
+				&:hover
+					background: #FFDA6C
+					border: 1px solid #FFDA6C
 
 
 .show_answer

@@ -4,7 +4,6 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="apple-itunes-app" content="app-id=300915900, app-argument=https://www.kkbox.com/tw/tc/index.html">
 <link rel="shortcut icon" href="img/e.Fingo_favicon.svg" />
 
 
@@ -13,102 +12,153 @@
 <title> 玉山銀行 e.Fingo </title>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content=""/>
-<meta property="og:url" content=""/>
+<meta property="og:url" content="https://www.facebook.com/esunbank/"/>
 <meta property="og:description" content="" />
-<meta property="og:image" content=""/>
+<meta property="og:image" content="img/og.png"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 
 <!--#include virtual="/event_templates/fb_appid_meta.html" -->
 
-<!-- <link href="/frontend_lib/bootstrap-grid/bootstrap-grid.css" rel="stylesheet" />
-<link href="/css/event-component.css" rel="stylesheet" media="screen">
--->
+
 
 
 <!-- 套件 CSS -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 
 <!-- 所有自訂的 CSS -->
 <link rel="stylesheet" href="css/slick.css">
 <link rel="stylesheet" href="css/slick-theme.css">
 
 <link href="css/jquery.bxslider.css" rel="stylesheet" />
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css' integrity='sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==' crossorigin='anonymous'/>
+<link href="css/all.css" rel="stylesheet" />
 
+<link href="css/magnific-popup.css" rel="stylesheet" />
 <link href="css/module.css" rel="stylesheet" />
 
 
-<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous'></script> 
-<script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
-
-
+<script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.paroller.min.js"></script>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js' integrity='sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==' crossorigin='anonymous'></script>
+<!-- for parallex -->
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.parallax-scroll.js"></script>
+
+
+<script src="js/jquery.bxslider.min.js"></script>
 
 <script src="js/ui.js"></script>
 
 
 
+
+
 </head>
 <body>
+
+    <!-- <div id="loading" class="loading">
+        <img src="img/loading.gif" alt="loading.." />
+    </div>   -->
+
+    <div class="this_is_top" id="this_is_top"></div>
     <!-- scroll down  -->
     <div class="scroll">
-        <h6>Scroll</h6>
+        <p>Scroll</p>
         <div class="l-line"></div>
     </div>
+
     {% block page %}{% endblock %}
 
+    <!-- go to top -->
+    <div class="go_top">
+        <div class="for_flex">
+            <div class="aaa">
+                <i class="fas fa-caret-left"></i> 
+                <p>TOP</p>   
+            </div>
+        </div>
+    </div>
+
 <div class="footer_wrapper">
+    <!-- footer_topwave -->
     <div class="footer_topwave">
         <img src="img/footer_bg.svg" alt="">
     </div> 
+
     <div class="footer_body">
         <div class="footer_content">
             <div class="item_row">
                 <div class="pillar">
-                    <h6>認識 e.Fingo</h6>
-                    <a href="understand_feature.html" class="link">專屬特色</a>
-                    <a href="understand_how-to-join.html" class="link">如何加入</a>
-                    <a href="understand_how-to-use.html" class="link">如何使用</a>
-                    <a href="understand_brand-story.html" class="link">品牌故事</a>
+                    <div class="footer_menu_title s_switch_on">
+                        <p>認識 e.Fingo</p> 
+                        <div class="add"><i class="fas fa-plus"></i></div>
+                        <div class="minus"><i class="fas fa-minus"></i></div>
+                    </div>
+
+                    <div class="pillar_content pillar_show">
+                        <a href="understand_feature.html" class="link">專屬特色</a>
+                        <a href="understand_how-to-join.html" class="link">如何加入</a>
+                        <a href="understand_how-to-use.html" class="link">如何使用</a>
+                        <a href="understand_brand-story.html" class="link">品牌故事</a>
+                    </div>
                 </div>
                 <div class="pillar">
-                    <h6>數位服務</h6>
-                    <a href="digital_account.html" class="link">數位帳戶</a>
-                    <a href="digital_creditcard_pay.html" class="link">信用卡／支付</a>
-                    <a href="digital_loan.html" class="link">數位貸款</a>
-                    <a href="digital_finance.html" class="link">數位理財</a>
-                    <a href="digital_exchange.html" class="link">數位外匯</a>
+                    <div class="footer_menu_title">
+                        <p>數位服務</p> 
+                        <div class="add"><i class="fas fa-plus"></i></div>
+                        <div class="minus"><i class="fas fa-minus"></i></div>
+                    </div>
+                    <div class="pillar_content">
+                        <a href="digital_account.html" class="link">數位帳戶</a>
+                        <a href="digital_creditcard_pay.html" class="link">信用卡／支付</a>
+                        <a href="digital_loan.html" class="link">數位貸款</a>
+                        <a href="digital_finance.html" class="link">數位理財</a>
+                        <a href="digital_exchange.html" class="link">數位外匯</a>
+                    </div>
                 </div>
                 <div class="pillar">
-                    <h6>e.Fingo 登山攻略</h6>
-                    <a href="mountaineer_roaming.html" class="link">步道漫遊 </a>
-                    <a href="mountaineer_cable_car_viewing.html" class="link">纜車觀景</a>
-                    <a href="mountaineer_secretpath_adventure.html" class="link">秘徑探險</a>
-                    <a href="mountaineer_rock_climbing.html" class="link">攀岩攻頂</a>
+                    <div class="footer_menu_title">
+                        <p>e.Fingo 登山攻略</p> 
+                        <div class="add"><i class="fas fa-plus"></i></div>
+                        <div class="minus"><i class="fas fa-minus"></i></div>
+                    </div>
+                    <div class="pillar_content">
+                        <a href="mountaineer_roaming.html" class="link">步道漫遊 </a>
+                        <a href="mountaineer_cable_car_viewing.html" class="link">纜車觀景</a>
+                        <a href="mountaineer_secretpath_adventure.html" class="link">秘徑探險</a>
+                        <a href="mountaineer_rock_climbing.html" class="link">攀岩攻頂</a>
+                    </div>
                 </div>
                 <div class="pillar">
-                    <h6>活動訊息</h6>
-                    <a href="activity_news.html" class="link">最新消息 </a>
-                    <a href="activity_announcement.html" class="link">公告消息</a>
-                    <a href="activity_blog.html" class="link">部落格</a>
+                    <div class="footer_menu_title">
+                        <p>活動訊息</p> 
+                        <div class="add"><i class="fas fa-plus"></i></div>
+                        <div class="minus"><i class="fas fa-minus"></i></div>
+                    </div>
+                    <div class="pillar_content">
+                        <a href="activity_news.html" class="link">最新活動 </a>
+                        <a href="activity_announcement.html" class="link">公告消息</a>
+                    </div>
 
                 </div>
                 <div class="pillar">
-                    <h6>常見問題</h6>
-                    <a href="#" class="link">會員相關</a>
-                    <a href="#" class="link">點數相關</a>
-                    <a href="#" class="link">兌換相關</a>
-                    <a href="#" class="link">申請相關</a>
+                    <div class="footer_menu_title">
+                        <p>常見問題</p> 
+                        <div class="add"><i class="fas fa-plus"></i></div>
+                        <div class="minus"><i class="fas fa-minus"></i></div>
+                    </div>
+                    <div class="pillar_content">
+                        <a href="#" class="link">會員相關</a>
+                        <a href="#" class="link">點數相關</a>
+                        <a href="#" class="link">兌換相關</a>
+                        <a href="#" class="link">申請相關</a>
+                    </div>
                 </div>
                 <div class="pillar">
-                    <h6>部落格</h6>
-                    
+                    <div class="footer_menu_title"><a href="activity_blog.html" class="link"><p>部落格</p> </a></div>
+
                 </div>
                 <div class="social_media">
                     <div class="s_link_row">
@@ -126,5 +176,62 @@
 
     </div> 
 </div>
+<script>
+    window.onload= function(){
+        $('#loading').addClass('remove');
+    };
+</script>
+<script>
+    $('.footer_menu_title').click(function(){
+        $(this).toggleClass('s_switch_on')
+        $(this).siblings().toggleClass('pillar_show')
+        $(this).parents().siblings().find(".footer_menu_title").removeClass('s_switch_on')
+        $(this).parents().siblings().find(".pillar_content").removeClass('pillar_show')
+	
+    })
+
+ 
+
+    if($(window).scrollTop() > 200){
+        $(".index_menu").addClass('index_menu_bg')
+    }else{
+        $(".index_menu").removeClass('index_menu_bg')
+    }
+
+    // scroll Animation	
+    $(window).scroll(function (event) {
+        var scrollTop = $(window).scrollTop()
+
+        if(scrollTop > 400){
+            $(".go_top").addClass('go_top_show')
+        }else{
+			$(".go_top").removeClass('go_top_show')
+        }
+
+        if(scrollTop > 100){
+            $(".index_menu").addClass('index_menu_bg')
+        }else{
+            $(".index_menu").removeClass('index_menu_bg')
+        }
+
+        if($(window).scrollTop() > $(".footer_topwave").offset().top -500){
+            $(".scroll").addClass('gone')
+        }else{
+            $(".scroll").removeClass('gone')
+        }
+
+    });
+
+    $('.go_top').click(function(){
+		// 讓捲軸移動到 0 的位置
+		var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$body.animate({
+			scrollTop: 0
+		}, 600);
+
+        return false;
+    })
+</script>
 </body>
 </html>
+ 
