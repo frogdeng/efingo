@@ -58,9 +58,24 @@
 </head>
 <body>
 
-    <!-- <div id="loading" class="loading">
-        <img src="img/loading.gif" alt="loading.." />
-    </div>   -->
+    <!-- loading -->
+    <div id="loading" class="loading">
+        <div class="loading_logo_w">
+            <div class="jump"><img src="img/jump.svg" alt=""></div>
+            <div class="loading_logo"><img src="img/loading_logo.svg" alt=""></div>
+
+            <div class="loading_bar">
+                <div class="meter">
+                    <span></span>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>  
+
 
     <div class="this_is_top" id="this_is_top"></div>
     <!-- scroll down  -->
@@ -122,19 +137,13 @@
                     
                 </div>
             </li>
-			<li><a href="qa.html">常見問題 </a></li>
-			<li><a href="#" class="join_member">加入會員 </a></li>
+			<li><a href="qa_a.html">常見問題 </a></li>
+			<li><a href="understand_how-to-join.html" class="join_member">加入會員 </a></li>
 		</ul>
 	</div>
 
 
-<script>
-    $('.m-first').click(function(){
-        $(".m-second_bg").removeClass("show")
-        $(this).parent().find(".m-second_bg").addClass("show")
 
-    })
-</script>
 
 <!-- hamburg -->
 <div class="hamburg ">
@@ -147,11 +156,11 @@
     <ul>
         <li>
             <div class="m-first ">認識 e.Fingo +</div>
-            <div class="m-second_bg show">
+            <div class="m-second_bg">
                 <ul >
                     <li><a href="understand_feature.html" class="m-second">專屬特色</a></li>
-                    <li><a href="understand_feature.html" class="m-second">如何加入</a></li>
-                    <li><a href="understand_feature.html" class="m-second">如何使用</a></li>
+                    <li><a href="understand_how-to-join.html" class="m-second">如何加入</a></li>
+                    <li><a href="understand_how-to-use.html" class="m-second">如何使用</a></li>
                     <li><a href="understand_brand-story.html" class="m-second">品牌故事</a></li>
                 </ul>
             </div>
@@ -191,9 +200,9 @@
                 </ul>
             </div>
         </li>
-        <li><a href="qa.html" class="m-first">常見問題 </a></li> 
+        <li><a href="qa_a.html" class="m-first">常見問題 </a></li> 
     </ul>
-    <a href="" class="join_member_m">加入會員</a>
+    <a href="understand_how-to-join.html" class="join_member_m">加入會員</a>
 </div>
 </header>
 
@@ -426,8 +435,12 @@
 		<h2>e.Fingo X 數位帳戶</h2>
 		<p>最新任務</p>
 	
-		<div class="slider_content">
+		<div class="slider_content ">
+			<div class="banner slider">
 				<img src="img/kv.png" alt="">
+				<img src="img/kv.png" alt="">
+				<img src="img/kv.png" alt="">
+			</div>
 		</div>
 	
 		<p>e.Fingo 會員於個人網路銀行 / 行動銀行 App 完成線上換匯 ( 買 ) ，  <br>
@@ -467,8 +480,10 @@
             三、夜間交易時間為營業日 17:00 至 23:00，提供「買/賣外幣」、「轉定存」、「幣別轉換」及「行內轉帳」服務。外幣兌換交易之匯率優惠僅包含「買/賣外幣」、「幣別轉換」、「以臺幣結購申請行    內轉帳」、「以臺幣結購申請匯出匯款」及「以臺幣結購轉外幣定存」。</p>
         <p>承作外幣存款須承擔日後兌換為新臺幣或其他外幣時可能產生之匯兌風險，於承作專案時應審慎評估。活動優惠內容以本行最新公告為準，本行保留隨時修改、變更或終止本活動之權利。</p>
         <br>
-        <h6> 謹慎理財 信用無價</h6>
-        <p> 信用卡循環利率：5.88%-15%(依本行電腦評等而訂，基準日：2015/9/1)預借現金手續費(依預借現金約定結付幣別區分)：預借現金金額x3.5%+(新臺幣100元/3.5美元/350日圓/2.5歐元) 。其他相關費率依本行網站及申請書公告</p>
+        <div class="credit_card">
+            <div class="slogen">謹慎理財 信用無價</div>
+            <div class="des">信用卡循環利率：5.88%-15%(依本行電腦評等而訂，基準日：2015/9/1)預借現金手續費(依預借現金約定結付幣別區分)：預借現金金額x3.5%+(新臺幣100元/3.5美元/350日圓/2.5歐元) 其他相關費率依本行網站及申請書公告</div>
+        </div>
 
     </div>
 </div>
@@ -476,28 +491,33 @@
 </div>
 
 <script>
-$(function(){
 
-    // scroll Animation	
-    $(window).scroll(function (event) {
-        var scrollTop = $(window).scrollTop()
+	// scroll Animation	
+	$(window).scroll(function (event) {
+		var scrollTop = $(window).scrollTop()
 
 		
 
 		if(scrollTop > $(".go_02").offset().top -300){
-            $(".c-boom_2").addClass('go_big')
-            $(".img-boom_2").addClass('go_big')
+			$(".c-boom_2").addClass('go_big')
+			$(".img-boom_2").addClass('go_big')
 
-        }else{
+		}else{
 			$(".c-boom_2").removeClass('go_big')
 			$(".img-boom_2").removeClass('go_big')
-        }
-
+		}
+	});
 	
-        
-    });
+	$(".banner").slick({
+		dots: true,
+		infinite: true,
+		arrows: true,
+		autoplay: false,
+		adaptiveHeight: true
+	})
 
-});
+
+
 </script>
 
 
@@ -580,10 +600,10 @@ $(function(){
                         <div class="minus"><i class="fas fa-minus"></i></div>
                     </div>
                     <div class="pillar_content">
-                        <a href="#" class="link">會員相關</a>
-                        <a href="#" class="link">點數相關</a>
-                        <a href="#" class="link">兌換相關</a>
-                        <a href="#" class="link">申請相關</a>
+                        <a href="qa_a.html" class="link">會員相關</a>
+                        <a href="qa_b.html" class="link">點數相關</a>
+                        <a href="qa_c.html" class="link">兌換相關</a>
+                        <a href="qa_d.html" class="link">申請相關</a>
                     </div>
                 </div>
                 <div class="pillar">
@@ -622,7 +642,7 @@ $(function(){
 
  
 
-    if($(window).scrollTop() > 200){
+    if($(window).scrollTop() > 100){
         $(".index_menu").addClass('index_menu_bg')
     }else{
         $(".index_menu").removeClass('index_menu_bg')
@@ -638,7 +658,7 @@ $(function(){
 			$(".go_top").removeClass('go_top_show')
         }
 
-        if(scrollTop > 100){
+        if(scrollTop > 20){
             $(".index_menu").addClass('index_menu_bg')
         }else{
             $(".index_menu").removeClass('index_menu_bg')

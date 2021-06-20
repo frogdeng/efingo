@@ -1,3 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="230" height="218.258" viewBox="0 0 230 218.258">
-  <path id="Intersection_5" data-name="Intersection 5" d="M855.474,380a50,50,0,0,1-50-50V183.72c88.173-14.11,164.712-20.537,230-21.977V330a50,50,0,0,1-50,50Z" transform="translate(-805.475 -161.742)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230" height="578" viewBox="0 0 230 578">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1589" data-name="Rectangle 1589" width="230" height="578" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_111" data-name="Mask Group 111" clip-path="url(#clip-path)">
+    <path id="Path_4640" data-name="Path 4640" d="M-1389.454,2485.825s409.413,128.122,788.362,26.137,522.308,1.831,544.023,31.572v281.66l-1323.819-37.064Z" transform="translate(825.454 -2226.64)" fill="#fff"/>
+  </g>
 </svg>

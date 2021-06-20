@@ -58,9 +58,24 @@
 </head>
 <body>
 
-    <!-- <div id="loading" class="loading">
-        <img src="img/loading.gif" alt="loading.." />
-    </div>   -->
+    <!-- loading -->
+    <div id="loading" class="loading">
+        <div class="loading_logo_w">
+            <div class="jump"><img src="img/jump.svg" alt=""></div>
+            <div class="loading_logo"><img src="img/loading_logo.svg" alt=""></div>
+
+            <div class="loading_bar">
+                <div class="meter">
+                    <span></span>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>  
+
 
     <div class="this_is_top" id="this_is_top"></div>
     <!-- scroll down  -->
@@ -150,10 +165,10 @@
                         <div class="minus"><i class="fas fa-minus"></i></div>
                     </div>
                     <div class="pillar_content">
-                        <a href="#" class="link">會員相關</a>
-                        <a href="#" class="link">點數相關</a>
-                        <a href="#" class="link">兌換相關</a>
-                        <a href="#" class="link">申請相關</a>
+                        <a href="qa_a.html" class="link">會員相關</a>
+                        <a href="qa_b.html" class="link">點數相關</a>
+                        <a href="qa_c.html" class="link">兌換相關</a>
+                        <a href="qa_d.html" class="link">申請相關</a>
                     </div>
                 </div>
                 <div class="pillar">
@@ -192,7 +207,7 @@
 
  
 
-    if($(window).scrollTop() > 200){
+    if($(window).scrollTop() > 100){
         $(".index_menu").addClass('index_menu_bg')
     }else{
         $(".index_menu").removeClass('index_menu_bg')
@@ -208,7 +223,7 @@
 			$(".go_top").removeClass('go_top_show')
         }
 
-        if(scrollTop > 100){
+        if(scrollTop > 20){
             $(".index_menu").addClass('index_menu_bg')
         }else{
             $(".index_menu").removeClass('index_menu_bg')

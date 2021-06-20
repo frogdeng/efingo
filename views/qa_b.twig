@@ -1,0 +1,248 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+{% block page %}
+
+{% include 'component/header.twig' %}
+
+<script>
+	$(document).ready(function(){
+
+		$(".qa_title").click(function(){
+      $(this).toggleClass('icon_animation');
+      $(this).parent().find(".qa_answer").toggleClass("show_answer")
+      $(this).parent().toggleClass('thick');
+      $(this).parent().siblings().find(".qa_answer").removeClass("show_answer")
+      $(this).parent().siblings().removeClass("thick")
+		})
+
+	});
+
+
+</script>
+
+<div class="qa_wrapper">
+{# section top #}
+	<div class="qa_top-bg">
+		<div class="t_description">
+		<h1>常見問題</h1>
+		</div>
+
+		<div class="four_card_section">
+		<div class="icon_row">
+			<a  href="qa_a.html" class="icon_item ">
+			<img src="img/qa_a01.svg" alt="">
+			<h2>會員相關</h2>
+			</a>
+
+			<a href="qa_b.html" class="icon_item qa_on">
+			<img src="img/qa_a02.svg" alt="">
+			<h2>點數相關</h2>
+			</a>
+
+			<a href="qa_c.html" class="icon_item">
+			<img src="img/qa_a03.svg" alt="">
+			<h2>兌換相關</h2>
+			</a>
+
+			<a href="qa_d.html" class="icon_item">
+			<img src="img/qa_a04.svg" alt="">
+			<h2>申請相關</h2>
+			</a>
+		</div>
+		</div>
+	</div>
+
+
+{# qa content#}
+<div class="qa_content">
+
+	<!-- qa_content_item -->
+	<div class="qa_content_item">
+		<div class="qa_title"> 
+			<p> e.Fingo點數能做什麼？  </p>  
+			<i class="fas fa-chevron-circle-down"></i>
+		</div> 
+
+		<!-- qa_answer -->
+		<div class="qa_answer">
+			<div class="top_line"></div>
+			<p> 可以兌換超過130項商品，及折抵部分金融服務手續費唷！(如外幣跨行匯款手續費折抵序號) </p> 
+		</div>
+	</div>
+	<!-- qa_content_item -->
+	<div class="qa_content_item">
+		<div class="qa_title"> 
+			<p> 該如何集點？  </p>  
+			<i class="fas fa-chevron-circle-down"></i>
+		</div> 
+
+		<!-- qa_answer -->
+		<div class="qa_answer">
+			<div class="top_line"></div>
+			<p> e.Fingo會員完成任務可獲得相對應點數，另外將不定期推出活動可累積會員點數唷！ </p> 
+		</div>
+	</div>
+	<!-- qa_content_item -->
+	<div class="qa_content_item">
+		<div class="qa_title"> 
+			<p> 什麼是e.Fingo點數？  </p>  
+			<i class="fas fa-chevron-circle-down"></i>
+		</div> 
+
+		<!-- qa_answer -->
+		<div class="qa_answer">
+			<div class="top_line"></div>
+			<p> 我們為e.Fingo會員全新打造的點數服務，點數1點等於新臺幣1元，可以從各項金融服務或活動獲得點數，並可兌換超過130項商品或折抵部分金融服務手續費，未來將持續新增獲得及使用點數的地方唷！ </p> 
+		</div>
+	</div>
+	<!-- qa_content_item -->
+	<div class="qa_content_item">
+		<div class="qa_title"> 
+			<p> e.Fingo點數有使用期限嗎？  </p>  
+			<i class="fas fa-chevron-circle-down"></i>
+		</div> 
+
+		<!-- qa_answer -->
+		<div class="qa_answer">
+			<div class="top_line"></div>
+			<p> e.Fingo點數有效期限為累積日起至獲得點數年度之隔年年底，期限屆滿後本行將自動扣除過期點數，e.Fingo點數到期後則無法兌換。 </p> 
+		</div>
+	</div>
+	<!-- qa_content_item -->
+	<div class="qa_content_item">
+		<div class="qa_title"> 
+			<p> e.Fingo點數可以送給親友嗎？  </p>  
+			<i class="fas fa-chevron-circle-down"></i>
+		</div> 
+
+		<!-- qa_answer -->
+		<div class="qa_answer">
+			<div class="top_line"></div>
+			<p> 可以，只要您的親友也是e.Fingo有效會員，就可以於e.Fingo會員專區內，透過點數「移轉」功能，將點數送給親友。 </p> 
+		</div>
+	</div>
+	<!-- qa_content_item -->
+	<div class="qa_content_item">
+		<div class="qa_title"> 
+			<p> e.Fingo點數移轉的規則與限制  </p>  
+			<i class="fas fa-chevron-circle-down"></i>
+		</div> 
+
+		<!-- qa_answer -->
+		<div class="qa_answer">
+			<div class="top_line"></div>
+			<p> 目前每筆轉出點數最低1(含)點，上限為50點，且不得有小數點；每月轉出與轉入次數上限為3次，轉出及轉入次數分別計算。 </p> 
+		</div>
+	</div>
+	<!-- qa_content_item -->
+	<div class="qa_content_item">
+		<div class="qa_title"> 
+			<p> e.Fingo點數移轉是否有贈與稅的問題？  </p>  
+			<i class="fas fa-chevron-circle-down"></i>
+		</div> 
+
+		<!-- qa_answer -->
+		<div class="qa_answer">
+			<div class="top_line"></div>
+			<p> 點數移轉視同贈與，依中華民國遺產及贈與稅法第19條規定，贈與人每年贈與總額減除扣除額及免稅額後所得之贈與淨額依稅率分級課徵贈與稅。e.Fingo點數價值以1點等同新臺幣1元計算，以此作為課稅標準。提醒您應依遺產及贈與稅法相關規定如期辦理。 </p> 
+		</div>
+	</div>
+	<!-- qa_content_item -->
+	<div class="qa_content_item">
+		<div class="qa_title"> 
+			<p> 誰可以獲得e.Fingo點數?  </p>  
+			<i class="fas fa-chevron-circle-down"></i>
+		</div> 
+
+		<!-- qa_answer -->
+		<div class="qa_answer">
+			<div class="top_line"></div>
+			<p> e.Fingo點數為e.Fingo會員之專屬權益，故僅有e.Fingo會員可以獲得喔！ </p> 
+		</div>
+	</div>
+	<!-- qa_content_item -->
+	<div class="qa_content_item">
+		<div class="qa_title"> 
+			<p> 我先完成給點交易再加入會員可以拿到嗎？  </p>  
+			<i class="fas fa-chevron-circle-down"></i>
+		</div> 
+
+		<!-- qa_answer -->
+		<div class="qa_answer">
+			<div class="top_line"></div>
+			<p> 需要先加入會員才可以獲得點數喔，所以先完成點數再加入會員並不能獲得點數！ </p> 
+		</div>
+	</div>
+	<!-- qa_content_item -->
+	<div class="qa_content_item">
+		<div class="qa_title"> 
+			<p> e.Fingo點數專區在哪裡？  </p>  
+			<i class="fas fa-chevron-circle-down"></i>
+		</div> 
+
+		<!-- qa_answer -->
+		<div class="qa_answer">
+			<div class="top_line"></div>
+			<p> 登入玉山行動銀行App→進入e.Fingo會員專區，就可以看到【點數專區】囉！即可體驗點數各項服務，包含查詢加扣點紀錄、兌換商品及移轉點數給親友哦！ </p> 
+		</div>
+	</div>
+	<!-- qa_content_item -->
+	<div class="qa_content_item">
+		<div class="qa_title"> 
+			<p> e.Fingo點數使用明細可以在哪邊查詢?  </p>  
+			<i class="fas fa-chevron-circle-down"></i>
+		</div> 
+
+		<!-- qa_answer -->
+		<div class="qa_answer">
+			<div class="top_line"></div>
+			<p> 登入玉山行動銀行App→進入e.Fingo會員專區，點選點數專區中的【查詢】按鈕，就可以查到累點及扣點紀錄囉！ </p> 
+		</div>
+	</div>
+
+
+
+
+
+    <!-- <div class="pagination">
+		<a href="qa.html" class="num page_on">1</a>
+		<a href="qa_2.html" class="num">2</a>
+		<a href="qa_2.html" class="num">3</a>
+		<a href="qa_2.html" class="num">4</a>
+		<a href="qa_2.html" class="num">5</a>
+		<a href="qa_2.html" class="num">6</a>
+		<a href="qa_2.html" class="num">7</a>
+		<a href="qa_2.html" class="num">8</a>
+    </div> -->
+
+</div>
+
+<div class="customer_service_bg">
+<div class="customer_service">
+	<img src="img/customer_service.svg" alt="">
+	<p>找不到你想問的問題嗎？ <br>
+	讓智能客服幫你解答吧 !</p>
+	<div class="btn_row">
+	<a href="https://robot.esunbank.com.tw/?eservice=eFingo&qaCategory=general" class="go_btn">找智能客服</a>
+	</div>
+</div>
+</div>
+
+
+<div class="for_height"></div>
+</div>
+
+
+
+
+{# notice #}
+<div class="notice_section_top">
+    <img src="img/notice_wave.svg" alt="">
+</div>
+<div class="notice_section">
+	<div class="notice_section">
+		{% include 'component/warning_a.twig' %}
+	</div>
+</div>
+
+{% endblock %}

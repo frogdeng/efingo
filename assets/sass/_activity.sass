@@ -405,7 +405,7 @@ $susy: (debug: (image: hide))
 			flex-wrap: wrap
 			flex-direction: row
 			justify-content: space-between
-			align-items: center
+			align-items: flex-start
 			margin-bottom: 80px
 			.blog_item
 				display: block
@@ -416,14 +416,14 @@ $susy: (debug: (image: hide))
 					width: 100%
 					margin-bottom: 16px
 				h3
-					font-size: 25px
+					font-size: 23px
 				h4
 					font-size: 23px
 					font-weight: 700
 					margin-bottom: 10px
 					line-height: 1.3
 				p
-					font-size: 18px
+					font-size: 16px
 					margin-bottom: 20px
 					
 				.item_bottom
@@ -444,15 +444,15 @@ $susy: (debug: (image: hide))
 					width: 100%
 					margin-bottom: 16px
 				h3
-					font-size: 25px 
+					font-size: 23px 
 				h4
 					font-size: 23px
 					font-weight: 700
 					margin-bottom: 10px
 					line-height: 1.3
 				p
-					font-size: 18px
-					margin-bottom: 20px
+					font-size: 16px
+					margin-bottom: 10px
 					
 				.item_bottom
 					display: flex
@@ -503,6 +503,7 @@ $susy: (debug: (image: hide))
 			align-items: center
 			margin: 40px 0
 			.num
+				display: block
 				width: 38px
 				height: 38px
 				border-radius: 50%
@@ -586,6 +587,7 @@ $susy: (debug: (image: hide))
 				border-radius: 50px
 
 	
+	
 .filter_row_blog
 	width: 100%
 	overflow: auto	
@@ -598,10 +600,16 @@ $susy: (debug: (image: hide))
 		border-radius: 50px
 		padding: 8px 8px
 		margin-bottom: 50px
+		display: -webkit-box
 		overflow: auto
 		position: relative
+		white-space: nowrap
+		-webkit-overflow-scrolling: touch
+	
+		// &::-webkit-scrollbar	
+    	// 	display: none
 		.filter_row
-			width: 820px
+			// width: max-content
 			display: flex
 			flex-direction: row
 			justify-content: flex-start
@@ -619,7 +627,7 @@ $susy: (debug: (image: hide))
 					color: #014343
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		max-width: 980px !important
+		width: fit-content
 		margin-top: 50px
 		border: 1px solid #014343
 		border-radius: 50px
@@ -628,26 +636,29 @@ $susy: (debug: (image: hide))
 		overflow: auto
 		position: relative
 		.filter_row
-			width: 1000px
+			width: fit-content
 			display: flex
 			flex-direction: row
 			justify-content: center
 			align-items: center
-		a 
-			display: block
-			margin-right: 10px
-			padding: 10px 20px
-			font-size: 16px
-			color: #FFF
-			font-weight: 600
-			transition: all .3s
-			&:nth-last-child(1)
-				margin: 0
-			h2 
-				color: #014343
-			&:hover
-				background: #FFF4CB
-				border-radius: 50px
+			a 
+				display: block
+				width: fit-content
+				margin-right: 10px
+				padding: 10px 30px
+				font-size: 16px
+				color: #FFF
+				font-weight: 600
+				transition: all .3s
+				&:nth-last-child(1)
+					margin: 0
+				h2 
+					color: #014343
+				&:hover
+					background: #FFF4CB
+					border-radius: 50px
+					color: #FFF
+				
 
 	
 
@@ -661,6 +672,16 @@ $susy: (debug: (image: hide))
 	border-radius: 50px
 	h2 
 		color: #FFF !important
+	&:hover
+		background: #014343 !important
+		padding: 10px 30px !important
+		border-radius: 50px !important
+		h2 
+			color: #FFF !important
+
+
+
+
 
 .for_flex
 	display: flex

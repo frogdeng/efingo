@@ -20,17 +20,21 @@ $susy: (debug: (image: hide))
 .slick-dotted.slick-slider
 	margin-bottom: 0
 
-
-.main_image_wrapper
+.main_image_wrapper_m
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		width: 100%
 		margin-top: 70px
 		background: #FFFBEF
 		.main_slider
-			display: none
+			display: none !important
 			
 		.main_slider_m
+			.main
+				.slick-prev
+					display: none !important
+				.slick-next
+					display: none !important
 			.new_photo
 				width: 100%
 				position: relative
@@ -103,7 +107,18 @@ $susy: (debug: (image: hide))
 				font-size: 40px
 				color: #FFF
 				font-weight: 900
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		display: none
 
+
+
+
+	
+.main_image_wrapper
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+		height: 1px
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
@@ -345,16 +360,6 @@ $susy: (debug: (image: hide))
 
 
 
-
-
-
-
-
-
-
-
-
-
 // video_section
 .video_section
 	+susy-breakpoint($breakpoint_pad, $w_pad)
@@ -523,7 +528,7 @@ $susy: (debug: (image: hide))
 					.w-b-a
 						width: 100%
 						position: absolute
-						bottom: -5px
+						bottom: -30%
 						img 
 							display: block
 							width: 100%
@@ -618,16 +623,15 @@ $susy: (debug: (image: hide))
 				.w-b-a
 					width: 100%
 					position: absolute
-					bottom: -5px
+					bottom: -40px
 					img 
 						display: block
 						width: 100%
 				.what_is_efingo_img
-					
-					width: 95%
+					width: 100%
 					margin: 0 auto
 					margin-top: 20px
-					padding: 20px
+					padding: 0px
 					display: flex
 					flex-direction: row
 					justify-content: center
@@ -784,9 +788,9 @@ $susy: (debug: (image: hide))
 		+container
 		position: relative
 		height: 800px
-		background: url("../img/green_hill.svg") 50% 145%
-		background-size: 2500px
-		background-repeat: no-repeat
+		// // background: url("../img/green_hill.svg") 50% 145%
+		// background-size: 2500px
+		// background-repeat: no-repeat
 		.efingo_member_des
 			position: absolute
 			width: 50%
@@ -1255,7 +1259,6 @@ $susy: (debug: (image: hide))
 
 // digital_loan
 .digital_loan_index
-
 	width: 100%
 	background: #1484E3 
 	h6 
@@ -1268,6 +1271,22 @@ $susy: (debug: (image: hide))
 		line-height: 2
 	a 
 		color: #DDD !important
+	.credit_card
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: flex-start
+		margin-top: 20px
+		.slogen
+			width: 20%
+			font-size: 14px
+			font-weight: 700
+			color: #FFF !important
+			
+		.des
+			font-size: 12px
+			color: #FFF !important
+
 
 
 
@@ -1310,6 +1329,25 @@ $susy: (debug: (image: hide))
 				margin-bottom: 5px
 			a 
 				color: #DDD
+			.credit_card
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: flex-start
+				margin-top: 20px
+				.slogen
+					width: 100%
+					font-size: 14px
+					font-weight: 700
+					color: #014343
+					margin-bottom: 10px
+					text-align: center
+					
+				.des
+					font-size: 12px
+					color: #014343
+
+
 				
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
@@ -1332,6 +1370,7 @@ $susy: (debug: (image: hide))
 				margin-bottom: 5px
 			a 
 				color: #FFC517
+
 		.d-text_page
 			padding: 0 80px
 			padding-bottom: 150px
@@ -1347,6 +1386,22 @@ $susy: (debug: (image: hide))
 				margin-bottom: 5px
 			a 
 				color: #014343
+			.credit_card
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: flex-start
+				padding-top: 20px
+				.slogen
+					width: 20%
+					font-size: 14px
+					font-weight: 700
+					color: #014343
+					
+				.des
+					font-size: 12px
+					color: #014343
+
 				
 
 

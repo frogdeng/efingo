@@ -1,0 +1,190 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+{% block page %}
+
+{% include 'component/header.twig' %}
+
+<script>
+	$(document).ready(function(){
+
+		$(".qa_title").click(function(){
+      $(this).toggleClass('icon_animation');
+      $(this).parent().find(".qa_answer").toggleClass("show_answer")
+      $(this).parent().toggleClass('thick');
+      $(this).parent().siblings().find(".qa_answer").removeClass("show_answer")
+      $(this).parent().siblings().removeClass("thick")
+		})
+
+	});
+
+
+</script>
+
+<div class="qa_wrapper">
+{# section top #}
+  <div class="qa_top-bg">
+      <div class="t_description">
+        <h1>常見問題</h1>
+      </div>
+
+      <div class="four_card_section">
+        <div class="icon_row">
+          <a  href="qa_a.html" class="icon_item qa_on">
+            <img src="img/qa_a01.svg" alt="">
+            <h2>會員相關</h2>
+          </a>
+
+          <a href="qa_b.html" class="icon_item ">
+            <img src="img/qa_a02.svg" alt="">
+            <h2>點數相關</h2>
+          </a>
+
+          <a href="qa_c.html" class="icon_item">
+            <img src="img/qa_a03.svg" alt="">
+            <h2>兌換相關</h2>
+          </a>
+
+          <a href="qa_d.html" class="icon_item">
+            <img src="img/qa_a04.svg" alt="">
+            <h2>申請相關</h2>
+          </a>
+        </div>
+      </div>
+
+  </div>
+
+
+{# qa content#}
+<div class="qa_content">
+  
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> 誰可以加入e.Fingo會員？</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>加入e.Fingo 會員需具備以下 2 個條件，並透過玉山行動銀行App加入：</p> 
+      <ul>
+        <li>持有「臺幣帳戶（含數位帳戶）」</li>
+        <li>持有「玉山 U Bear 信用卡／玉山 Only 卡／玉山 Pi 拍錢包信用卡／玉山 Pi 拍兔 Debit卡」任一張指定卡片</li>
+      </ul>
+      <p>提醒您：（提醒您：1. 請將玉山行動銀行App更新至最新版本。 2.現階段僅提供本國自然人申請。）</p>
+    </div>
+  </div>
+
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> e.Fingo會員專區在哪裡？</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>您可以在玉山行動銀行App首頁最上方的介紹卡片，或點選側邊欄找到e.Fingo會員專區喔！</p> 
+      
+    </div>
+  </div>
+
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> 如果不小心刪除玉山行動銀行App，我的會員資格會被取消嗎？</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>不會喲！您的會員資格將被保留，請重新下載玉山行動銀行App，繼續參與專屬會員活動、體驗便利的數位服務吧 !</p> 
+    </div>
+  </div>
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> 什麼情形會喪失會員資格？</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>如果您未持有玉山臺幣帳戶及任一張玉山信用卡，則無法再使用e.Fingo數位會員服務。</p> 
+    </div>
+  </div>
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> 不加入e.Fingo會員會影響我的權益嗎?</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>沒加入e.Fingo會員不會影響您既有權益，但加入會員可以有更多會員專屬權益跟活動可以參加喔！</p> 
+      
+    </div>
+  </div>
+
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> e.Fingo是玉山銀行新推出的App嗎？</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>e.Fingo是玉山銀行的數位品牌，包含玉山行動銀行App、玉山Wallet App、e指系列等服務，所以e.Fingo非獨立新推出的App唷！你可以從玉山行動銀行App進入e.Fingo會員專區，體驗各項專屬服務及權益哦！</p> 
+    </div>
+  </div>
+
+    <!-- <div class="pagination">
+      <a href="qa.html" class="num page_on">1</a>
+      <a href="qa_2.html" class="num">2</a>
+      <a href="qa_2.html" class="num">3</a>
+      <a href="qa_2.html" class="num">4</a>
+      <a href="qa_2.html" class="num">5</a>
+      <a href="qa_2.html" class="num">6</a>
+      <a href="qa_2.html" class="num">7</a>
+      <a href="qa_2.html" class="num">8</a>
+    </div> -->
+
+</div>
+
+<div class="customer_service_bg">
+<div class="customer_service">
+  <img src="img/customer_service.svg" alt="">
+  <p>找不到你想問的問題嗎？ <br>
+    讓智能客服幫你解答吧 !</p>
+  <div class="btn_row">
+    <a href="https://robot.esunbank.com.tw/?eservice=eFingo&qaCategory=general" class="go_btn">找智能客服</a>
+  </div>
+</div>
+</div>
+
+
+<div class="for_height"></div>
+</div>
+
+
+
+
+{# notice #}
+<div class="notice_section_top">
+    <img src="img/notice_wave.svg" alt="">
+</div>
+<div class="notice_section">
+	<div class="notice_section">
+		{% include 'component/warning_a.twig' %}
+	</div>
+</div>
+
+{% endblock %}

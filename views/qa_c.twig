@@ -1,0 +1,143 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+{% block page %}
+
+{% include 'component/header.twig' %}
+
+<script>
+	$(document).ready(function(){
+
+		$(".qa_title").click(function(){
+      $(this).toggleClass('icon_animation');
+      $(this).parent().find(".qa_answer").toggleClass("show_answer")
+      $(this).parent().toggleClass('thick');
+      $(this).parent().siblings().find(".qa_answer").removeClass("show_answer")
+      $(this).parent().siblings().removeClass("thick")
+		})
+
+	});
+
+
+</script>
+
+<div class="qa_wrapper">
+{# section top #}
+  <div class="qa_top-bg">
+      <div class="t_description">
+        <h1>常見問題</h1>
+      </div>
+
+      <div class="four_card_section">
+        <div class="icon_row">
+          <a  href="qa_a.html" class="icon_item ">
+            <img src="img/qa_a01.svg" alt="">
+            <h2>會員相關</h2>
+          </a>
+
+          <a href="qa_b.html" class="icon_item ">
+            <img src="img/qa_a02.svg" alt="">
+            <h2>點數相關</h2>
+          </a>
+
+          <a href="qa_c.html" class="icon_item qa_on">
+            <img src="img/qa_a03.svg" alt="">
+            <h2>兌換相關</h2>
+          </a>
+
+          <a href="qa_d.html" class="icon_item">
+            <img src="img/qa_a04.svg" alt="">
+            <h2>申請相關</h2>
+          </a>
+        </div>
+      </div>
+  </div>
+
+
+{# qa content#}
+<div class="qa_content">
+  
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p>兌換完之票券可以在哪裡做查詢?</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>進入e.Fingo會員專區後點選【兌點】後，進入點數兌換專區，點選上方【我的票券】按鈕後即可查看以兌換成功之票券。票券依據使用狀態分為未使用、已使用即已過期三種狀態，您可以依據票券狀態來查詢曾經兌換的票券喔。</p> 
+    </div>
+  </div>
+
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> 兌換之票券有使用期限嗎?</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p> 有唷！票券注意事項皆會顯示商品使用期限，提醒您在兌換商品票券後要注意使用期限，以免票券過期唷！ </p> 
+    </div>
+  </div>
+
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> 誰可以使用e.Fingo點數？</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p> 只要是e.Fingo會員或曾經有招財點點數轉換為e.Fingo點數的顧客都可以使用e.Fingo點數唷！若想要累積e.Fingo點數，加入e.Fingo會員後，並完成指定任務，即可獲得相對應點數，還有不定期推出的會員活動可以累積點數喔！ </p> 
+    </div>
+  </div>
+
+
+    <!-- <div class="pagination">
+      <a href="qa.html" class="num page_on">1</a>
+      <a href="qa_2.html" class="num">2</a>
+      <a href="qa_2.html" class="num">3</a>
+      <a href="qa_2.html" class="num">4</a>
+      <a href="qa_2.html" class="num">5</a>
+      <a href="qa_2.html" class="num">6</a>
+      <a href="qa_2.html" class="num">7</a>
+      <a href="qa_2.html" class="num">8</a>
+    </div> -->
+
+</div>
+
+<div class="customer_service_bg">
+<div class="customer_service">
+  <img src="img/customer_service.svg" alt="">
+  <p>找不到你想問的問題嗎？ <br>
+    讓智能客服幫你解答吧 !</p>
+  <div class="btn_row">
+    <a href="https://robot.esunbank.com.tw/?eservice=eFingo&qaCategory=general" class="go_btn">找智能客服</a>
+  </div>
+</div>
+</div>
+
+
+<div class="for_height"></div>
+</div>
+
+
+
+
+{# notice #}
+<div class="notice_section_top">
+    <img src="img/notice_wave.svg" alt="">
+</div>
+<div class="notice_section">
+	<div class="notice_section">
+		{% include 'component/warning_a.twig' %}
+	</div>
+</div>
+
+{% endblock %}

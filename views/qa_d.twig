@@ -1,0 +1,114 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+{% block page %}
+
+{% include 'component/header.twig' %}
+
+<script>
+	$(document).ready(function(){
+
+		$(".qa_title").click(function(){
+      $(this).toggleClass('icon_animation');
+      $(this).parent().find(".qa_answer").toggleClass("show_answer")
+      $(this).parent().toggleClass('thick');
+      $(this).parent().siblings().find(".qa_answer").removeClass("show_answer")
+      $(this).parent().siblings().removeClass("thick")
+		})
+
+	});
+
+
+</script>
+
+<div class="qa_wrapper">
+{# section top #}
+    <div class="qa_top-bg">
+        <div class="t_description">
+            <h1>常見問題</h1>
+        </div>
+
+        <div class="four_card_section">
+            <div class="icon_row">
+                <a  href="qa_a.html" class="icon_item ">
+                    <img src="img/qa_a01.svg" alt="">
+                    <h2>會員相關</h2>
+                </a>
+
+                <a href="qa_b.html" class="icon_item ">
+                    <img src="img/qa_a02.svg" alt="">
+                    <h2>點數相關</h2>
+                </a>
+
+                <a href="qa_c.html" class="icon_item ">
+                    <img src="img/qa_a03.svg" alt="">
+                    <h2>兌換相關</h2>
+                </a>
+
+                <a href="qa_d.html" class="icon_item qa_on">
+                    <img src="img/qa_a04.svg" alt="">
+                    <h2>申請相關</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+{# qa content#}
+<div class="qa_content">
+  
+  <!-- qa_content_item -->
+  <div class="qa_content_item">
+    <div class="qa_title"> 
+      <p> 我是學生還無法申辦信用卡的話，要如何加入e.Fingo會員呢？</p>  
+      <i class="fas fa-chevron-circle-down"></i>
+    </div> 
+    <!-- qa_answer -->
+    <div class="qa_answer">
+      <div class="top_line"></div>
+      <p>沒關係，只要開立玉山數位存款帳戶，並選擇「玉山 Pi 拍兔簽帳金融卡」，即符合會員資格可成為e.Fingo會員唷！</p> 
+    </div>
+  </div>
+
+  
+    <!-- <div class="pagination">
+      <a href="qa.html" class="num page_on">1</a>
+      <a href="qa_2.html" class="num">2</a>
+      <a href="qa_2.html" class="num">3</a>
+      <a href="qa_2.html" class="num">4</a>
+      <a href="qa_2.html" class="num">5</a>
+      <a href="qa_2.html" class="num">6</a>
+      <a href="qa_2.html" class="num">7</a>
+      <a href="qa_2.html" class="num">8</a>
+    </div> -->
+
+</div>
+
+<div class="customer_service_bg">
+<div class="customer_service">
+  <img src="img/customer_service.svg" alt="">
+  <p>找不到你想問的問題嗎？ <br>
+    讓智能客服幫你解答吧 !</p>
+  <div class="btn_row">
+    <a href="https://robot.esunbank.com.tw/?eservice=eFingo&qaCategory=general" class="go_btn">找智能客服</a>
+  </div>
+</div>
+</div>
+
+
+<div class="for_height"></div>
+</div>
+
+
+
+
+{# notice #}
+<div class="notice_section_top">
+    <img src="img/notice_wave.svg" alt="">
+</div>
+<div class="notice_section">
+	<div class="notice_section">
+		{% include 'component/warning_a.twig' %}
+	</div>
+</div>
+
+{% endblock %}

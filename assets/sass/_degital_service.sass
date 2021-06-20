@@ -446,15 +446,26 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		display: flex
-		flex-direction: column
-		justify-content: center
+		flex-direction: row
+		justify-content: space-between
 		align-items: center
 		margin-top: 40px
 		margin-bottom: 50px
 		.go_btn
 			+yellow_btn
-			margin-right: 0
+			margin: 0 5px
 			margin-bottom: 20px
+			padding: 8px 26px
+		.go_btn_a
+			+yellow_btn
+			background: #FFF
+			border: 1px solid #014343
+			padding: 8px 26px
+			margin: 0 5px
+			margin-bottom: 20px
+
+	
+
 
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
@@ -666,10 +677,10 @@ $susy: (debug: (image: hide))
 		margin-top: -3px
 		position: relative
 		.robat
-			width: 22%
+			width: 18%
 			position: absolute
-			left: 2%
-			top: -22px
+			left: 5%
+			top: -8%
 		h2 
 			text-align: center
 		h3
@@ -693,7 +704,7 @@ $susy: (debug: (image: hide))
 				position: relative
 				.bg_circle
 					position: absolute
-					top: -3%
+					top: 3%
 					transform: scale(.3)
 					transition: all .2s
 					
@@ -757,7 +768,7 @@ $susy: (debug: (image: hide))
 				.bg_circle
 					width: 100%
 					position: absolute
-					top: 0%
+					top: -3%
 					display: flex
 					flex-direction: column
 					justify-content: center
@@ -811,13 +822,14 @@ $susy: (debug: (image: hide))
 			
 		.slider_content
 			width: 100%
-			display: flex
-			flex-direction: row
-			justify-content: center
-			align-items: center
 			margin: 30px auto
-			img 
-				width: 100%
+			margin-bottom: 50px
+			.slick-dots
+				bottom: -30px !important
+			.slick-prev
+				display: none
+			.slick-next
+				display: none
 		.btn_row
 			align-items: center
 			
@@ -830,6 +842,7 @@ $susy: (debug: (image: hide))
 			position: absolute
 			right: 10%
 			bottom: 22%
+			z-index: 800
 
 		h2
 			text-align: center
@@ -844,11 +857,41 @@ $susy: (debug: (image: hide))
 			color: #014343
 			font-size: 20px
 		.slider_content
-			display: flex
-			flex-direction: row
-			justify-content: center
-			align-items: center
-			margin: 50px
+			width: 70%
+			margin: 30px auto
+			margin-bottom: 50px
+			.slick-dots
+				bottom: -30px !important
+			.slick-prev
+				width: 69px
+				height: 69px
+				background: #190
+				left: -100px
+				z-index: 500
+				background: url(../img/btn_to_left.svg)
+				background-repeat: no-repeat
+				background-size: 100%
+				&::before
+					display: none
+				&:hover
+					background: url(../img/btn_to_left-hover.svg)
+					background-repeat: no-repeat
+					background-size: 100%
+			.slick-next
+				width: 69px
+				height: 69px
+				background: #190
+				right: -100px
+				z-index: 501
+				background: url(../img/btn_to_right.svg)
+				background-repeat: no-repeat
+				background-size: 100%
+				&::before
+					display: none
+				&:hover
+					background: url(../img/btn_to_right-hover.svg)
+					background-repeat: no-repeat
+					background-size: 100%
 			
 
 
@@ -1196,6 +1239,11 @@ $susy: (debug: (image: hide))
 					font-size: 18px
 				.btn_row
 					justify-content: flex-start
+					.go_btn
+						width: 90%
+						text-align: center
+						margin-bottom: 20px
+					
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -1401,7 +1449,6 @@ $susy: (debug: (image: hide))
 					align-items: center
 					margin: 10px 0
 					
-
 					.chip
 						border: 1px solid #014343
 						padding: 5px 20px
@@ -1409,6 +1456,7 @@ $susy: (debug: (image: hide))
 						margin: 0 10px
 						color: #014343
 						cursor: pointer
+						font-weight: 700
 
 				h6 
 					text-align: center
@@ -1437,5 +1485,11 @@ $susy: (debug: (image: hide))
 					text-align: center
 				
 
+.money_select
+	background: #014343
+	color: #FFF !important
 
+.year_select
+	background: #014343
+	color: #FFF !important
 

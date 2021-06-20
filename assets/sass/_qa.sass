@@ -194,11 +194,11 @@ $susy: (debug: (image: hide))
 			.qa_answer
 				margin-top: 0px
 				display: none
+				
 				.top_line
 					height: 1px
 					width: 100%
 					background: #014343
-					margin-bottom: 30px
 				p 
 					font-size: 16px
 					line-height: 1.6
@@ -244,8 +244,8 @@ $susy: (debug: (image: hide))
 			margin-bottom: 30px
 			overflow: hidden
 			transition: all .3s
-			&:hover
-				transform: scale(1.01)
+			
+			
 			.qa_title
 				display: flex
 				flex-direction: row
@@ -268,19 +268,21 @@ $susy: (debug: (image: hide))
 			.qa_answer
 				margin-top: 0px
 				display: none
+				margin-bottom: 30px
+				padding: 0 30px
 				.top_line
 					height: 1px
 					width: 100%
 					background: #014343
 					margin-bottom: 30px
 				p 
-					font-size: 20px
+					font-size: 16px
 					line-height: 1.6
 				ul
 					margin-left: 30px
 					margin-bottom: 30px
 					li 
-						font-size: 20px
+						font-size: 16px
 						color: #014343
 						list-style: decimal outside
 						line-height: 1.6
@@ -323,7 +325,10 @@ $susy: (debug: (image: hide))
 	border: 3px solid #014343 !important
 
 
-
+.customer_service_bg
+	background: url(../img/icon_bg.svg) top
+	background-repeat: repeat-y
+	position: relative
 .customer_service
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
@@ -332,6 +337,7 @@ $susy: (debug: (image: hide))
 		flex-direction: column
 		justify-content: center
 		align-items: center
+		
 		img 
 			display: block
 			margin-bottom: 30px
@@ -344,6 +350,7 @@ $susy: (debug: (image: hide))
 		flex-direction: column
 		justify-content: center
 		align-items: center
+	
 		img 
 			display: block
 			margin-bottom: 30px

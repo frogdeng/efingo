@@ -58,9 +58,24 @@
 </head>
 <body>
 
-    <!-- <div id="loading" class="loading">
-        <img src="img/loading.gif" alt="loading.." />
-    </div>   -->
+    <!-- loading -->
+    <div id="loading" class="loading">
+        <div class="loading_logo_w">
+            <div class="jump"><img src="img/jump.svg" alt=""></div>
+            <div class="loading_logo"><img src="img/loading_logo.svg" alt=""></div>
+
+            <div class="loading_bar">
+                <div class="meter">
+                    <span></span>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>  
+
 
     <div class="this_is_top" id="this_is_top"></div>
     <!-- scroll down  -->
@@ -122,19 +137,13 @@
                     
                 </div>
             </li>
-			<li><a href="qa.html">常見問題 </a></li>
-			<li><a href="#" class="join_member">加入會員 </a></li>
+			<li><a href="qa_a.html">常見問題 </a></li>
+			<li><a href="understand_how-to-join.html" class="join_member">加入會員 </a></li>
 		</ul>
 	</div>
 
 
-<script>
-    $('.m-first').click(function(){
-        $(".m-second_bg").removeClass("show")
-        $(this).parent().find(".m-second_bg").addClass("show")
 
-    })
-</script>
 
 <!-- hamburg -->
 <div class="hamburg ">
@@ -147,11 +156,11 @@
     <ul>
         <li>
             <div class="m-first ">認識 e.Fingo +</div>
-            <div class="m-second_bg show">
+            <div class="m-second_bg">
                 <ul >
                     <li><a href="understand_feature.html" class="m-second">專屬特色</a></li>
-                    <li><a href="understand_feature.html" class="m-second">如何加入</a></li>
-                    <li><a href="understand_feature.html" class="m-second">如何使用</a></li>
+                    <li><a href="understand_how-to-join.html" class="m-second">如何加入</a></li>
+                    <li><a href="understand_how-to-use.html" class="m-second">如何使用</a></li>
                     <li><a href="understand_brand-story.html" class="m-second">品牌故事</a></li>
                 </ul>
             </div>
@@ -191,9 +200,9 @@
                 </ul>
             </div>
         </li>
-        <li><a href="qa.html" class="m-first">常見問題 </a></li> 
+        <li><a href="qa_a.html" class="m-first">常見問題 </a></li> 
     </ul>
-    <a href="" class="join_member_m">加入會員</a>
+    <a href="understand_how-to-join.html" class="join_member_m">加入會員</a>
 </div>
 </header>
 
@@ -559,10 +568,10 @@
                         <div class="minus"><i class="fas fa-minus"></i></div>
                     </div>
                     <div class="pillar_content">
-                        <a href="#" class="link">會員相關</a>
-                        <a href="#" class="link">點數相關</a>
-                        <a href="#" class="link">兌換相關</a>
-                        <a href="#" class="link">申請相關</a>
+                        <a href="qa_a.html" class="link">會員相關</a>
+                        <a href="qa_b.html" class="link">點數相關</a>
+                        <a href="qa_c.html" class="link">兌換相關</a>
+                        <a href="qa_d.html" class="link">申請相關</a>
                     </div>
                 </div>
                 <div class="pillar">
@@ -601,7 +610,7 @@
 
  
 
-    if($(window).scrollTop() > 200){
+    if($(window).scrollTop() > 100){
         $(".index_menu").addClass('index_menu_bg')
     }else{
         $(".index_menu").removeClass('index_menu_bg')
@@ -617,7 +626,7 @@
 			$(".go_top").removeClass('go_top_show')
         }
 
-        if(scrollTop > 100){
+        if(scrollTop > 20){
             $(".index_menu").addClass('index_menu_bg')
         }else{
             $(".index_menu").removeClass('index_menu_bg')

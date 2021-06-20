@@ -58,9 +58,24 @@
 </head>
 <body>
 
-    <!-- <div id="loading" class="loading">
-        <img src="img/loading.gif" alt="loading.." />
-    </div>   -->
+    <!-- loading -->
+    <div id="loading" class="loading">
+        <div class="loading_logo_w">
+            <div class="jump"><img src="img/jump.svg" alt=""></div>
+            <div class="loading_logo"><img src="img/loading_logo.svg" alt=""></div>
+
+            <div class="loading_bar">
+                <div class="meter">
+                    <span></span>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>  
+
 
     <div class="this_is_top" id="this_is_top"></div>
     <!-- scroll down  -->
@@ -122,19 +137,13 @@
                     
                 </div>
             </li>
-			<li><a href="qa.html">常見問題 </a></li>
-			<li><a href="#" class="join_member">加入會員 </a></li>
+			<li><a href="qa_a.html">常見問題 </a></li>
+			<li><a href="understand_how-to-join.html" class="join_member">加入會員 </a></li>
 		</ul>
 	</div>
 
 
-<script>
-    $('.m-first').click(function(){
-        $(".m-second_bg").removeClass("show")
-        $(this).parent().find(".m-second_bg").addClass("show")
 
-    })
-</script>
 
 <!-- hamburg -->
 <div class="hamburg ">
@@ -147,11 +156,11 @@
     <ul>
         <li>
             <div class="m-first ">認識 e.Fingo +</div>
-            <div class="m-second_bg show">
+            <div class="m-second_bg">
                 <ul >
                     <li><a href="understand_feature.html" class="m-second">專屬特色</a></li>
-                    <li><a href="understand_feature.html" class="m-second">如何加入</a></li>
-                    <li><a href="understand_feature.html" class="m-second">如何使用</a></li>
+                    <li><a href="understand_how-to-join.html" class="m-second">如何加入</a></li>
+                    <li><a href="understand_how-to-use.html" class="m-second">如何使用</a></li>
                     <li><a href="understand_brand-story.html" class="m-second">品牌故事</a></li>
                 </ul>
             </div>
@@ -191,9 +200,9 @@
                 </ul>
             </div>
         </li>
-        <li><a href="qa.html" class="m-first">常見問題 </a></li> 
+        <li><a href="qa_a.html" class="m-first">常見問題 </a></li> 
     </ul>
-    <a href="" class="join_member_m">加入會員</a>
+    <a href="understand_how-to-join.html" class="join_member_m">加入會員</a>
 </div>
 </header>
 
@@ -389,7 +398,8 @@
 
 
 <!-- lightbox 1 -->
-<div id="js-open-notice-01" class="notice-popup_text mfp-hide">
+<!-- mfp-hide -->
+<div id="js-open-notice-01" class="notice-popup_text ">
 	<div class="notice-popup_content">
 			<div class="digital-lightbox">
 				<div class="robat">
@@ -402,10 +412,10 @@
 							<p>STEP 1 </p>
 							<h6>點選需要的資金額度？</h6>
 							<div class="btn_row">
-								<div class="chip">10 萬</div>
-								<div class="chip">50 萬</div>
-								<div class="chip">100 萬</div>
-								<div class="chip">150 萬</div>
+								<div class="chip money" value="10">10 萬</div>
+								<div class="chip money money_select" value="50">50 萬</div>
+								<div class="chip money" value="100">100 萬</div>
+								<div class="chip money" value="150">150 萬</div>
 							</div>
 						</div>
 					</div>
@@ -414,16 +424,16 @@
 							<p>STEP 2 </p>
 							<h6>選擇無壓力的還款期限？</h6>
 							<div class="btn_row">
-								<div class="chip">1 年</div>
-								<div class="chip">3 年</div>
-								<div class="chip">5 年</div>
+								<div class="chip year" value="1">1 年</div>
+								<div class="chip year year_select" value="3">3 年</div>
+								<div class="chip year" value="5">5 年</div>
 				
 							</div>
 						</div>
 					</div>
 					<div class="summary">
 						<div class="total">
-							<p style="font-size: 25px">月付約 14,000 元</p>
+							<p style="font-size: 25px">月付約 <span class="money_pay">0</span> 元</p>
 							<p>預設利率 2.68 %</p>
 					</div>
 					<div class="btn_row">
@@ -431,16 +441,73 @@
 						" class="go_btn">立即補足，資金缺口</a>
 				</div>
 					</div>
-
-
-
-					
 			</div>
 	</div>
 </div>
 
 <script>
+	var moeny = 0
+	var year = 0
 
+	
+	$('.money').click(function(){
+		$(this).addClass('money_select').siblings().removeClass('money_select')
+	})
+	$('.year').click(function(){
+		$(this).addClass('year_select').siblings().removeClass('year_select')
+	})
+
+	$('.money').each(function(index, item) {
+		if($(this).hasClass("money_select")){
+			$(this).attr('value')
+		}
+		
+	});
+
+	moeny = $('.money_select').attr('value')
+	year = $('.year_select').attr('value')
+	console.log(moeny, year)
+
+
+	if(moeny == 10 && year == 1) {
+		$('.money_pay').html("8,455")
+	}else if(moeny == 10 && year == 3){
+		$('.money_pay').html("2,894")
+	}else if(moeny == 10 && year == 5){
+		$('.money_pay').html("1,783")
+	}else if(moeny == 10 && year == 7){
+		$('.money_pay').html("1,307")
+	}else if(moeny == 50 && year == 1){
+		$('.money_pay').html("42,274")
+	}else if(moeny == 50 && year == 3){
+		$('.money_pay').html("14,470")
+	}else if(moeny == 50 && year == 5){
+		$('.money_pay').html("8,913")
+	}else if(moeny == 50 && year == 7){
+		$('.money_pay').html("6,535")
+	}else if(moeny == 100 && year == 1){
+		$('.money_pay').html("84,548")
+	}else if(moeny == 100 && year == 3){
+		$('.money_pay').html("28,940")
+	}else if(moeny == 100 && year == 5){
+		$('.money_pay').html("17,827")
+	}else if(moeny == 100 && year == 7){
+		$('.money_pay').html("13,070")
+	}else if(moeny == 150 && year == 1){
+		$('.money_pay').html("126,822")
+	}else if(moeny == 150 && year == 3){
+		$('.money_pay').html("43,411")
+	}else if(moeny == 150 && year == 5){
+		$('.money_pay').html("26,740")
+	}else if(moeny == 150 && year == 7){
+		$('.money_pay').html("19,604")
+	}
+
+	//$('.money_pay').html(result)
+</script>
+
+
+<script>
 	$('.js-open-notice-01').magnificPopup({
 		items: {
 				src: '#js-open-notice-01',
@@ -561,10 +628,10 @@
                         <div class="minus"><i class="fas fa-minus"></i></div>
                     </div>
                     <div class="pillar_content">
-                        <a href="#" class="link">會員相關</a>
-                        <a href="#" class="link">點數相關</a>
-                        <a href="#" class="link">兌換相關</a>
-                        <a href="#" class="link">申請相關</a>
+                        <a href="qa_a.html" class="link">會員相關</a>
+                        <a href="qa_b.html" class="link">點數相關</a>
+                        <a href="qa_c.html" class="link">兌換相關</a>
+                        <a href="qa_d.html" class="link">申請相關</a>
                     </div>
                 </div>
                 <div class="pillar">
@@ -603,7 +670,7 @@
 
  
 
-    if($(window).scrollTop() > 200){
+    if($(window).scrollTop() > 100){
         $(".index_menu").addClass('index_menu_bg')
     }else{
         $(".index_menu").removeClass('index_menu_bg')
@@ -619,7 +686,7 @@
 			$(".go_top").removeClass('go_top_show')
         }
 
-        if(scrollTop > 100){
+        if(scrollTop > 20){
             $(".index_menu").addClass('index_menu_bg')
         }else{
             $(".index_menu").removeClass('index_menu_bg')

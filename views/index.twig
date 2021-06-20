@@ -1,5 +1,5 @@
 {# index.twig #}
-{% extends "/_template/layout.twig" %}
+{% extends "/_template/layout_index.twig" %}
 {% block page %}
 
 {% include 'component/header.twig' %}
@@ -19,9 +19,7 @@
 
 
 
-
-<div class="main_image_wrapper" id="skrollr-body" >
-    
+<div class="main_image_wrapper_m">
     <!-- mobile   -->
     <div class="main_slider_m">
 		<section class="main slider">
@@ -29,7 +27,7 @@
 			<div class="new_photo">
                 <div class="main_des_a">
                     <h1>
-                        <img src="img/efingo_logo.svg" alt="">
+                        <img src="img/main_logo.svg" alt="">
                         數位金融 
                     </h1>
                     <span>Keep Going, <br> Keep Smiling </span>
@@ -58,13 +56,15 @@
 
 		</section>
 	</div>
+</div>
 
+<div class="main_image_wrapper">
     <!-- desktop   -->
 	<div class="main_slider">
 		<section class="main slider">
             <!-- 1 -->
 			<div class="new_photo">
-                <div class="img_a mountain" data-0="transform: scale(1)" data-800="transform: scale(1.4)">
+                <div class="img_a mountain" data-0-top="transform: scale(1)" data-800="transform: scale(1.4)">
                     <img src="img/index_mountain.svg" alt="">
                 </div>
                 <div class="img_b"><img src="img/index_wave.svg" alt=""></div>
@@ -79,7 +79,7 @@
                 <div class="main_des_a">
 
                     <h1>
-                        <img src="img/efingo_logo.svg" alt="">
+                        <img src="img/main_logo.svg" alt="">
                         數位金融 
                     </h1>
                     <span>Keep Going, <br> Keep Smiling </span>
@@ -115,8 +115,7 @@
 
 
 
-<div class="for_parallex">
-
+<div class="">
 
 {# video section #}
 <div class="video_section">
@@ -262,12 +261,7 @@
 </div>
 
 
-
-
-
 {# efingo_activity #}
-
-
 
 <div class="efingo_activity">
     <!-- svg animation -->
@@ -281,7 +275,7 @@
         <div class="cloud_w_left"><img src="img/cloud_w_left.svg" alt=""></div>
         <div class="cloud_w_right"><img src="img/cloud_w_right.svg" alt=""></div>
         
-        <section class="main slider activity">
+        <section class="main slider">
             <!-- 1 -->
             <div class="slide_row">
                 <div class="efingo_activity_des for_order_a">
@@ -291,7 +285,7 @@
                         月月抽 iPhone 12 Pro 128G、e.Fingo 點數 200 點。現在加入 e.Fingo 會員，馬上獲得 1 次抽獎機會喔！ </p>
                     <div class="link_row">
                         <a href="#" class="seemore">了解更多</a>
-                        <a href="#" class="notice js-open-notice-index">注意事項  <i class="fas fa-plus"></i></a>
+                        <!-- <a href="#" class="notice js-open-notice-index">注意事項  <i class="fas fa-plus"></i></a> -->
                     </div>
                 </div>
                 <div class="mobile_circle_bg for_order_b">
@@ -310,7 +304,7 @@
                         月月抽 iPhone 12 Pro 128G、e.Fingo 點數 200 點。現在加入 e.Fingo 會員，馬上獲得 1 次抽獎機會喔！ </p>
                     <div class="link_row">
                         <a href="#" class="seemore">了解更多</a>
-                        <a href="#" class="notice js-open-notice-index">注意事項  <i class="fas fa-plus"></i></a>
+                        <!-- <a href="#" class="notice js-open-notice-index">注意事項  <i class="fas fa-plus"></i></a> -->
                     </div>
                 </div>
                 <div class="mobile_circle_bg for_order_b">
@@ -433,6 +427,11 @@
     </div>
 </div>
 </div>
+
+
+
+
+
 <script>
     $(function(){
         $('.js-open-video-index').magnificPopup({
@@ -475,10 +474,12 @@
     })
 </script>
 <script type="text/javascript" src="js/skrollr.stylesheets.js"></script>
-<script type="text/javascript" src="js/skrollr.js"></script>
-<script type="text/javascript">
-    var s = skrollr.init();
-</script>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+<!-- <script type="text/javascript">
+    var s=skrollr.init({
+        mobileDeceleration:0.01
+    });
+</script> -->
 <!-- <script>
     $('.main_image_wrapper').paroller({
         factor: -0.2,
@@ -492,12 +493,12 @@
         direction: 'vertical'
     });
 
-    $('.for_parallex').paroller({
+    $('.').paroller({
         factor: -0.2,
         type: 'foreground',
         direction: 'vertical'
     });
 
-
+    
 </script> -->
 {% endblock %}

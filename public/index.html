@@ -56,11 +56,26 @@
 
 
 </head>
-<body>
+<body id="skrollr-body">
 
-    <!-- <div id="loading" class="loading">
-        <img src="img/loading.gif" alt="loading.." />
-    </div>   -->
+    <!-- loading -->
+    <div id="loading" class="loading">
+        <div class="loading_logo_w">
+            <div class="jump"><img src="img/jump.svg" alt=""></div>
+            <div class="loading_logo"><img src="img/loading_logo.svg" alt=""></div>
+
+            <div class="loading_bar">
+                <div class="meter">
+                    <span></span>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>  
+
 
     <div class="this_is_top" id="this_is_top"></div>
     <!-- scroll down  -->
@@ -122,19 +137,13 @@
                     
                 </div>
             </li>
-			<li><a href="qa.html">常見問題 </a></li>
-			<li><a href="#" class="join_member">加入會員 </a></li>
+			<li><a href="qa_a.html">常見問題 </a></li>
+			<li><a href="understand_how-to-join.html" class="join_member">加入會員 </a></li>
 		</ul>
 	</div>
 
 
-<script>
-    $('.m-first').click(function(){
-        $(".m-second_bg").removeClass("show")
-        $(this).parent().find(".m-second_bg").addClass("show")
 
-    })
-</script>
 
 <!-- hamburg -->
 <div class="hamburg ">
@@ -147,11 +156,11 @@
     <ul>
         <li>
             <div class="m-first ">認識 e.Fingo +</div>
-            <div class="m-second_bg show">
+            <div class="m-second_bg">
                 <ul >
                     <li><a href="understand_feature.html" class="m-second">專屬特色</a></li>
-                    <li><a href="understand_feature.html" class="m-second">如何加入</a></li>
-                    <li><a href="understand_feature.html" class="m-second">如何使用</a></li>
+                    <li><a href="understand_how-to-join.html" class="m-second">如何加入</a></li>
+                    <li><a href="understand_how-to-use.html" class="m-second">如何使用</a></li>
                     <li><a href="understand_brand-story.html" class="m-second">品牌故事</a></li>
                 </ul>
             </div>
@@ -191,9 +200,9 @@
                 </ul>
             </div>
         </li>
-        <li><a href="qa.html" class="m-first">常見問題 </a></li> 
+        <li><a href="qa_a.html" class="m-first">常見問題 </a></li> 
     </ul>
-    <a href="" class="join_member_m">加入會員</a>
+    <a href="understand_how-to-join.html" class="join_member_m">加入會員</a>
 </div>
 </header>
 
@@ -223,9 +232,7 @@
 
 
 
-
-<div class="main_image_wrapper" id="skrollr-body" >
-    
+<div class="main_image_wrapper_m">
     <!-- mobile   -->
     <div class="main_slider_m">
 		<section class="main slider">
@@ -233,7 +240,7 @@
 			<div class="new_photo">
                 <div class="main_des_a">
                     <h1>
-                        <img src="img/efingo_logo.svg" alt="">
+                        <img src="img/main_logo.svg" alt="">
                         數位金融 
                     </h1>
                     <span>Keep Going, <br> Keep Smiling </span>
@@ -262,13 +269,15 @@
 
 		</section>
 	</div>
+</div>
 
+<div class="main_image_wrapper">
     <!-- desktop   -->
 	<div class="main_slider">
 		<section class="main slider">
             <!-- 1 -->
 			<div class="new_photo">
-                <div class="img_a mountain" data-0="transform: scale(1)" data-800="transform: scale(1.4)">
+                <div class="img_a mountain" data-0-top="transform: scale(1)" data-800="transform: scale(1.4)">
                     <img src="img/index_mountain.svg" alt="">
                 </div>
                 <div class="img_b"><img src="img/index_wave.svg" alt=""></div>
@@ -283,7 +292,7 @@
                 <div class="main_des_a">
 
                     <h1>
-                        <img src="img/efingo_logo.svg" alt="">
+                        <img src="img/main_logo.svg" alt="">
                         數位金融 
                     </h1>
                     <span>Keep Going, <br> Keep Smiling </span>
@@ -319,8 +328,7 @@
 
 
 
-<div class="for_parallex">
-
+<div class="">
 
 
 <div class="video_section">
@@ -468,11 +476,6 @@
 
 
 
-
-
-
-
-
 <div class="efingo_activity">
     <!-- svg animation -->
     <div class="svg_curve_line_c">
@@ -485,7 +488,7 @@
         <div class="cloud_w_left"><img src="img/cloud_w_left.svg" alt=""></div>
         <div class="cloud_w_right"><img src="img/cloud_w_right.svg" alt=""></div>
         
-        <section class="main slider activity">
+        <section class="main slider">
             <!-- 1 -->
             <div class="slide_row">
                 <div class="efingo_activity_des for_order_a">
@@ -495,7 +498,7 @@
                         月月抽 iPhone 12 Pro 128G、e.Fingo 點數 200 點。現在加入 e.Fingo 會員，馬上獲得 1 次抽獎機會喔！ </p>
                     <div class="link_row">
                         <a href="#" class="seemore">了解更多</a>
-                        <a href="#" class="notice js-open-notice-index">注意事項  <i class="fas fa-plus"></i></a>
+                        <!-- <a href="#" class="notice js-open-notice-index">注意事項  <i class="fas fa-plus"></i></a> -->
                     </div>
                 </div>
                 <div class="mobile_circle_bg for_order_b">
@@ -514,7 +517,7 @@
                         月月抽 iPhone 12 Pro 128G、e.Fingo 點數 200 點。現在加入 e.Fingo 會員，馬上獲得 1 次抽獎機會喔！ </p>
                     <div class="link_row">
                         <a href="#" class="seemore">了解更多</a>
-                        <a href="#" class="notice js-open-notice-index">注意事項  <i class="fas fa-plus"></i></a>
+                        <!-- <a href="#" class="notice js-open-notice-index">注意事項  <i class="fas fa-plus"></i></a> -->
                     </div>
                 </div>
                 <div class="mobile_circle_bg for_order_b">
@@ -596,7 +599,7 @@
 <div class="digital_loan_content">
     <div class="d-text_page">
 
-        <h6>數位貸款</h6>   
+        <p><b>數位貸款</b></p>   
         <p>   貸款總費用年百分率說明： (1)信用貸款總費用年百分率約3.67%~14.49%。貸款金額：30萬元。貸款期間：5年。貸款年利率：前3個月1.68%~2.98%，第4個月起2.98%~14.88%，貸款費用6,000元。(2)房屋貸款總費用年百分率約1.51%~2.12%起。貸款金額：200萬元。貸款期間：20年。貸款年利率：前六個月1.31%~1.48%起，第七個月起1.48%~2.08%起。各項相關費用總金額8,000元。(3)二順位貸款總費用年百分率約2.29%~10.2%起。貸款金額：50萬元，貸款期間：7年，貸款年利率：前六個月1.68%~9.88%起，第七個月起2.05%~9.88%起。各項相關費用：貸款金額的1%起。</p>
 
         <p> 本廣告揭露之年百分率係按主管機關備查之標準計算範例予以計算，實際貸款條件，仍以銀行提供之產品為準， <b>    且每一顧客實際之年百分率仍以其個別貸款產品及授信條件而有所不同。</b></p>
@@ -608,7 +611,7 @@
         <p> 實際貸款條件以本行提供之產品為準。
         <p> 承作不動產抵押貸款，須依「中央銀行對金融機構辦理不動產抵押貸款業務規定」相關規範辦理。</p>
         <br>
-        <h6><b> 共同基金投資警語</b></h6>
+        <p><b> 共同基金投資警語</b></p>
         <p> <b>  各基金經金管會核准或同意生效，惟不表示絕無風險，本行及基金經理公司以往之經理績效不保證基金之最低投資收益；本行及基金經理公司除盡善良管理人之注意義務外，不負責各基金之盈虧，亦不保證最低之收益，投資人申購前應詳閱基金公開說明書。投資基金所應承擔之相關風險及應負擔之費用(含分銷費用等)已揭露於基金公開說明書或投資人須知中，投資人可至公開資訊觀測站或境外基金資訊觀測站查閱。基金並非存款，基金投資非屬存款保險承保範圍投資人需自負盈虧。基金投資具投資風險，此一風險可能使本金發生虧損，其中可能之最大損失為全部信託本金。投資人應依其自行判斷進行投資。</b></p> 
         <p>基金ｅ指選」所提供之資訊僅供參考用途。本行當盡力提供正確之資訊，所載資料均來自或本諸我們相信可靠之來源，但對其完整性、即時性和正確性不做任何擔保，如有錯漏或疏忽，本行並不負任何法律責任。任何人因信賴此等資料而做出或改變投資決策，應審慎衡量本身之需求及投資風險，並就投資結果自行負責。未經本行許可，相關資料及訊息不得逕行抄錄、翻印或另作派發。
         <p><b>「基金ｅ指選」非屬機器人理財及投資顧問服務，而屬於輔助性功能，投資人保有自主調整及最終決定之權利，故不適用「中華民國證券投資信託暨顧問商業同業公會證券投資顧問事業以自動化工具提供證券投資顧問服務(Robo-Advisor)作業要點」</b>。顧客每次使用本服務需透過「玉山銀行基金e指選自主投資聲明書」進行意思表示確有投資理財需求，主動請求本行提供相關理財資訊。</p> 
@@ -616,7 +619,7 @@
         <h6> 定期定額投資警語</h6>
         <p>投資人因不同時間進場，將有不同之投資績效，過去之績效亦不代表未來績效之保證。</p>
         <br>
-        <h6>數位外匯</h6>
+        <p><b>數位外匯</b></p>
         <p>辦理買賣外幣時，如涉及新臺幣結匯累積臨櫃及電子化通路金額達新臺幣五十萬元以上，須以符合電子交易簽章效力方式確認申報書內容，提醒您提早準備相關憑證。行動銀行辦理買賣外幣時，如涉及新臺幣結匯累積臨櫃及電子化通路金額達新臺幣五十萬元以上，須以符合電子交易簽章效力方式確認申報書內容，提醒您提早準備相關憑證。行動銀行 APP / 個人網路銀行(手機瀏覽器版)可使用「玉山銀行 IXML 憑證」，目前僅開放個人顧客使用(申請路徑：登入玉山行動銀行 APP - 側邊選單>設定>憑證管理)。提醒您玉山銀行IXML憑證需依不同裝置申請，詳細說明與憑證申請方式請參閱電子簽章說明。</p>
         <p>個人網路銀行/行動銀行外匯交易時間：<br>
             一、外匯服務交易時間為營業日 09:00 至 17:00。<br>
@@ -624,8 +627,12 @@
             三、夜間交易時間為營業日 17:00 至 23:00，提供「買/賣外幣」、「轉定存」、「幣別轉換」及「行內轉帳」服務。外幣兌換交易之匯率優惠僅包含「買/賣外幣」、「幣別轉換」、「以臺幣結購申請行    內轉帳」、「以臺幣結購申請匯出匯款」及「以臺幣結購轉外幣定存」。</p>
         <p>承作外幣存款須承擔日後兌換為新臺幣或其他外幣時可能產生之匯兌風險，於承作專案時應審慎評估。活動優惠內容以本行最新公告為準，本行保留隨時修改、變更或終止本活動之權利。</p>
         <br>
-        <h6> 謹慎理財 信用無價</h6>
-        <p> 信用卡循環利率：5.88%-15%(依本行電腦評等而訂，基準日：2015/9/1)預借現金手續費(依預借現金約定結付幣別區分)：預借現金金額x3.5%+(新臺幣100元/3.5美元/350日圓/2.5歐元) 。其他相關費率依本行網站及申請書公告</p>
+
+
+        <div class="credit_card">
+            <div class="slogen">謹慎理財 信用無價</div>
+            <div class="des">信用卡循環利率：5.88%-15%(依本行電腦評等而訂，基準日：2015/9/1)預借現金手續費(依預借現金約定結付幣別區分)：預借現金金額x3.5%+(新臺幣100元/3.5美元/350日圓/2.5歐元) 其他相關費率依本行網站及申請書公告</div>
+        </div>
 
     </div>
 </div>
@@ -673,6 +680,11 @@
     </div>
 </div>
 </div>
+
+
+
+
+
 <script>
     $(function(){
         $('.js-open-video-index').magnificPopup({
@@ -715,10 +727,12 @@
     })
 </script>
 <script type="text/javascript" src="js/skrollr.stylesheets.js"></script>
-<script type="text/javascript" src="js/skrollr.js"></script>
-<script type="text/javascript">
-    var s = skrollr.init();
-</script>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+<!-- <script type="text/javascript">
+    var s=skrollr.init({
+        mobileDeceleration:0.01
+    });
+</script> -->
 <!-- <script>
     $('.main_image_wrapper').paroller({
         factor: -0.2,
@@ -732,13 +746,13 @@
         direction: 'vertical'
     });
 
-    $('.for_parallex').paroller({
+    $('.').paroller({
         factor: -0.2,
         type: 'foreground',
         direction: 'vertical'
     });
 
-
+    
 </script> -->
 
     <!-- go to top -->
@@ -820,10 +834,10 @@
                         <div class="minus"><i class="fas fa-minus"></i></div>
                     </div>
                     <div class="pillar_content">
-                        <a href="#" class="link">會員相關</a>
-                        <a href="#" class="link">點數相關</a>
-                        <a href="#" class="link">兌換相關</a>
-                        <a href="#" class="link">申請相關</a>
+                        <a href="qa_a.html" class="link">會員相關</a>
+                        <a href="qa_b.html" class="link">點數相關</a>
+                        <a href="qa_c.html" class="link">兌換相關</a>
+                        <a href="qa_d.html" class="link">申請相關</a>
                     </div>
                 </div>
                 <div class="pillar">
@@ -846,6 +860,11 @@
 
     </div> 
 </div>
+<script type="text/javascript">
+    var s=skrollr.init({
+        mobileDeceleration:0.01
+    });
+</script>
 <script>
     window.onload= function(){
         $('#loading').addClass('remove');
@@ -862,7 +881,7 @@
 
  
 
-    if($(window).scrollTop() > 200){
+    if($(window).scrollTop() > 50){
         $(".index_menu").addClass('index_menu_bg')
     }else{
         $(".index_menu").removeClass('index_menu_bg')
