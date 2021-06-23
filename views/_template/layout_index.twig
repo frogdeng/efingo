@@ -106,13 +106,13 @@
         <div class="footer_content">
             <div class="item_row">
                 <div class="pillar">
-                    <div class="footer_menu_title s_switch_on">
+                    <div class="footer_menu_title">
                         <p>認識 e.Fingo</p> 
                         <div class="add"><i class="fas fa-plus"></i></div>
                         <div class="minus"><i class="fas fa-minus"></i></div>
                     </div>
 
-                    <div class="pillar_content pillar_show">
+                    <div class="pillar_content">
                         <a href="understand_feature.html" class="link">專屬特色</a>
                         <a href="understand_how-to-join.html" class="link">如何加入</a>
                         <a href="understand_how-to-use.html" class="link">如何使用</a>
@@ -191,11 +191,26 @@
 
     </div> 
 </div>
+<!-- <script>
+    function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+        if (!isMobile()) {
+        //place script you don't want to run on mobile here
+        //TRY YOUR SCRIPT AS FOLLOWING WAY!!!
+        document.write('<script type="text/javascript" src="js/skrollr.min.js"></script>');
+    }
+</script> -->
+
+<script type="text/javascript" src="js/skrollr.min.js"></script>
 <script type="text/javascript">
-    var s=skrollr.init({
-        mobileDeceleration:0.01
-    });
+    if (screen.width >= 540) {
+
+        var s=skrollr.init(); 
+    }
+    
 </script>
+
 <script>
     window.onload= function(){
         $('#loading').addClass('remove');

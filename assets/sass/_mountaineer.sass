@@ -109,8 +109,8 @@ $susy: (debug: (image: hide))
 		padding: 80px 20px
 		width: 100%
 		// height: 900px
-		background: url("../img/mountain.svg") bottom 
-		background-size: 900px
+		background: url("../img/mountain.svg") -980px 320px
+		background-size: 2000px
 		background-repeat: no-repeat
 		h6 
 			font-size: 26px
@@ -124,28 +124,49 @@ $susy: (debug: (image: hide))
 				margin-bottom: 10px
 			p 
 				font-size: 18px
-		.m-img
-			position: relative
-			width: 100%
-			img 
-				display: block
-				width: 100%
-			.t_dialog
-				width: 220px
-				height: 100px
-				position: absolute
-				background: url("../img/dialog.svg")
-				background-repeat: no-repeat
-				color: #FFF
-				font-size: 30px
-				display: flex
-				flex-direction: column
-				justify-content: flex-start
-				align-items: center
-				padding-top: 15px
-				bottom: 20%
-				left: 50%
-				margin-left: -110px
+		.m-img_row
+			display: flex
+			flex-flow: wrap
+			flex-direction: row
+			justify-content: center
+			align-items: flex-start
+			margin-top: 50px
+
+			.m-img
+				position: relative
+				width: 50%
+				margin-bottom: 20px
+				img 
+					display: block
+					width: 100%
+				.t_dialog
+					// width: 120px
+					// height: 50px
+					position: absolute
+					// background: url("../img/dialog.svg")
+					// background-repeat: no-repeat
+					background: #FFF
+					color: #014343
+					font-weight: 700
+					padding: 5px 20px
+					font-size: 15px
+					border-radius: 50px
+					display: flex
+					flex-direction: row
+					justify-content: flex-start
+					align-items: center
+					bottom: 10%
+					left: 50%
+					margin-left: -60px
+					i 
+						margin-left: 10px
+
+
+
+
+
+
+
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
@@ -165,9 +186,9 @@ $susy: (debug: (image: hide))
 		width: 100%
 		height: 900px
 		padding: 80px 50px
-		background: url("../img/mountain.svg") bottom
+		background: url("../img/mountain.svg") top
 		background-repeat: no-repeat
-		background-size: 1700px
+		background-size: 3200px
 		position: relative
 		.go_btn
 			background: #FFF
@@ -210,8 +231,8 @@ $susy: (debug: (image: hide))
 			
 		.p_02_cable_car
 			position: absolute
-			right: 1%
-			top: 17%
+			right: 4%
+			top: 5%
 			display: flex
 			flex-direction: column
 			justify-content: center
@@ -285,78 +306,79 @@ $susy: (debug: (image: hide))
 			display: none
 		
 		.mountaineer_content
-			border: 3px solid #195F5F
-			border-radius: 30px
-			background: #FFFBF0
-			display: flex
-			flex-wrap: wrap
-			flex-direction: column
-			justify-content: center
-			align-items: center
-			padding: 50px 0px
-			.subject
-				display: flex
-				flex-direction: column
-				justify-content: center
-				align-items: center
-				margin-bottom: 50px
-				.subject_des
-					width: 90%
-					margin-bottom: 30px
-					h2
-						text-align: left
-					p 
-						text-align: left
-				.subject_radar
-					width: 100%
-					display: flex
-					flex-direction: row
-					justify-content: center
-					align-items: center
-			.equipment_package
-				width: 100%
-				.e-title
-					background: #FCF6E0
-					padding: 10px
-					text-align: center
-					font-size: 35px
-					color: #014343
-					font-weight: 600
-					border-radius: 50px
-					margin-bottom: 50px
-				.equipment_package_row
-					display: flex
-					flex-wrap: wrap
-					flex-direction: column
-					justify-content: flex-start
-					align-items: center
-					.equipment_package_item
-						width: 100%
-						display: flex
-						flex-direction: column
-						justify-content: flex-start
-						align-items: flex-start
-						margin-bottom: 50px
-						.e_img
-							width: 100%
-							display: flex
-							flex-direction: row
-							justify-content: center
-							align-items: flex-start
-							margin-bottom: 20px
-							img 
-								display: block
-								width: 60%
-						.e_des
-							width: 100%
-							padding: 0 30px
-							h4 
-								font-size: 20px
-								text-align: left
-								margin-bottom: 10px
-							p 
-								font-size: 14px
-								text-align: left
+			display: none
+			// border: 3px solid #195F5F
+			// border-radius: 30px
+			// background: #FFFBF0
+			// display: flex
+			// flex-wrap: wrap
+			// flex-direction: column
+			// justify-content: center
+			// align-items: center
+			// padding: 50px 0px
+			// .subject
+			// 	display: flex
+			// 	flex-direction: column
+			// 	justify-content: center
+			// 	align-items: center
+			// 	margin-bottom: 50px
+			// 	.subject_des
+			// 		width: 90%
+			// 		margin-bottom: 30px
+			// 		h2
+			// 			text-align: left
+			// 		p 
+			// 			text-align: left
+			// 	.subject_radar
+			// 		width: 100%
+			// 		display: flex
+			// 		flex-direction: row
+			// 		justify-content: center
+			// 		align-items: center
+			// .equipment_package
+			// 	width: 100%
+			// 	.e-title
+			// 		background: #FCF6E0
+			// 		padding: 10px
+			// 		text-align: center
+			// 		font-size: 35px
+			// 		color: #014343
+			// 		font-weight: 600
+			// 		border-radius: 50px
+			// 		margin-bottom: 50px
+			// 	.equipment_package_row
+			// 		display: flex
+			// 		flex-wrap: wrap
+			// 		flex-direction: column
+			// 		justify-content: flex-start
+			// 		align-items: center
+			// 		.equipment_package_item
+			// 			width: 100%
+			// 			display: flex
+			// 			flex-direction: column
+			// 			justify-content: flex-start
+			// 			align-items: flex-start
+			// 			margin-bottom: 50px
+			// 			.e_img
+			// 				width: 100%
+			// 				display: flex
+			// 				flex-direction: row
+			// 				justify-content: center
+			// 				align-items: flex-start
+			// 				margin-bottom: 20px
+			// 				img 
+			// 					display: block
+			// 					width: 60%
+			// 			.e_des
+			// 				width: 100%
+			// 				padding: 0 30px
+			// 				h4 
+			// 					font-size: 20px
+			// 					text-align: left
+			// 					margin-bottom: 10px
+			// 				p 
+			// 					font-size: 14px
+			// 					text-align: left
 		
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -453,7 +475,211 @@ $susy: (debug: (image: hide))
 								font-size: 16px
 								text-align: left
 
-	
+
+
+.mountain-popup
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		position: relative
+		max-width: 950px
+		padding: 20px 0
+		margin: 0 auto
+		background: #FFF
+		border-radius: 50px
+		padding: 50px 20px
+		.mobile_mountain_wrapper
+			background: #FFF
+			padding-right: 10px
+			height: 60vh
+			overflow: auto
+			.mountaineer_content
+				// border: 3px solid #195F5F
+				border-radius: 30px
+				// background: #FFFBF0
+				display: flex
+				flex-wrap: wrap
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				padding: 10px 0px
+				.subject
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					margin-bottom: 50px
+					.subject_des
+						width: 90%
+						margin-bottom: 30px
+						h2
+							font-size: 25px
+							color: #014343
+							line-height: 1.3
+							font-weight: 600
+							margin-bottom: 10px
+						p
+							font-size: 16px
+							color: #014343
+							line-height: 1.5
+							font-weight: 500
+							text-align: left
+					.subject_radar
+						width: 100%
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+				.equipment_package
+					width: 100%
+					.e-title
+						background: #FCF6E0
+						padding: 10px
+						text-align: center
+						font-size: 35px
+						color: #014343
+						font-weight: 600
+						border-radius: 50px
+						margin-bottom: 50px
+					.equipment_package_row
+						display: flex
+						flex-wrap: wrap
+						flex-direction: column
+						justify-content: flex-start
+						align-items: center
+						.equipment_package_item
+							width: 100%
+							display: flex
+							flex-direction: column
+							justify-content: flex-start
+							align-items: flex-start
+							margin-bottom: 50px
+							.e_img
+								width: 100%
+								display: flex
+								flex-direction: row
+								justify-content: center
+								align-items: flex-start
+								margin-bottom: 20px
+								img 
+									display: block
+									width: 60%
+							.e_des
+								width: 100%
+								padding: 0 0px
+								h4 
+									font-size: 20px
+									text-align: left
+									margin-bottom: 10px
+									color: #014343
+									font-weight: 700
+								p 
+									font-size: 14px
+									text-align: left
+									color: #014343
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		position: relative
+		max-width: 950px
+		padding: 20px 0
+		margin: 0 auto
+		background: #FFF
+		border-radius: 50px
+		padding: 50px 20px
+		.mobile_mountain_wrapper
+			background: #FFF
+			padding-right: 10px
+			height: 70vh
+			overflow: auto
+			.mountaineer_content
+				// border: 3px solid #195F5F
+				border-radius: 30px
+				// background: #FFFBF0
+				display: flex
+				flex-wrap: wrap
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				padding: 10px 0px
+				.subject
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					margin-bottom: 50px
+					.subject_des
+						width: 90%
+						margin-bottom: 30px
+						h2
+							font-size: 25px
+							color: #014343
+							line-height: 1.3
+							font-weight: 600
+							margin-bottom: 10px
+						p
+							font-size: 16px
+							color: #014343
+							line-height: 1.5
+							font-weight: 500
+							text-align: left
+					.subject_radar
+						width: 100%
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+				.equipment_package
+					width: 100%
+					.e-title
+						background: #FCF6E0
+						padding: 10px
+						text-align: center
+						font-size: 35px
+						color: #014343
+						font-weight: 600
+						border-radius: 50px
+						margin-bottom: 50px
+					.equipment_package_row
+						display: flex
+						flex-wrap: wrap
+						flex-direction: row
+						justify-content: flex-start
+						align-items: center
+						.equipment_package_item
+							width: 50%
+							display: flex
+							flex-direction: row
+							justify-content: flex-start
+							align-items: flex-start
+							margin-bottom: 50px
+							.e_img
+								width: 30%
+								display: flex
+								flex-direction: row
+								justify-content: flex-start
+								align-items: flex-start
+								img 
+									display: block
+									width: 100%
+							.e_des
+								width: 70%
+								padding: 0 30px
+								h4 
+									font-size: 20px
+									text-align: left
+									margin-bottom: 10px
+									color: #014343
+								p 
+									font-size: 16px
+									text-align: left
+									color: #014343
+
+
+
+
+
+
+
+
 
 .join_now
 	width: 100%

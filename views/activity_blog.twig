@@ -106,7 +106,7 @@
       <a href="activity_blog_inside_page.html" class="blog_item">
         <img src="img/blog_02.jpg" alt="">
         <h3>玉山證券榮獲《財訊》財富管理大獎 數位金融發展深受肯定</h3>
-        <p>經濟部與信保基金於今(24)日頒發「2021中小企業信用保證融資業務績優金融機構及授信經理人」獎，玉山銀行連續2年榮獲「信保金質獎-...</p>
+        <p>經濟部與信保基金於今(24)日頒發「2021中小企業信用保證融資業務經濟部與信保基金於今(24)日頒發「2021中小企業信用保證融資業務經濟部與信保基金於今(24)日頒發「2021中小企業信用保證融資業務經濟部與信保基金於今(24)日頒發「2021中小企業信用保證融資業務經濟部與信保基金於今(24)日頒發「2021中小企業信用保證融資業務績優金融機構及授信經理人」獎，玉山銀行連續2年榮獲「信保金質獎-...</p>
         <div class="item_bottom">
 					<div class="filter_tag">e.Fingo 會員限定</div>
 					<div class="time_tag">2O21.O5.26</div>
@@ -158,38 +158,44 @@
       </a>
       
 
-
-
 		</div>
 
 
     <!-- pagination -->
-		<div class="pagination">
-			<div class="num page_on">1</div>
-			<div class="num">2</div>
-			<div class="num">3</div>
-			<div class="num">4</div>
-			<div class="num">5</div>
-			<div class="num">6</div>
-			<div class="num">7</div>
-		</div>
-
-
-
+	<div class="pagination">
+		<a href="activity_news.html" class="num page_on">1</a>
+		<a href="activity_blog_2.html" class="num">2</a>
+		<a href="activity_blog_2.html" class="num">3</a>
+		<a href="activity_blog_2.html" class="num">4</a>
+		<a href="activity_blog_2.html" class="num">5</a>
+		<a href="activity_blog_2.html" class="num">6</a>
+		<a href="activity_blog_2.html" class="num">7</a>
+		<a href="activity_blog_2.html" class="num">8</a>
+	</div>
 	</div>
 
 <div class="for_height"></div>
 </div>
 
-	
 
 <script>
-  $(".main").slick({
-      dots: false,
-      infinite: true,
-      arrows: true,
-      autoplay: false,
-      adaptiveHeight: true
-  })
+	$(".main").slick({
+		dots: false,
+		infinite: true,
+		arrows: true,
+		autoplay: false,
+		adaptiveHeight: true
+	})
+</script>
+<script>
+	var len = 102;
+	$(".blog_item >  p").each(function(i){
+		if($(this).text().length>len){
+			$(this).attr("title",$(this).text());
+			var text=$(this).text().substring(0,len-1)+"...";
+			$(this).text(text);
+		}
+	});
+
 </script>
 {% endblock %}

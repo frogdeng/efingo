@@ -4,21 +4,7 @@
 
 {% include 'component/header.twig' %}
 
-<script>
-	$(document).ready(function(){
 
-		$(".qa_title").click(function(){
-      $(this).toggleClass('icon_animation');
-      $(this).parent().find(".qa_answer").toggleClass("show_answer")
-      $(this).parent().toggleClass('thick');
-      $(this).parent().siblings().find(".qa_answer").removeClass("show_answer")
-      $(this).parent().siblings().removeClass("thick")
-		})
-
-	});
-
-
-</script>
 
 <div class="qa_wrapper">
 {# section top #}
@@ -27,7 +13,7 @@
         <h1>常見問題</h1>
       </div>
 
-      <div class="four_card_section">
+      <div class="four_card_section scroll-pos">
         <div class="icon_row">
           <a  href="qa_a.html" class="icon_item ">
             <img src="img/qa_a01.svg" alt="">
@@ -139,5 +125,18 @@
 		{% include 'component/warning_a.twig' %}
 	</div>
 </div>
+
+
+<script>
+		$(".qa_title").click(function(){
+      $(this).toggleClass('icon_animation');
+      $(this).parent().find(".qa_answer").toggleClass("show_answer")
+      $(this).parent().toggleClass('thick');
+      $(this).parent().siblings().find(".qa_answer").removeClass("show_answer")
+      $(this).parent().siblings().removeClass("thick")
+		})
+    $('.scroll-pos').scrollLeft(250)
+
+</script>
 
 {% endblock %}

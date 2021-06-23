@@ -10,17 +10,20 @@
 
 // @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
 
-*
-	touch-action: pan-y
+// *
+// 	touch-action: auto
 	
 body
-	// background: #09CEF6
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Helvetica, Arial, sans-serif !important
+	
+	font-family:  "Helvetica Neue", Helvetica, Arial, 'Noto Sans TC', sans-serif !important
 	-webkit-font-smoothing: antialiased
-	overflow-x: hidden
+	// overflow-x: auto
 	line-height: 1.5
 	color: #000
-	// background: #ECEBE7
+	overflow-x: hidden
+	
+
+
 a
 	color: #888
 
@@ -43,7 +46,6 @@ header
 		height: 70px
 		padding: 0 0px
 		background: rgba(255,255,255,.9)
-		z-index: 200
 		border-bottom: 1px solid #eee
 		display: flex
 		flex-direction: row
@@ -531,7 +533,7 @@ header
 						text-decoration: underline
 
 			.social_media
-				width: 28%
+				width: 25%
 				height: 150px
 				display: flex
 				flex-direction: column
@@ -576,16 +578,38 @@ header
 
 
 
-.notice-popup
-	position: relative
-	max-width: 1000px
-	padding: 20px 0
-	margin: 0 auto
-	background: #000
-	iframe
-		width: 100%
-		height: 600px
 
+.notice-popup
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		position: relative
+		max-width: 1000px
+		padding: 20px 0
+		margin: 0 auto
+		background: #000
+		iframe
+			width: 100%
+			height: 400px
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		position: relative
+		max-width: 1000px
+		padding: 20px 0
+		margin: 0 auto
+		background: #000
+		iframe
+			width: 100%
+			height: 600px
+
+
+
+
+
+
+
+
+	
 
 .mfp-close-btn-in .mfp-close
 	position: absolute
@@ -597,31 +621,61 @@ header
 	right: 0px
 	top: -50px
 
-.notice-popup_text
-	position: relative
-	max-width: 950px
-	padding: 20px 0
-	margin: 0 auto
-	background: #FFF
-	border-radius: 50px
-	padding: 50px 20px
-	.notice-popup_content
-		background: #FFF
-		padding-right: 10px
-		// height: 60vh
-		overflow: auto
 
-		h6
-			font-size: 22px
-			color: #047B77
-			font-weight: 700
-			text-align: center
-			margin-bottom: 20px
-		p 
-			color: #047B77
-			font-size: 14px
-			margin-bottom: 5px
-		
+
+
+.notice-popup_text
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		position: relative
+		max-width: 950px
+		padding: 20px 0
+		margin: 0 auto
+		background: #FFF
+		border-radius: 50px
+		padding: 50px 20px
+		.notice-popup_content
+			background: #FFF
+			padding-right: 10px
+			height: 60vh
+			overflow: auto
+
+			h6
+				font-size: 22px
+				color: #047B77
+				font-weight: 700
+				text-align: center
+				margin-bottom: 20px
+			p 
+				color: #047B77
+				font-size: 14px
+				margin-bottom: 5px
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		position: relative
+		max-width: 950px
+		padding: 20px 0
+		margin: 0 auto
+		background: #FFF
+		border-radius: 50px
+		padding: 50px 20px
+		.notice-popup_content
+			background: #FFF
+			padding-right: 10px
+			height: 60vh
+			overflow: auto
+
+			h6
+				font-size: 22px
+				color: #047B77
+				font-weight: 700
+				text-align: center
+				margin-bottom: 20px
+			p 
+				color: #047B77
+				font-size: 14px
+				margin-bottom: 5px
+			
 
 
 
@@ -768,3 +822,31 @@ header
 	display: none
 
 
+
+
+
+
+
+.ggg
+	width: 300px
+	height: 300px
+	background: eee
+	position: relative
+	margin: 0 auto
+	border: 2px solid #000
+	overflow-x: auto
+	&:-webkit-scrollbar
+		width: 0px
+		background-color: transparent
+	// touch-action: pan-x !important
+	// -webkit-overflow-scrolling: touch
+	.bbb
+		position: absolute
+		width: 3000px
+		height: 200px
+		background: #188290
+		margin-left: 0
+		margin-right: 0
+		&:-webkit-scrollbar
+			width: 0px
+			background-color: transparent

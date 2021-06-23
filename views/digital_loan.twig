@@ -25,11 +25,11 @@
         </svg>
     </div>
 
-	<div class="svg_curve_line_digital_d d_position_5">
+	<!-- <div class="svg_curve_line_digital_d d_position_5">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1592.463 1389.514" class="go">
             <path id="Path_1637" data-name="Path 1637" d="M-1457,820.272s164.811,163.654,323.709,56.413-7.572-321.755,155.424-464.317,334.839-12.1,582.387-145.568S-53.265-248.708-45.258-247.834" transform="matrix(0.985, 0.174, -0.174, 0.985, 1593.858, 497.626)" fill="none" stroke="#d8c750" stroke-width=".5"/>
         </svg>
-    </div>
+    </div> -->
 
 	
 
@@ -188,7 +188,7 @@
 
 <!-- lightbox 1 -->
 <!-- mfp-hide -->
-<div id="js-open-notice-01" class="notice-popup_text ">
+<div id="js-open-notice-01" class="notice-popup_text mfp-hide">
 	<div class="notice-popup_content">
 			<div class="digital-lightbox">
 				<div class="robat">
@@ -201,10 +201,11 @@
 							<p>STEP 1 </p>
 							<h6>點選需要的資金額度？</h6>
 							<div class="btn_row">
-								<div class="chip money" value="10">10 萬</div>
-								<div class="chip money money_select" value="50">50 萬</div>
+								<div class="chip money money_select" value="10">10 萬</div>
+								<div class="chip money " value="50" >50 萬</div>
 								<div class="chip money" value="100">100 萬</div>
 								<div class="chip money" value="150">150 萬</div>
+								<div class="chip money" value="300">300 萬</div>
 							</div>
 						</div>
 					</div>
@@ -213,16 +214,16 @@
 							<p>STEP 2 </p>
 							<h6>選擇無壓力的還款期限？</h6>
 							<div class="btn_row">
-								<div class="chip year" value="1">1 年</div>
-								<div class="chip year year_select" value="3">3 年</div>
+								<div class="chip year year_select" value="1">1 年</div>
+								<div class="chip year " value="3">3 年</div>
 								<div class="chip year" value="5">5 年</div>
-				
+								<div class="chip year" value="7">7 年</div>
 							</div>
 						</div>
 					</div>
 					<div class="summary">
 						<div class="total">
-							<p style="font-size: 25px">月付約 <span class="money_pay">0</span> 元</p>
+							<p style="font-size: 25px">月付約 <span class="money_pay">8,455</span> 元</p>
 							<p>預設利率 2.68 %</p>
 					</div>
 					<div class="btn_row">
@@ -235,62 +236,73 @@
 </div>
 
 <script>
-	var moeny = 0
-	var year = 0
-
 	
+	
+	var money = 10
+	var year = 1
+
 	$('.money').click(function(){
-		$(this).addClass('money_select').siblings().removeClass('money_select')
+		$(this).addClass("money_select").siblings().removeClass("money_select")
+		money = $(this).attr('value')
+		total()
 	})
 	$('.year').click(function(){
-		$(this).addClass('year_select').siblings().removeClass('year_select')
+		$(this).addClass("year_select").siblings().removeClass("year_select")
+		year = $(this).attr('value')
+		total()
 	})
 
-	$('.money').each(function(index, item) {
-		if($(this).hasClass("money_select")){
-			$(this).attr('value')
+
+
+	function total(){
+		console.log("out money", money)
+		console.log("out year", year)
+		if(money == 10 && year == 1) {
+			$('.money_pay').html("8,455")
+		}else if(money == 10 && year == 3){
+			$('.money_pay').html("2,894")
+		}else if(money == 10 && year == 5){
+			$('.money_pay').html("1,783")
+		}else if(money == 10 && year == 7){
+			$('.money_pay').html("1,307")
+			
+		}else if(money == 50 && year == 1){
+			$('.money_pay').html("42,274")
+		}else if(money == 50 && year == 3){
+			$('.money_pay').html("14,470")
+		}else if(money == 50 && year == 5){
+			$('.money_pay').html("8,913")
+		}else if(money == 50 && year == 7){
+			$('.money_pay').html("6,535")
+		}else if(money == 100 && year == 1){
+			$('.money_pay').html("84,548")
+		}else if(money == 100 && year == 3){
+			$('.money_pay').html("28,940")
+		}else if(money == 100 && year == 5){
+			$('.money_pay').html("17,827")
+		}else if(money == 100 && year == 7){
+			$('.money_pay').html("13,070")
+		}else if(money == 150 && year == 1){
+			$('.money_pay').html("126,822")
+		}else if(money == 150 && year == 3){
+			$('.money_pay').html("43,411")
+		}else if(money == 150 && year == 5){
+			$('.money_pay').html("26,740")
+		}else if(money == 150 && year == 7){
+			$('.money_pay').html("19,604")
+		}else if(money == 300 && year == 1){
+			$('.money_pay').html("253,644")
+		}else if(money == 300 && year == 3){
+			$('.money_pay').html("86,821")
+		}else if(money == 300 && year == 5){
+			$('.money_pay').html("53,481")
+		}else if(money == 300 && year == 7){
+			$('.money_pay').html("39,209")
 		}
 		
-	});
-
-	moeny = $('.money_select').attr('value')
-	year = $('.year_select').attr('value')
-	console.log(moeny, year)
-
-
-	if(moeny == 10 && year == 1) {
-		$('.money_pay').html("8,455")
-	}else if(moeny == 10 && year == 3){
-		$('.money_pay').html("2,894")
-	}else if(moeny == 10 && year == 5){
-		$('.money_pay').html("1,783")
-	}else if(moeny == 10 && year == 7){
-		$('.money_pay').html("1,307")
-	}else if(moeny == 50 && year == 1){
-		$('.money_pay').html("42,274")
-	}else if(moeny == 50 && year == 3){
-		$('.money_pay').html("14,470")
-	}else if(moeny == 50 && year == 5){
-		$('.money_pay').html("8,913")
-	}else if(moeny == 50 && year == 7){
-		$('.money_pay').html("6,535")
-	}else if(moeny == 100 && year == 1){
-		$('.money_pay').html("84,548")
-	}else if(moeny == 100 && year == 3){
-		$('.money_pay').html("28,940")
-	}else if(moeny == 100 && year == 5){
-		$('.money_pay').html("17,827")
-	}else if(moeny == 100 && year == 7){
-		$('.money_pay').html("13,070")
-	}else if(moeny == 150 && year == 1){
-		$('.money_pay').html("126,822")
-	}else if(moeny == 150 && year == 3){
-		$('.money_pay').html("43,411")
-	}else if(moeny == 150 && year == 5){
-		$('.money_pay').html("26,740")
-	}else if(moeny == 150 && year == 7){
-		$('.money_pay').html("19,604")
 	}
+
+		
 
 	//$('.money_pay').html(result)
 </script>
