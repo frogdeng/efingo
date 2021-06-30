@@ -258,8 +258,8 @@
   <div class="inside_top">
     <span>2O21.O4.26 e.Fingo 會員限定</span>
     <h1>熊朋友邀請賽  中獎公告</h1>
-    <p>2021 年 1 月、2020 年 10,11,12 月份活動得獎公告</p>
-    <div class="for_flex-row">
+    <p style="margin-bottom: 30px;">2021 年 1 月、2020 年 10,11,12 月份活動得獎公告</p>
+    <!-- <div class="for_flex-row">
       <div class="count">
         <div class="watch"> <i class="far fa-eye"></i> 666</div>
         <div class="heart"><i class="fas fa-heart"></i> 666</div>
@@ -268,7 +268,7 @@
         <div class="like"><i class="fas fa-heart"></i> <p>Like</p> </div>
         <div class="share"><i class="fas fa-share"></i> <p>Share</p> </div>
       </div>
-    </div>
+    </div> -->
 
   </div>
 
@@ -484,6 +484,22 @@
 <script>
   $(".see_more").click(function(){
     $('.inside_notice').toggleClass('open')
+    if ($('.see_more  > p').html() === "展開更多") {
+      $('.see_more p').html("收合");
+    
+    } else {
+      $('.see_more p').html("展開更多");
+      // 讓捲軸移動到 0 的位置
+      var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+      $body.animate({
+        scrollTop: 3400
+      }, 600);
+    }
+
+
+
+
+    
   })
 </script>
 
@@ -649,6 +665,6 @@
         return false;
     })
 </script>
+
 </body>
 </html>
- 

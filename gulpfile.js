@@ -24,10 +24,10 @@ gulp.task('sass', function () {
         .pipe(plumber())
         .pipe(sass({
             includePaths: [bourbon, 'node_modules/susy/sass']
-          }))
+        }))
         .pipe(autoprefixer({
-                browsers: ['last 2 versions'],
-                cascade: false
+                browsers: ['last 2 versions','ie >= 10'],
+                cascade: true
             }))
         .pipe(sass({errLogToConsole: true}))
         .pipe(gulp.dest('./public/css'))
@@ -51,11 +51,11 @@ function getJsonData (file, cb) {
 gulp.task('twig', function () {
     return gulp.src('./views/*.twig')
         .pipe(plumber({
-          errorHandler: function (error) {
-            console.log(error.message);
-            this.emit('end');
+            errorHandler: function (error) {
+                console.log(error.message);
+                this.emit('end');
         }}))
-       .pipe(data(getJsonData))
+        .pipe(data(getJsonData))
         .pipe(foreach(function(stream,file){
             return stream
             .pipe(twig({

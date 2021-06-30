@@ -143,7 +143,7 @@ $susy: (debug: (image: hide))
 		flex-direction: row
 		justify-content: center
 		align-items: center
-		padding: 80px 50px
+		padding: 80px 50px 150px 50px
 		position: relative
 		.t_description
 			width: 40%
@@ -362,11 +362,12 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		width: 100%
-		background: url("../img/digital_wave_01a.svg") bottom
-		background-size: 100%
+		background: url("../img/digital_wave_01a.svg") 
+		background-position: center bottom
+		background-size: 200% 31%
 		background-repeat: no-repeat
 		position: relative
-		position: relative
+
 	
 .creditcard_pay_top-bg
 	+susy-breakpoint($breakpoint_pad, $w_pad)
@@ -380,8 +381,9 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		width: 100%
-		background: url("../img/digital_wave_01b.svg") bottom
-		background-size: 100%
+		background: url("../img/digital_wave_01b.svg") 
+		background-position: center bottom
+		background-size: 200% 31%
 		background-repeat: no-repeat
 		position: relative
 	
@@ -398,10 +400,13 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		width: 100%
-		background: url("../img/digital_wave_01c.svg") bottom
-		background-size: 100%
+		background: url("../img/digital_wave_01c.svg") 
+		background-position: center bottom
+		background-size: 200% 31%
 		background-repeat: no-repeat
 		position: relative
+	
+	
 	
 .finance_top-bg
 	+susy-breakpoint($breakpoint_pad, $w_pad)
@@ -415,10 +420,12 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		width: 100%
-		background: url("../img/digital_wave_01d.svg") bottom
-		background-size: 100%
+		background: url("../img/digital_wave_01d.svg")
+		background-position: center bottom
+		background-size: 200% 31%
 		background-repeat: no-repeat
 		position: relative
+	
 	
 .exchange_top-bg
 	+susy-breakpoint($breakpoint_pad, $w_pad)
@@ -432,11 +439,12 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		width: 100%
-		background: url("../img/digital_wave_01e.svg") bottom
-		background-size: 100%
+		background: url("../img/digital_wave_01e.svg")
+		background-position: center bottom
+		background-size: 200% 31%
 		background-repeat: no-repeat
 		position: relative
-		
+	
 
 
 
@@ -519,6 +527,7 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		background: #FFD24E
+		margin-top: -3px
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
@@ -650,9 +659,12 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		margin-top: -3px
+		width: 100%
+		margin-bottom: 20px
 		img 
 			display: block
-			width: 100%
+			width: 110%
+			height: 88px
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
@@ -669,10 +681,15 @@ $susy: (debug: (image: hide))
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
-		margin-top: -3px
+		margin-top: -10px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: flex-start
+		
 		img 
-			display: block
 			width: 100%
+
 
 
 
@@ -774,15 +791,19 @@ $susy: (debug: (image: hide))
 				align-items: center
 				position: relative
 				.bg_circle
-					width: 100%
 					position: absolute
+
 					top: 1.5%
+					left: 0
 					display: flex
 					flex-direction: column
 					justify-content: center
 					align-items: center
 					transform: scale(.3)
 					transition: all .2s
+					img 
+						width: 256px
+						height: 172px
 				.icon_img	 
 					width: 70%
 					display: block
@@ -944,7 +965,7 @@ $susy: (debug: (image: hide))
 		// background: url("../img/digital_wave_03d.svg") bottom #00AFFF
 		background-size: 100%
 		background-repeat: no-repeat
-		margin-top: -3px
+		margin-top: -7px
 
 
 
@@ -1032,7 +1053,7 @@ $susy: (debug: (image: hide))
 			display: flex
 			flex-direction: row
 			justify-content: space-around
-			align-items: center
+			align-items: flex-start
 			padding-bottom: 10px
 			
 			.card_item
@@ -1062,17 +1083,20 @@ $susy: (debug: (image: hide))
 					
 			.card_item_green
 				width: 30%
+				height: 533px
 				background: #FFF
 				border-radius: 60px
 				display: flex
 				flex-direction: column
-				justify-content: center
-				align-items: flex-start
+				justify-content: flex-start
+				align-items: center
 				margin-bottom: 0px
 				overflow: hidden
 				img
 					display: block
-					width: 100%
+					width: 110%
+					height: 400px
+					margin-top: -50px
 				.des
 					padding: 0 30px
 					width: 100%
@@ -1091,6 +1115,7 @@ $susy: (debug: (image: hide))
 						width: 100%
 					.btn_row
 						margin-top: 10px
+						margin-bottom: 40px
 						justify-content: center
 						a 
 							margin-right: 0
@@ -1190,12 +1215,16 @@ $susy: (debug: (image: hide))
 					width: 100%
 					position: absolute
 					top: 0%
+					left: 0px
 					display: flex
 					flex-direction: column
 					justify-content: center
 					align-items: center
 					transform: scale(.3)
 					transition: all .2s
+					img 
+						width: 256px
+						height: 172px
 				.icon_img	 
 					width: 70%
 					display: block
@@ -1371,9 +1400,12 @@ $susy: (debug: (image: hide))
 		align-items: center
 		position: relative
 		.robat
-			display: none
+			position: absolute
+			width: 80px
+			top: 0px
+			left: 0%
 		h2 
-			font-size: 35px
+			font-size: 30px
 			color: #014343
 			font-weight: 700
 			margin-bottom: 10px
@@ -1388,28 +1420,28 @@ $susy: (debug: (image: hide))
 				width: 100%
 				background: #FDF7E0
 				border-radius: 30px
-				padding: 20px
-				margin: 2% 1%
-				border-radius: 30px
+				padding: 10px
+				margin: 1% 1%
 				.btn_row
 					display: flex
-					flex-direction: column
-					justify-content: center
+					flex-wrap: wrap
+					flex-direction: row
+					justify-content: flex-start
 					align-items: center
 					margin: 10px 0
 					.chip
-						width: 80%
+						width: 30%
 						border: 1px solid #014343
-						padding: 5px 20px
+						padding: 5px 10px
 						border-radius: 20px
-						margin: 10px 10px
+						margin: 5px 4px
 						text-align: center
 						color: #014343
 						cursor: pointer
 
 				h6 
 					text-align: center
-					margin-bottom: 20px
+					margin-bottom: 10px
 				p 
 					text-align: center
 					font-size: 16px

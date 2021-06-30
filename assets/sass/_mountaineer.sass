@@ -102,6 +102,10 @@ $susy: (debug: (image: hide))
 			line-height: 1.5
 			font-weight: 400
 
+
+.bt-0
+	margin-bottom: 0 !important
+
 .mountaineer_top_section_m
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
@@ -131,8 +135,9 @@ $susy: (debug: (image: hide))
 			justify-content: center
 			align-items: flex-start
 			margin-top: 50px
-
+			
 			.m-img
+				display: block
 				position: relative
 				width: 50%
 				margin-bottom: 20px
@@ -161,17 +166,9 @@ $susy: (debug: (image: hide))
 					i 
 						margin-left: 10px
 
-
-
-
-
-
-
-
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		display: none
-
 
 
 
@@ -188,7 +185,7 @@ $susy: (debug: (image: hide))
 		padding: 80px 50px
 		background: url("../img/mountain.svg") top
 		background-repeat: no-repeat
-		background-size: 3200px
+		background-size: 3200px 900px
 		position: relative
 		.go_btn
 			background: #FFF
@@ -219,6 +216,9 @@ $susy: (debug: (image: hide))
 			.p_img
 				position: absolute
 				top: 50px
+				left: 100px
+				width: 147px
+				height: 280px
 			.y-bg
 				opacity: 0
 				transition: all .1s
@@ -240,6 +240,9 @@ $susy: (debug: (image: hide))
 			.p_img
 				position: absolute
 				top: 50px
+				left: 60px
+				width: 340px
+				height: 397px
 			.y-bg
 				opacity: 0
 			.btn_row
@@ -259,6 +262,9 @@ $susy: (debug: (image: hide))
 			.p_img
 				position: absolute
 				top: 50px
+				left: 20px
+				width: 265px
+				height: 284px
 			.y-bg
 				opacity: 0
 			.btn_row
@@ -277,6 +283,10 @@ $susy: (debug: (image: hide))
 			.p_img
 				position: absolute
 				top: 50px
+				left: 30px
+				width: 252px
+				height: 218px
+				
 			.y-bg
 				opacity: 0
 			.btn_row
@@ -487,10 +497,12 @@ $susy: (debug: (image: hide))
 		background: #FFF
 		border-radius: 50px
 		padding: 50px 20px
+		margin-top: 80px
 		.mobile_mountain_wrapper
 			background: #FFF
 			padding-right: 10px
-			height: 60vh
+			
+			height: 65vh
 			overflow: auto
 			.mountaineer_content
 				// border: 3px solid #195F5F
@@ -676,11 +688,6 @@ $susy: (debug: (image: hide))
 
 
 
-
-
-
-
-
 .join_now
 	width: 100%
 	height: 500px
@@ -692,3 +699,14 @@ $susy: (debug: (image: hide))
 		font-size: 45px
 		text-align: center
 		font-weight: 700
+
+.mfp-bg
+	// height: 100vh !important
+	overscroll-behavior: contain
+	scroll-snap-stop: none
+	
+.mfp-wrap 
+	position: fixed !important
+	top: -20px !important
+	overscroll-behavior: contain
+	scroll-snap-stop: none

@@ -135,7 +135,7 @@ $susy: (debug: (image: hide))
 		.t_description
 			width: 100%
 			h2
-				font-size: 30px
+				font-size: 20px
 				margin-bottom: 6px
 				span
 					font-size: 12px
@@ -244,7 +244,7 @@ $susy: (debug: (image: hide))
 			.img_c01
 				width: 90%
 				transform: scale(.3)
-				transition: all .4s
+				transition: all .3s
 				display: flex
 				flex-direction: row
 				justify-content: center
@@ -252,15 +252,15 @@ $susy: (debug: (image: hide))
 				margin-top: 0px
 			.img_c02
 				position: absolute
-				width: 90%
+				width: 70%
 				display: flex
 				flex-direction: row
 				justify-content: center
 				align-items: center
 				transform: scale(.2)
-				transition: all .5s
+				transition: all .6s
 				top: -10%
-				left: 0%
+				left: 10%
 				// animation: img_a02 16s linear infinite
 	
 
@@ -363,6 +363,7 @@ $susy: (debug: (image: hide))
 				transform: scale(.6)
 				transition: all .8s
 				top: 20px
+				
 			.aaa
 				width: 200px
 				position: absolute
@@ -399,6 +400,7 @@ $susy: (debug: (image: hide))
 			flex-direction: row
 			justify-content: center
 			align-items: center
+			position: relative
 			.bg_circle
 				position: relative
 				transform: scale(.4)
@@ -407,7 +409,12 @@ $susy: (debug: (image: hide))
 				position: absolute
 				transform: scale(.6)
 				transition: all .8s
-				top: 20px
+				top: -50px
+				left: 150px
+			.aaa
+				
+				
+				left: 250px
 			
 
 
@@ -489,15 +496,20 @@ $susy: (debug: (image: hide))
 				flex-direction: column
 				justify-content: center
 				align-items: center
+
 				.shapping_img
 					position: absolute
-					
-				h3 
-					text-align: center
-					margin-bottom: 5px
-					margin-top: 130px
-				p 
-					font-size: 14px
+					left: 0
+					top: 0
+				.okm
+					width: 200px
+					h3 
+						text-align: center
+						margin-bottom: 5px
+						margin-top: 130px
+					p 
+						font-size: 14px
+						text-align: center
 		.exchange_row
 			display: flex
 			flex-direction: row
@@ -648,6 +660,8 @@ $susy: (debug: (image: hide))
 			flex-direction: row
 			justify-content: flex-start
 			align-items: center
+			&::-webkit-scrollbar
+				display: none 
 			
 			.join_item
 				width: 100%
@@ -716,6 +730,7 @@ $susy: (debug: (image: hide))
 					a 
 						+yellow_btn
 						margin-right: 0
+						text-align: center
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -783,6 +798,7 @@ $susy: (debug: (image: hide))
 				.phone
 					margin-bottom: 50px
 					width: 179px
+					height: 380px
 				h4
 					text-align: center
 					margin-bottom: 20px
@@ -796,6 +812,7 @@ $susy: (debug: (image: hide))
 					a 
 						+yellow_btn
 						margin-right: 0
+						text-align: center
 	
 
 
@@ -879,6 +896,8 @@ $susy: (debug: (image: hide))
 						p 
 							font-size: 14px
 							font-weight: 600
+
+							
 		.how_to_use_row_multiple
 			display: flex
 			flex-direction: column
@@ -924,6 +943,7 @@ $susy: (debug: (image: hide))
 						justify-content: center
 						align-items: center
 						transition: all .3s
+						
 			.icon_switch
 				width: 100%
 				h3 
@@ -1017,6 +1037,8 @@ $susy: (debug: (image: hide))
 					position: absolute
 					transform: scale(.3)
 					transition: all .3s
+					left: 0
+					top: 20%
 				.mobile_wrap
 					position: relative
 					width: 300px
@@ -1042,6 +1064,10 @@ $susy: (debug: (image: hide))
 						justify-content: center
 						align-items: center
 						transition: all .3s
+						.mobile_content
+							width: 300px
+							img 
+								width: 300px
 			.icon_switch
 				width: 58%
 				h3 
@@ -1076,6 +1102,9 @@ $susy: (debug: (image: hide))
 						flex-direction: column
 						justify-content: center
 						align-items: center
+						img 
+							display: block
+							width: 84px
 						p 
 							font-size: 14px
 							font-weight: 600
@@ -1098,6 +1127,8 @@ $susy: (debug: (image: hide))
 					position: absolute
 					transform: scale(.3)
 					transition: all .3s
+					top: 20%
+					left: 0px
 				.mobile_wrap
 					position: relative
 					width: 300px
@@ -1123,6 +1154,8 @@ $susy: (debug: (image: hide))
 						justify-content: center
 						align-items: center
 						transition: all .3s
+						.mobile_content
+							width: 284px
 			.icon_switch
 				width: 58%
 				h3 
@@ -1140,7 +1173,8 @@ $susy: (debug: (image: hide))
 					align-items: center
 					margin-bottom: 30px
 					img 
-						width: 70%
+						display: block
+						width: 84px
 						margin-bottom: 5px
 					
 					.icon_btn_multiple
