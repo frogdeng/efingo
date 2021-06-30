@@ -1743,8 +1743,8 @@ a {
   font-size: 30px; }
 
 .show_no {
-  display: -ms-flexbox !important;
-  display: flex !important; }
+  display: -ms-flexbox;
+  display: flex; }
 
 @media (min-width: 0) and (max-width: 890px) {
   .understand_feature_wrapper {
@@ -9539,6 +9539,8 @@ p {
     padding-right: 10px;
     height: 73vh;
     overflow: auto; }
+  .notice-popup_text .notice-popup_content::-webkit-scrollbar {
+    display: none; }
   .notice-popup_text .notice-popup_content h6 {
     font-size: 22px;
     color: #047B77;
@@ -9571,6 +9573,8 @@ p {
     padding-right: 10px;
     height: 60vh;
     overflow: auto; }
+  .notice-popup_text .notice-popup_content::-webkit-scrollbar {
+    display: none; }
   .notice-popup_text .notice-popup_content h6 {
     font-size: 22px;
     color: #047B77;

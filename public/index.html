@@ -79,7 +79,7 @@
     </div>
 
 
-    <div class="no_ie show_no">
+    <div class="no_ie">
         <div class="ie_close"><i class="fas fa-times-circle"></i></div>
         <h6>本網站建議使用 Chrome, Firefox, Safari 瀏覽器，得到最佳瀏覽體驗</h6>
     </div>
@@ -879,18 +879,19 @@
 
 
 <script type="text/javascript">
-    function isIE() { 
-        if (!!window.ActiveXObject || 'ActiveXObject' in window) {
+    
+    if (!!window.ActiveXObject || 'ActiveXObject' in window) {
             console.log('我是 IE');
+            $('.no_ie').addClass('show_no')
             
         } else {
             if (screen.width >= 540) {
             var s=skrollr.init(); 
             $('.no_ie').removeClass('show_no')
-        }
+        
         }
     }
-    isIE();
+
 
 
     $('.ie_close').click(function(){
