@@ -663,14 +663,12 @@ $susy: (debug: (image: hide))
 		margin-bottom: 20px
 		img 
 			display: block
-			width: 110%
-			height: 88px
+			width: 100%
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
-		img 
-			display: none
-			width: 100%
+		display: none
+	
 
 .wave_border
 	+susy-breakpoint($breakpoint_pad, $w_pad)
@@ -681,14 +679,15 @@ $susy: (debug: (image: hide))
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
+		width: 100%
 		margin-top: -10px
 		display: flex
 		flex-direction: row
 		justify-content: flex-start
 		align-items: flex-start
-		
 		img 
 			width: 100%
+			display: block
 
 
 

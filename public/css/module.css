@@ -405,7 +405,9 @@ a {
     -ms-flex-align: start;
     align-items: flex-start;
     width: 80%;
-    position: absolute; }
+    position: absolute;
+    top: 20%;
+    left: 10%; }
   .main_image_wrapper .main_slider .new_photo .main_banner_b .main_des_b {
     width: 30%;
     padding-right: 20px; }
@@ -1546,44 +1548,6 @@ a {
     background: #FFC517;
     color: #195F5F; } }
 
-.digital_loan_index {
-  width: 100%;
-  background: #1484E3; }
-
-.digital_loan_index h6 {
-  color: #FFF !important;
-  font-size: 14px;
-  font-weight: 700; }
-
-.digital_loan_index p {
-  color: #FFFF !important;
-  font-size: 11px;
-  line-height: 2; }
-
-.digital_loan_index a {
-  color: #FEC739 !important; }
-
-.digital_loan_index .credit_card {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  margin-top: 20px; }
-
-.digital_loan_index .credit_card .slogen {
-  width: 20%;
-  font-size: 14px;
-  font-weight: 700;
-  color: #FFF !important; }
-
-.digital_loan_index .credit_card .des {
-  font-size: 12px;
-  color: #FFF !important; }
-
 .digital_loan {
   width: 100%;
   background: #1484E3; }
@@ -1610,7 +1574,7 @@ a {
     font-size: 11px;
     line-height: 2; }
   .digital_loan_content .d-text a {
-    color: #DDD; }
+    color: #FFC517; }
   .digital_loan_content .d-text_page {
     padding: 0 10px;
     padding-bottom: 150px; }
@@ -1707,6 +1671,129 @@ a {
     flex: 0 1 100%;
     font-size: 12px;
     color: #014343;
+    margin-top: 6px; } }
+
+@media (min-width: 0) and (max-width: 950px) {
+  .digital_loan_content_index {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+    background: #1484E3; }
+  .digital_loan_content_index:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .digital_loan_content_index .d-text {
+    padding: 0 10px;
+    padding-bottom: 90px; }
+  .digital_loan_content_index .d-text h6 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700; }
+  .digital_loan_content_index .d-text p {
+    color: #FFF;
+    font-size: 11px;
+    line-height: 2; }
+  .digital_loan_content_index .d-text a {
+    color: #FFC517; }
+  .digital_loan_content_index .d-text_page {
+    padding: 0 10px;
+    padding-bottom: 150px; }
+  .digital_loan_content_index .d-text_page h6 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700; }
+  .digital_loan_content_index .d-text_page p {
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 5px; }
+  .digital_loan_content_index .d-text_page a {
+    color: #FFC517;
+    text-decoration: underline; }
+  .digital_loan_content_index .d-text_page .credit_card {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-top: 20px; }
+  .digital_loan_content_index .d-text_page .credit_card .slogen {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 10px;
+    text-align: center; }
+  .digital_loan_content_index .d-text_page .credit_card .des {
+    font-size: 12px;
+    color: #FFF; } }
+
+@media (min-width: 951px) {
+  .digital_loan_content_index {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
+    background: #1484E3; }
+  .digital_loan_content_index:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .digital_loan_content_index .d-text {
+    padding: 0 80px;
+    padding-bottom: 150px; }
+  .digital_loan_content_index .d-text h6 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700; }
+  .digital_loan_content_index .d-text p {
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 5px; }
+  .digital_loan_content_index .d-text a {
+    color: #FFC517; }
+  .digital_loan_content_index .d-text_page {
+    padding: 0 80px;
+    padding-bottom: 150px; }
+  .digital_loan_content_index .d-text_page h6 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700; }
+  .digital_loan_content_index .d-text_page p {
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 5px; }
+  .digital_loan_content_index .d-text_page a {
+    color: #FFC517;
+    text-decoration: underline; }
+  .digital_loan_content_index .d-text_page .credit_card {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-top: 20px; }
+  .digital_loan_content_index .d-text_page .credit_card .slogen {
+    -ms-flex: 0 1 400px;
+    flex: 0 1 400px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFF; }
+  .digital_loan_content_index .d-text_page .credit_card .des {
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    font-size: 12px;
+    color: #FFF;
     margin-top: 6px; } }
 
 .no_ie {
@@ -4294,21 +4381,18 @@ a {
     clear: both; }
   .wave_border-m img {
     display: block;
-    width: 110%;
-    height: 88px; } }
+    width: 100%; } }
 
 @media (min-width: 891px) {
   .wave_border-m {
     max-width: 100%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    display: none; }
   .wave_border-m:after {
     content: " ";
     display: block;
-    clear: both; }
-  .wave_border-m img {
-    display: none;
-    width: 100%; } }
+    clear: both; } }
 
 @media (min-width: 0) and (max-width: 890px) {
   .wave_border {
@@ -4328,6 +4412,7 @@ a {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
     margin-top: -10px;
     display: -ms-flexbox;
     display: flex;
@@ -4342,7 +4427,8 @@ a {
     display: block;
     clear: both; }
   .wave_border img {
-    width: 100%; } }
+    width: 100%;
+    display: block; } }
 
 @media (min-width: 0) and (max-width: 890px) {
   .four_card_section {

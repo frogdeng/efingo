@@ -248,6 +248,9 @@ $susy: (debug: (image: hide))
 					align-items: flex-start
 					width: 80%
 					position: absolute
+					top: 20%
+					left: 10%
+					
 					.main_des_b
 						width: 30%
 						padding-right: 20px
@@ -1270,37 +1273,6 @@ $susy: (debug: (image: hide))
 
 				
 
-// digital_loan
-.digital_loan_index
-	width: 100%
-	background: #1484E3 
-	h6 
-		color: #FFF !important
-		font-size: 14px
-		font-weight: 700
-	p 
-		color: #FFFF !important
-		font-size: 11px
-		line-height: 2
-	a 
-		color: #FEC739!important
-	.credit_card
-		display: flex
-		flex-direction: row
-		justify-content: center
-		align-items: flex-start
-		margin-top: 20px
-		.slogen
-			width: 20%
-			font-size: 14px
-			font-weight: 700
-			color: #FFF !important
-			
-		.des
-			font-size: 12px
-			color: #FFF !important
-
-
 
 
 // digital_loan
@@ -1326,7 +1298,7 @@ $susy: (debug: (image: hide))
 				font-size: 11px
 				line-height: 2
 			a 
-				color: #DDD
+				color: #FFC517
 		.d-text_page
 			padding: 0 10px
 			padding-bottom: 150px
@@ -1419,6 +1391,148 @@ $susy: (debug: (image: hide))
 					margin-top: 6px
 
 				
+// !!!
+.digital_loan_content_index
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		padding: 0 30px
+		// margin-bottom: 50px
+		background: #1484E3
+		.d-text
+			padding: 0 10px
+			padding-bottom: 90px
+			h6 
+				color: #FFF
+				font-size: 14px
+				font-weight: 700
+			p 
+				color: #FFF
+				font-size: 11px
+				line-height: 2
+			a 
+				color: #FFC517
+		.d-text_page
+			padding: 0 10px
+			padding-bottom: 150px
+			h6 
+				color: #FFF
+				font-size: 14px
+				font-weight: 700
+			
+			p 
+				color: #FFF
+				font-size: 13px
+				line-height: 1.5
+				margin-bottom: 5px
+			a 
+				color: #FFC517
+				text-decoration: underline
+			.credit_card
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: flex-start
+				padding-top: 20px
+				.slogen
+					width: 100%
+					font-size: 24px
+					font-weight: 700
+					color: #FFF
+					margin-bottom: 10px
+					text-align: center
+					
+				.des
+					font-size: 12px
+					color: #FFF
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 50px
+		// margin-bottom: 50px
+		background: #1484E3
+		.d-text
+			padding: 0 80px
+			padding-bottom: 150px
+			h6 
+				color: #FFF
+				font-size: 14px
+				font-weight: 700
+			
+			p 
+				color: #FFF
+				font-size: 13px
+				line-height: 1.5
+				margin-bottom: 5px
+			a 
+				color: #FFC517
+
+		.d-text_page
+			padding: 0 80px
+			padding-bottom: 150px
+			h6 
+				color: #FFF
+				font-size: 14px
+				font-weight: 700
+			
+			p 
+				color: #FFF
+				font-size: 13px
+				line-height: 1.5
+				margin-bottom: 5px
+			a 
+				color: #FFC517
+				text-decoration: underline
+			.credit_card
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: flex-start
+				padding-top: 20px
+			
+				.slogen
+					flex: 0 1 400px
+					font-size: 30px
+					font-weight: 700
+					color: #FFF
+					
+				.des
+					// width: 0%
+					flex: 0 1 100%
+					font-size: 12px
+					color: #FFF
+					margin-top: 6px
+
+// digital_loan
+// .digital_loan_index
+// 	width: 100%
+// 	background: #1484E3
+// 	color: #FFF !important
+// 	.d-text_page
+// 		h6 
+// 			color: #FFF !important
+// 			font-size: 14px
+// 			font-weight: 700
+// 		p 
+// 			color: #FFFF !important
+// 			font-size: 11px
+// 			line-height: 2
+// 		a 
+// 			color: #FEC739!important
+// 		.credit_card
+// 			display: flex
+// 			flex-direction: row
+// 			justify-content: center
+// 			align-items: flex-start
+// 			margin-top: 20px
+// 			.slogen
+// 				width: 20%
+// 				font-size: 14px
+// 				font-weight: 700
+// 				color: #FFF !important
+				
+// 			.des
+// 				font-size: 12px
+// 				color: #FFF !important
 
 
 
