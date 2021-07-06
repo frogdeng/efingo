@@ -5309,7 +5309,9 @@ a {
     display: block;
     clear: both; }
   .single_img h6, .single_img p {
-    text-align: center; } }
+    text-align: center; }
+  .single_img .btn_row .go_btn {
+    margin: 0; } }
 
 @media (min-width: 891px) {
   .single_img {
@@ -5329,7 +5331,9 @@ a {
     display: block;
     clear: both; }
   .single_img h6, .single_img p {
-    text-align: center; } }
+    text-align: center; }
+  .single_img .btn_row .go_btn {
+    margin: 0; } }
 
 @media (min-width: 0) and (max-width: 890px) {
   .digital-lightbox {
@@ -6757,14 +6761,15 @@ a {
     flex-wrap: wrap;
     -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
     margin-bottom: 80px; }
   .activity_list .item_row .blog_item {
     display: block;
     width: 47%;
+    margin: 0 1.5%;
     margin-bottom: 50px; }
   .activity_list .item_row .blog_item img {
     display: block;
@@ -6794,6 +6799,7 @@ a {
   .activity_list .item_row .activity_item {
     display: block;
     width: 30%;
+    margin: 0 1.5%;
     margin-bottom: 50px; }
   .activity_list .item_row .activity_item img {
     display: block;
@@ -7796,7 +7802,7 @@ a {
   .qa_top-bg .four_card_section::-webkit-scrollbar {
     display: none; }
   .qa_top-bg .four_card_section .icon_row {
-    width: 650px;
+    width: 488px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;

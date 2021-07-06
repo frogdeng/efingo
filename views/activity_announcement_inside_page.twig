@@ -196,7 +196,7 @@
       // 讓捲軸移動到 0 的位置
       var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
       $body.animate({
-        scrollTop: 1300
+        scrollTop: $(".inside_notice").offset().top - 100
       }, 600);
     }
 

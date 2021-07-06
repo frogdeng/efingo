@@ -482,7 +482,7 @@
       // 讓捲軸移動到 0 的位置
       var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
       $body.animate({
-        scrollTop: 3400
+        scrollTop: $(".inside_notice").offset().top - 100
       }, 600);
     }
 
@@ -610,7 +610,6 @@
     })
 
  
-
     if($(window).scrollTop() > 100){
         $(".index_menu").addClass('index_menu_bg')
     }else{
